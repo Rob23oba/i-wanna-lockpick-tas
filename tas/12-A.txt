@@ -1,0 +1,30 @@
+# solution: 6 26 3 4
+
+# walk
+R 10
+
+# jump, do second 2 times
+J 20 rL 1 lR j 1 rL J
+
+3 l
+
+# do first 6 times
+R 1 j Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 3 r
+
+# second 2 times
+L 1 lR 1 Lr 1 lR 1 Lr 1 lR
+
+# jump
+10 r 1 J 1 R
+
+# third 2 times, last 6 times, third 1 time
+15 r 2 j 1 JL 4 l 4 j R 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 4 l 10 L 4 l
+
+# second 22 times
+5 J 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1
+j Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1
+J Lr 1 lR 1 Lr 1 lR 1 j Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR
+
+21 J 1 j
+
+$win

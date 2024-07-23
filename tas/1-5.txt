@@ -1,0 +1,15 @@
+R 13
+J 10 Lr 1 j 1 J 4 j 2 JjJ 1 j 1
+8 lR 41 Lr 11
+J 9 lR 4 j 1 J 12 jJ 1 j 2
+17 Lr 11
+J 3 lR 6 jJ 2 j 1
+17 Lr 32 lR 20 Lr 11
+J 9 lR 4 j 1 J 12 jJ 1 j 2
+28 Lr 50 lR 31 Lr 21
+J 3 lR 6 jJ 2 j 1
+33 Lr 33 lR 49 Lr 32
+J 9 lR 4 j 1 J 12 jJ 1 j 2
+27 Lr 21
+J 9 lR 4 j 1 J 12 jJ 1 j 2
+18 Jj 2 r

@@ -1,0 +1,78 @@
+L 13 JjJ 1 j 23 JjJ 1 j 8 l
+
+$enter
+$1-1
+$win
+
+R 11 JjJ 1 j 10 r
+
+$enter
+$1-2
+$win
+
+Nn 1
+
+R 11 JjJ 1 j 10 r
+
+$enter
+$1-3
+$win
+
+R 11 JjJ 1 j 10 r
+
+$enter
+$1-4
+$win
+
+Nn 1
+
+L 40 u 4 JjJ 1 j 15 l
+
+$enter
+$1-5
+$win
+
+# R 15 JjJ 1 j 17 r
+
+R 14 rL 30 l
+$enter
+$1-8
+$win
+
+R 13 r
+$enter
+$1-9
+$win
+
+R 13 r
+$enter
+$1-10
+$win
+
+Nn 1 L 10 l 21
+$enter
+$1-6
+$win
+
+R 18 r
+$enter
+$1-7
+$win
+
+R 15 JjJ 1 j 17 r
+$enter
+$1-A
+$win
+
+L 40 l
+$enter
+$1-B
+$win
+
+R 18 r
+$enter
+$1-C
+$win
+
+Nn 1
+$enter_world

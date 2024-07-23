@@ -1,0 +1,40 @@
+# Crazy jump: J 4 j 6 J 6 j 1 RJ 11 j 3
+
+1 L 2 l
+J 7 L 3 lR 2 j 5 J 17 j 1
+6
+J 2 Lr 7 jJ 2 j 3 l
+J 4 j 6 J 6 j 1 RJ 11 j 1 Lr 2 lR
+47 JjJ 1 j
+6
+J 7 Lr j 1 J 6 l j 20
+J 13 j 1 RJ 12 rL jJ 1 jJ 1
+30 lR 31 jLr 28 lR
+2
+J 11 Lr j 2 J 4 jJ 1 j 1
+J 4 j 1 J l 3 L 2 jJ 1 jJ 1 j 1
+24 lR 10 Lr 28 lR
+2
+J 11 Lr j 2 J 4 jJ 1 j 1
+J 4 j 1 J l 3 L 2 jJ 1 jJ 1 j 1
+11
+10 J 3 jJ 2 j 3
+31 lR 28 Lr
+2
+J 11 lR j 2 J 4 jJ 1 j 1
+J 4 j 1 J 2 Lr 3 jJ 1 jJ 1 j 1
+J 1 j 1 J 3 jJ 1 jJ 2 j 1
+31 lR 28 Lr
+2
+J 11 lR j 2 J 4 jJ 1 j 1
+J 4 j 1 J r 3 R 2 jJ 1 jJ 1 j 1
+5
+J 2 Lr 7 j 1 Jj 1 JjJ 2 j 1
+4
+J 1 j 1 J 3 jJ 1 jJ 1 j 2
+J 4 j 6 J 6 j 1 RJ 11 j 1 Lr 2 lR
+41 JjJ 1 j
+11
+J 4 j 1 J 5 jJ 2 j 10
+J 4 j 6 J 6 j 1 LrJ 11 j 1 lR 2 Lr
+23 lR 42 r 14

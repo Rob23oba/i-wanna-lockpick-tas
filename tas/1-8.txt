@@ -1,0 +1,8 @@
+R 17 Lr 34
+Jj 1 l J 1 jJ 1 R jJ 1 j 9
+60 Lr 19
+J 7 j 1 J 5 lR 4 jJ 1 jJ 1 j 1 Lr
+J 1 l 6 j 1 J 9 jJ 1 jJR 1 j 1
+19
+Jj 1 J 1 jJ 1 Lr jJ 1 j 9
+16 lR 36 Jj 2 r
