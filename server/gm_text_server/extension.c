@@ -254,6 +254,46 @@ void gm_api_network_has_client(struct gm_value *target, struct gm_instance *self
 	target->value.i32 = 1;
 }
 
+char g_split_buffer[MAX_MSG_LEN + 1];
+char *g_split_ptr = NULL;
+
+void gm_api_string_split_initialize(struct gm_value *target, struct gm_instance *self, struct gm_instance *other, int paramCount, struct gm_value *parameters) {
+	if (paramCount < 1) {
+		gm_show_error_message("string_split_initialize requires 1 parameter!", 1);
+		return;
+	}
+	const char *str = gm_param_as_string(parameters, 0);
+	g_split_buffer[0] = 0;
+	strncat_s(g_split_buffer, sizeof(g_split_buffer), str, sizeof(g_split_buffer) - 1);
+	g_split_ptr = g_split_buffer;
+}
+
+void gm_api_string_split_next_float(struct gm_value *target, struct gm_instance *self, struct gm_instance *other, int paramCount, struct gm_value *parameters) {
+	if (g_split_ptr == NULL) {
+		gm_show_error_message("No split present!", 1);
+		return;
+	}
+	char *end;
+	double num = strtod(g_split_ptr, &end);
+	g_split_ptr = end;
+
+	target->type = TYPE_NUMBER;
+	target->value.number = num;
+}
+
+void gm_api_string_split_next_int(struct gm_value *target, struct gm_instance *self, struct gm_instance *other, int paramCount, struct gm_value *parameters) {
+	if (g_split_ptr == NULL) {
+		gm_show_error_message("No split present!", 1);
+		return;
+	}
+	char *end;
+	int num = (int) strtol(g_split_ptr, &end, 10);
+	g_split_ptr = end;
+
+	target->type = TYPE_INT32;
+	target->value.i32 = num;
+}
+
 int make_internal_function(char *str, gm_function fn, int paramCount, bool flag) {
 	for (int i = internal_function_count - 1; i >= 0; i--) {
 		if (strcmp(internal_function_list[i].name, str) == 0) {
@@ -285,14 +325,17 @@ gm_function get_internal_function(const char *name) {
 void replace_function_references(int *internalFns, int count);
 
 __declspec(dllexport) void init_extension() {
-	int list[5] = {
+	int list[] = {
 		make_internal_function("network_create_text_server", &gm_api_network_create_text_server, 1, FALSE),
 		make_internal_function("network_close_text_server", &gm_api_network_close_text_server, 0, FALSE),
 		make_internal_function("network_send_text", &gm_api_network_send_text, 1, FALSE),
 		make_internal_function("network_check_text", &gm_api_network_check_text, 0, FALSE),
 		make_internal_function("network_has_client", &gm_api_network_has_client, 0, FALSE),
+		make_internal_function("string_split_initialize", &gm_api_string_split_initialize, 1, FALSE),
+		make_internal_function("string_split_next_float", &gm_api_string_split_next_float, 0, FALSE),
+		make_internal_function("string_split_next_int", &gm_api_string_split_next_int, 0, FALSE),
 	};
-	replace_function_references(list, 5);
+	replace_function_references(list, sizeof(list) / sizeof(int));
 }
 
 // Replace occurrences of script functions with actual (internal) functions, don't use within currently used function

@@ -1,4 +1,4 @@
-var query, heldString, pressedString, releasedString, i, button;
+var query, heldString, pressedString, releasedString, i, button, flags;
 global.tasOverrides = 0
 global.tasOverrides[16] = 0
 global.tasPrevHeld = global.tasCurHeld
@@ -72,6 +72,28 @@ while 1
         case "unblock":
             blockingMode = 0
             room_speed = 50
+            break
+        case "savestate":
+            with (objPlayer)
+                network_send_text(x, " ", y, " ", hspeed, " ", vspeed, " ", ((((djump + (frozen * 2)) + (onPlatform * 4)) + (global.runSwitch * 8)) + (global.complexMode * 16)), " ", downTime, " ", downDir, " ")
+            break
+        case "load_savestate":
+            with (objPlayer)
+            {
+                string_split_initialize(network_check_text(1))
+                x = string_split_next_float()
+                y = string_split_next_float()
+                hspeed = string_split_next_float()
+                vspeed = string_split_next_float()
+                flags = string_split_next_float()
+                djump = ((flags & 1) != 0)
+                frozen = ((flags & 2) != 0)
+                onPlatform = ((flags & 4) != 0)
+                global.runSwitch = ((flags & 8) != 0)
+                global.complexMode = ((flags & 16) != 0)
+                downTime = string_split_next_float()
+                downDir = string_split_next_float()
+            }
             break
         case "obstacles":
             with (objBlock)
