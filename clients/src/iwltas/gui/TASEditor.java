@@ -193,15 +193,16 @@ public class TASEditor {
 		startingPoint = new JTextField();
 		startingPoint.getDocument().addDocumentListener(new DocumentListener() {
 			public void changedUpdate(DocumentEvent ev) {
-				updateCacheTarget();
+				queuedUpdateCacheTarget = true;
+				SwingUtilities.invokeLater(TASEditor.this::updateCacheTarget);
 			}
 
 			public void insertUpdate(DocumentEvent ev) {
-				updateCacheTarget();
+				changedUpdate(ev);
 			}
 
 			public void removeUpdate(DocumentEvent ev) {
-				updateCacheTarget();
+				changedUpdate(ev);
 			}
 		});
 
@@ -251,9 +252,9 @@ public class TASEditor {
 			while (true) {
 				long inputMask = reader.frame(prevInputs, newLookup);
 				if (newLookup.end) {
-					seq = null;
 					break;
 				} else if ((inputMask & TASReader.END_MASK) != 0) {
+					seq = null;
 					break;
 				}
 				seq.add(inputMask);
@@ -261,10 +262,10 @@ public class TASEditor {
 			}
 		} catch (IOException ex) {
 			seq = null;
-			return;
 		}
 		synchronized (cache) {
 			cache.target = seq;
+			cache.interrupt();
 		}
 	}
 

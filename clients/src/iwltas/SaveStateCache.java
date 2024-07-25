@@ -45,6 +45,11 @@ public class SaveStateCache extends WaitingTASFrameHandler {
 			return;
 		}
 		double[][] saveState = client.getSaveState();
+		int prevInputs = (int) saveState[0][0];
+		if (currentSequence.isEmpty() && prevInputs != 0) {
+			client.release(prevInputs);
+			return;
+		}
 		if (saveStates.size() > 1000) {
 			Iterator<InputSequence> it = saveStates.keySet().iterator();
 			while (it.hasNext()) {
