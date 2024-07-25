@@ -65,93 +65,29 @@ public class Playback extends WaitingTASFrameHandler {
 	public boolean logInputs;
 
 	/**
-	 * The time remaining to wait.
+	 * The TAS reader used to read inputs.
 	 */
-	private int waitTime;
-
-	/**
-	 * The decimal number of the current wait command. Used for waits with multiple digits.
-	 */
-	private int waitDecimal;
-
-	/**
-	 * A stack of readers built from "$" commands.
-	 */
-	private Stack<Reader> stack = new Stack<>();
-
-	/**
-	 * The currently used reader.
-	 */
-	private Reader in = new BufferedReader(new InputStreamReader(System.in));
+	private TASReader reader = new TASReader(new BufferedReader(new InputStreamReader(System.in)));
 
 	@Override
 	public void frame(TASClient client) throws IOException {
 		int prev = client.previousInputMask();
-		if (waitTime > 0) {
-			client.doInputs();
-			if (logInputs) {
-				System.out.println(client.getInputs());
+		long mask = reader.frame(prev, str -> {
+			try (FileInputStream fin = new FileInputStream(new File(searchRoot, str + ".txt"))) {
+				return new StringReader(new String(fin.readAllBytes()).stripTrailing());
+			} catch (IOException ex) {
+				System.err.println(str + " could not be found. Use --lookup to specify the search path. --help for more information.");
+				return new StringReader("");
 			}
-			waitTime--;
-			waitUntilNextFrame();
-			return;
-		}
-		while (waitTime <= 0) {
-			int ch = in.read();
-			if (ch < 0) {
-				if (stack.isEmpty()) {
-					client.stopBlocking();
-					return;
-				}
-				in = stack.pop();
-				continue;
-			}
-			if (ch >= '0' && ch <= '9') {
-				waitTime = waitDecimal * 9 + (ch - '0');
-				waitDecimal = waitDecimal * 10 + (ch - '0');
-			} else {
-				waitDecimal = 0;
-				int pos = Inputs.TAS_STRING.indexOf(ch);
-				if (pos >= 0) {
-					if ((prev & (1 << pos)) != 0) {
-						continue;
-					}
-					client.press(1 << pos);
-					prev |= 1 << pos;
-				} else if ((pos = Inputs.TAS_STRING_OFF.indexOf(ch)) >= 0) {
-					if ((prev & (1 << pos)) == 0) {
-						continue;
-					}
-					client.release(1 << pos);
-					prev &= ~(1 << pos);
-				} else if (ch == '#') {
-					while (ch >= 0 && ch != '\r' && ch != '\n') {
-						ch = in.read();
-					}
-				} else if (ch == '$') {
-					String str = "";
-					ch = in.read();
-					while (ch >= 0 && !Character.isWhitespace(ch)) {
-						str += (char) ch;
-						ch = in.read();
-					}
-					String content;
-					try (FileInputStream fin = new FileInputStream(new File(searchRoot, str + ".txt"))) {
-						content = new String(fin.readAllBytes());
-					} catch (IOException ex) {
-						System.err.println(str + " could not be found. Use --lookup to specify the search path. --help for more information.");
-						continue;
-					}
-					stack.push(in);
-					in = new StringReader(content);
-				}
-			}
-		}
-		client.doInputs();
+		});
+		client.doInputs(TASReader.toInputs(mask));
 		if (logInputs) {
 			System.out.println(client.getInputs());
 		}
-		waitTime--;
+		if ((mask & TASReader.END_MASK) != 0) {
+			client.stopBlocking();
+			return;
+		}
 		waitUntilNextFrame();
 	}
 }

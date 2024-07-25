@@ -30,6 +30,9 @@ To indicate wait times, simply write them as a number, e.g. write `30` to wait 3
 
 Comments can be initiated using `#` and go until the end of the line.
 
+If you want to run multiple things simultaneously, you can use parentheses ("(...)").
+Everything within parentheses will be run in parallel, i.e. it doesn't wait until the stuff inside the parentheses is done.
+
 But most importantly: use `$` followed by the name of a TAS to "insert" it at the current position.
 
 ### Examples:
@@ -40,6 +43,14 @@ R 10 r
 Jj 1 # small tap
 
 lrudjznspcxbwaefo # releases all buttons
+
+# a double jump at the same time as movement
+(
+  J 10 j # first jump
+  1
+  J 10 j # second jump
+)
+L 10 lR 20 r
 
 # runs everything in the file "cool_other_file.txt"
 $cool_other_file

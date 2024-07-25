@@ -1,8 +1,9 @@
 #data 1 27 369 375
 lrudjznspcxbwaefo
 
-R J 13 j 1 J 2 Lr 10 jJ 1 j 1
+(R 16 Lr) J 13 j 1 J 12 jJ 1 j 1
 8 lR 45 Lr 11
-J 7 lR j 1 J 9 jJ 1 j 25
+(7 lR) J 7 j 1 J 9 jJ 1 j 25
 
-Jj 1 J 1 jJ 1 jJ Lr 1 jJ 31 lR 45 Jj 1 r
+Jj 1 J 1 jJ 1 jJ Lr 1 jJj
+31 lR 45 Jj 1 r

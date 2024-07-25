@@ -239,6 +239,49 @@ public class TASClient implements Closeable {
 	}
 
 	/**
+	 * Returns a two-dimensional double array representing a save state that can be loaded using {@link #loadSaveState}.
+	 */
+	public double[][] getSaveState() throws IOException {
+		send("savestate");
+		List<double[]> list = new ArrayList<>();
+		while (true) {
+			String s = get();
+			if ("end".equals(s)) {
+				return list.toArray(new double[0][]);
+			}
+			String[] split = s.split(" ");
+			double[] d = new double[split.length];
+			for (int i = 0; i < split.length; i++) {
+				d[i] = Double.parseDouble(split[i]);
+			}
+			list.add(d);
+		}
+	}
+
+	/**
+	 * Loads back a save state as returned by {@link #getSaveState}.
+	 *
+	 * @param saveState the save state data.
+	 */
+	public void loadSaveState(double[][] saveState) throws IOException {
+		String saveStateString = "";
+		for (int i = 0; i < saveState.length; i++) {
+			if (i > 0) saveStateString += "\n";
+			double[] ds = saveState[i];
+			for (int j = 0; j < ds.length; j++) {
+				if (j > 0) saveStateString += " ";
+				double d = ds[j];
+				if ((int) d == d) {
+					saveStateString += (int) d;
+				} else {
+					saveStateString += d;
+				}
+			}
+		}
+		send("load_savestate\n" + saveStateString);
+	}
+
+	/**
 	 * Closes the client and the underlying socket.
 	 */
 	public void close() throws IOException {

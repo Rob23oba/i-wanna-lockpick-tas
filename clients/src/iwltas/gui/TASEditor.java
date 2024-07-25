@@ -13,7 +13,7 @@ import java.nio.charset.*;
 
 import iwltas.*;
 
-public class TextFormatter {
+public class TASEditor {
 	public static void main(String[] args) throws BadLocationException {
 		JFrame frame = new JFrame("TAS Editor");
 
