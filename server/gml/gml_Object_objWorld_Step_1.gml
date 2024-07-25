@@ -75,24 +75,109 @@ while 1
             break
         case "savestate":
             with (objPlayer)
-                network_send_text(x, " ", y, " ", hspeed, " ", vspeed, " ", ((((djump + (frozen * 2)) + (onPlatform * 4)) + (global.runSwitch * 8)) + (global.complexMode * 16)), " ", downTime, " ", downDir, " ")
+            {
+                flags = (((((((((djump | (frozen << (1 << 0))) | (onPlatform << (2 << 0))) | (global.runSwitch << (3 << 0))) | (global.complexMode << (4 << 0))) | (aura[0] << (5 << 0))) | (aura[1] << (6 << 0))) | (aura[2] << (7 << 0))) | (recentJump << (8 << 0))) | (global.fAnimIsNormal << (9 << 0)))
+                network_send_text(global.tasPrevHeld, " ", x, " ", y, " ", vspeed, " ", flags, " ", masterMode, " ", brownMode, " ", downTime, " ", downDir, " ", global.fAnimTimer, " ", global.fAnimSpd)
+            }
+            for (i = 0; i < 16; i++)
+                network_send_text(global.key[i], " ", global.ikey[i])
+            with (oKeyBulk)
+                network_send_text((active | (touched << (1 << 0))))
+            with (oDoorSimple)
+            {
+                flags = (((((active | (aura[0] << (1 << 0))) | (aura[1] << (2 << 0))) | (aura[2] << (3 << 0))) | (browned << (4 << 0))) | (brownNearPlayer << (5 << 0)))
+                network_send_text(flags, " ", copies, " ", icopies, " ", copyState, " ", copyTimer)
+            }
+            with (oDoorCombo)
+            {
+                flags = (((((active | (aura[0] << (1 << 0))) | (aura[1] << (2 << 0))) | (aura[2] << (3 << 0))) | (browned << (4 << 0))) | (brownNearPlayer << (5 << 0)))
+                network_send_text(flags, " ", copies, " ", icopies, " ", copyState, " ", copyTimer)
+            }
+            network_send_text("end")
             break
         case "load_savestate":
             with (objPlayer)
             {
                 string_split_initialize(network_check_text(1))
+                global.tasPrevHeld = string_split_next_int()
                 x = string_split_next_float()
                 y = string_split_next_float()
-                hspeed = string_split_next_float()
+                xprevious = x
+                yprevious = y
                 vspeed = string_split_next_float()
-                flags = string_split_next_float()
-                djump = ((flags & 1) != 0)
-                frozen = ((flags & 2) != 0)
-                onPlatform = ((flags & 4) != 0)
-                global.runSwitch = ((flags & 8) != 0)
-                global.complexMode = ((flags & 16) != 0)
-                downTime = string_split_next_float()
-                downDir = string_split_next_float()
+                flags = string_split_next_int()
+                djump = ((flags & 1) != false)
+                frozen = ((flags & 2) != false)
+                onPlatform = ((flags & 4) != false)
+                global.runSwitch = ((flags & 8) != false)
+                global.complexMode = ((flags & 16) != false)
+                aura[0] = ((flags & 32) != false)
+                aura[1] = ((flags & 64) != false)
+                aura[2] = ((flags & 128) != false)
+                recentJump = ((flags & 256) != false)
+                global.fAnimIsNormal = ((flags & 512) != false)
+                masterMode = string_split_next_int()
+                brownMode = string_split_next_int()
+                downTime = string_split_next_int()
+                downDir = string_split_next_int()
+                global.fAnimTimer = string_split_next_int()
+                global.fAnimSpd = string_split_next_float()
+            }
+            for (i = 0; i < 16; i++)
+            {
+                string_split_initialize(network_check_text(1))
+                global.key[i] = string_split_next_float()
+                global.ikey[i] = string_split_next_float()
+            }
+            with (oKeyBulk)
+            {
+                flags = real(network_check_text(1))
+                active = ((flags & 1) != false)
+                touched = ((flags & 2) != false)
+                visible = active
+                undoReposition()
+            }
+            with (oDoorSimple)
+            {
+                string_split_initialize(network_check_text(1))
+                flags = string_split_next_int()
+                active = ((flags & 1) != false)
+                aura[0] = ((flags & 2) != false)
+                aura[1] = ((flags & 4) != false)
+                aura[2] = ((flags & 8) != false)
+                browned = ((flags & 16) != false)
+                brownNearPlayer = ((flags & 32) != false)
+                copies = string_split_next_float()
+                icopies = string_split_next_float()
+                copyState = string_split_next_int()
+                copyTimer = string_split_next_int()
+                copySound = -1
+                visible = active
+                undoReposition()
+            }
+            with (oDoorCombo)
+            {
+                string_split_initialize(network_check_text(1))
+                flags = string_split_next_int()
+                active = ((flags & 1) != false)
+                aura[0] = ((flags & 2) != 0)
+                aura[1] = ((flags & 4) != 0)
+                aura[2] = ((flags & 8) != 0)
+                browned = ((flags & 16) != 0)
+                brownNearPlayer = ((flags & 32) != 0)
+                copies = string_split_next_float()
+                icopies = string_split_next_float()
+                copyState = string_split_next_int()
+                copyTimer = string_split_next_int()
+                copySound = -1
+                visible = active
+                undoReposition()
+            }
+            with (oUndoMain)
+            {
+                ds_stack_clear(undoStack)
+                undoPos = 0
+                undoPUSH()
             }
             break
         case "obstacles":

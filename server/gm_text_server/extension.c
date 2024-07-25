@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/types.h>
@@ -15,9 +16,11 @@ WSADATA g_wsaData;
 SOCKET g_serverSocket = INVALID_SOCKET;
 SOCKET g_clientSocket = INVALID_SOCKET;
 char g_inBuffer[MAX_MSG_LEN * 2];
-int g_inBufferPos;
+int g_inBufferPos = 0;
 
 char g_outBuffer[MAX_MSG_LEN + 2];
+uint32_t g_outBufferPos = 0;
+uint32_t g_outBufferMsgStart = 0;
 
 void closeStuff() {
 	if (g_clientSocket != INVALID_SOCKET) {
@@ -117,6 +120,50 @@ int test_network_connection() {
 	return 1;
 }
 
+void append_to_out_buffer(int paramCount, struct gm_value *parameters) {
+	for (int i = 0; i < paramCount; i++) {
+		unsigned int n = 0;
+		switch (parameters[i].type) {
+		case TYPE_NUMBER:
+			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos, "%.17g", parameters[i].value.number);
+			break;
+		case TYPE_INT32:
+			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos, "%d", parameters[i].value.i32);
+			break;
+		case TYPE_INT64:
+			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos, "%lld", parameters[i].value.i64);
+			break;
+		case TYPE_PTR:
+			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos, "%p", parameters[i].value.ptr);
+			break;
+		default:
+			const char *str = gm_param_as_string(parameters, i);
+			n = strlen(str);
+			if (g_outBufferPos + n > MAX_MSG_LEN) {
+				goto msg_too_long;
+			}
+			memcpy(g_outBuffer + g_outBufferPos, str, n);
+			g_outBufferPos += n;
+			continue;
+		}
+		if (g_outBufferPos + n > MAX_MSG_LEN) {
+msg_too_long:
+			if (g_outBufferPos - g_outBufferMsgStart + n <= MAX_MSG_LEN) {
+				// Flush previous message and try again
+				send(g_clientSocket, g_outBuffer, g_outBufferMsgStart, 0);
+				memmove(g_outBuffer, g_outBuffer + g_outBufferMsgStart, g_outBufferPos - g_outBufferMsgStart);
+				g_outBufferPos -= g_outBufferMsgStart;
+				g_outBufferMsgStart = 0;
+				i--;
+				continue;
+			}
+			gm_show_error_message("Message is too long, only messages up to length " MAX_MSG_LEN_STRING " are allowed.", 1);
+			return;
+		}
+		g_outBufferPos += n;
+	}
+}
+
 void gm_api_network_send_text(struct gm_value *target, struct gm_instance *self, struct gm_instance *other, int paramCount, struct gm_value *parameters) {
 	if (g_serverSocket == INVALID_SOCKET) {
 		gm_show_error_message("No server initialized!", 1);
@@ -126,43 +173,28 @@ void gm_api_network_send_text(struct gm_value *target, struct gm_instance *self,
 		gm_show_error_message("network_send_text requires a client to be connected!", 1);
 		return;
 	}
-	unsigned int outBufferPos = 0;
-	for (int i = 0; i < paramCount; i++) {
-		unsigned int n = 0;
-		switch (parameters[i].type) {
-		case TYPE_NUMBER:
-			n = snprintf(g_outBuffer + outBufferPos, MAX_MSG_LEN - outBufferPos, "%.17g", parameters[i].value.number);
-			break;
-		case TYPE_INT32:
-			n = snprintf(g_outBuffer + outBufferPos, MAX_MSG_LEN - outBufferPos, "%d", parameters[i].value.i32);
-			break;
-		case TYPE_INT64:
-			n = snprintf(g_outBuffer + outBufferPos, MAX_MSG_LEN - outBufferPos, "%lld", parameters[i].value.i64);
-			break;
-		case TYPE_PTR:
-			n = snprintf(g_outBuffer + outBufferPos, MAX_MSG_LEN - outBufferPos, "%p", parameters[i].value.ptr);
-			break;
-		default:
-			const char *str = gm_param_as_string(parameters, i);
-			n = strlen(str);
-			if (MAX_MSG_LEN <= outBufferPos +  + 1) {
-				goto msg_too_long;
-			}
-			memcpy(g_outBuffer + outBufferPos, str, n);
-			outBufferPos += n;
-			continue;
-		}
-		if (MAX_MSG_LEN <= outBufferPos + n) {
-msg_too_long:
-			gm_show_error_message("Message is too long, only messages up to length " MAX_MSG_LEN_STRING " are allowed.", 1);
-			return;
-		}
-		outBufferPos += n;
-	}
-	g_outBuffer[outBufferPos] = '\n';
+	append_to_out_buffer(paramCount, parameters);
+	g_outBuffer[g_outBufferPos++] = '\n';
+	g_outBufferMsgStart = g_outBufferPos;
+}
 
-	send(g_clientSocket, g_outBuffer, outBufferPos + 1, 0);
-	target->type = TYPE_UNDEFINED;
+void gm_api_network_append_text(struct gm_value *target, struct gm_instance *self, struct gm_instance *other, int paramCount, struct gm_value *parameters) {
+	if (g_serverSocket == INVALID_SOCKET) {
+		gm_show_error_message("No server initialized!", 1);
+		return;
+	}
+	if (test_network_connection() <= 0) {
+		gm_show_error_message("network_send_text requires a client to be connected!", 1);
+		return;
+	}
+	append_to_out_buffer(paramCount, parameters);
+}
+
+void flush_data() {
+	if (g_outBufferPos > 0) {
+		send(g_clientSocket, g_outBuffer, g_outBufferPos, 0);
+	}
+	g_outBufferPos = 0;
 }
 
 int test_buffer_string(struct gm_value *target) {
@@ -187,6 +219,7 @@ void gm_api_network_check_text(struct gm_value *target, struct gm_instance *self
 		gm_show_error_message("No server initialized!", 1);
 		return;
 	}
+	flush_data();
 	unsigned long blockingMode = 1;
 	if (paramCount >= 1) {
 		blockingMode = gm_param_as_int(parameters, 0) == 0;
@@ -287,11 +320,11 @@ void gm_api_string_split_next_int(struct gm_value *target, struct gm_instance *s
 		return;
 	}
 	char *end;
-	int num = (int) strtol(g_split_ptr, &end, 10);
+	long num = strtol(g_split_ptr, &end, 10);
 	g_split_ptr = end;
 
-	target->type = TYPE_INT32;
-	target->value.i32 = num;
+	target->type = TYPE_NUMBER;
+	target->value.number = num;
 }
 
 int make_internal_function(char *str, gm_function fn, int paramCount, bool flag) {
@@ -328,7 +361,8 @@ __declspec(dllexport) void init_extension() {
 	int list[] = {
 		make_internal_function("network_create_text_server", &gm_api_network_create_text_server, 1, FALSE),
 		make_internal_function("network_close_text_server", &gm_api_network_close_text_server, 0, FALSE),
-		make_internal_function("network_send_text", &gm_api_network_send_text, 1, FALSE),
+		make_internal_function("network_send_text", &gm_api_network_send_text, -1, FALSE),
+		make_internal_function("network_append_text", &gm_api_network_append_text, -1, FALSE),
 		make_internal_function("network_check_text", &gm_api_network_check_text, 0, FALSE),
 		make_internal_function("network_has_client", &gm_api_network_has_client, 0, FALSE),
 		make_internal_function("string_split_initialize", &gm_api_string_split_initialize, 1, FALSE),
