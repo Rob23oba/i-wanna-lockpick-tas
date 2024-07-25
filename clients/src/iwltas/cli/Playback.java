@@ -72,14 +72,9 @@ public class Playback extends WaitingTASFrameHandler {
 	@Override
 	public void frame(TASClient client) throws IOException {
 		int prev = client.previousInputMask();
-		long mask = reader.frame(prev, str -> {
-			try (FileInputStream fin = new FileInputStream(new File(searchRoot, str + ".txt"))) {
-				return new StringReader(new String(fin.readAllBytes()).stripTrailing());
-			} catch (IOException ex) {
-				System.err.println(str + " could not be found. Use --lookup to specify the search path. --help for more information.");
-				return new StringReader("");
-			}
-		});
+		long mask = reader.frame(prev, TASLookup.fromLookupDirectory(searchRoot).onFailure(str -> {
+			System.err.println(str + " could not be found. Use --lookup to specify the search path. --help for more information.");
+		}));
 		client.doInputs(TASReader.toInputs(mask));
 		if (logInputs) {
 			System.out.println(client.getInputs());

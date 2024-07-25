@@ -96,6 +96,12 @@ while 1
             network_send_text("end")
             break
         case "load_savestate":
+            with (oLevelWin)
+                instance_destroy()
+            with (oKeyPart)
+                instance_destroy()
+            if (!instance_exists(objPlayer))
+                instance_create(0, 0, objPlayer)
             with (objPlayer)
             {
                 string_split_initialize(network_check_text(1))
@@ -172,12 +178,6 @@ while 1
                 copySound = -1
                 visible = active
                 undoReposition()
-            }
-            with (oUndoMain)
-            {
-                ds_stack_clear(undoStack)
-                undoPos = 0
-                undoPUSH()
             }
             break
         case "obstacles":

@@ -24,10 +24,6 @@ public class TASReader {
 	 */
 	Reader in;
 
-	public static interface TASLookup {
-		Reader open(String tasName) throws IOException;
-	}
-
 	public TASReader(Reader reader) {
 		this.in = reader;
 	}
@@ -48,6 +44,11 @@ public class TASReader {
 	public static int applyInputMask(long mask, int prevInputs) {
 		int overrides = (int) ((mask >> 40) | (mask >> 20)) & 0x1FFFF;
 		return ((prevInputs & ~overrides) | ((int) mask & overrides)) & 0x1FFFF;
+	}
+
+	public static int applyInputMaskToUndecided(long mask, int undecidedInputs) {
+		int overrides = (int) ((mask >> 40) | (mask >> 20)) & 0x1FFFF;
+		return undecidedInputs & ~overrides;
 	}
 
 	public static Inputs toInputs(long mask) {
@@ -74,16 +75,21 @@ public class TASReader {
 	public static final long END_MASK = Long.MIN_VALUE;
 
 	public long frame(int prevInputs, TASLookup lookup) throws IOException {
+		return frame(prevInputs, 0, lookup);
+	}
+
+	public long frame(int prevInputs, int undecidedInputs, TASLookup lookup) throws IOException {
 		long mask = 0L;
 		ListIterator<TASReader> forkIt = forks.listIterator();
 		while (forkIt.hasNext()) {
 			TASReader fork = forkIt.next();
 
-			long newMask = fork.frame(prevInputs, lookup);
+			long newMask = fork.frame(prevInputs, undecidedInputs, lookup);
 			if ((newMask & END_MASK) != 0) {
 				forkIt.remove();
 			}
 			prevInputs = applyInputMask(newMask, prevInputs);
+			undecidedInputs = applyInputMaskToUndecided(newMask, undecidedInputs);
 			mask = mergeMasks(mask, newMask);
 		}
 		if (waitTime > 0) {
@@ -107,21 +113,23 @@ public class TASReader {
 			waitDecimal = 0;
 			int pos = Inputs.TAS_STRING.indexOf(ch);
 			if (pos >= 0) {
-				if ((prevInputs & (1 << pos)) != 0) {
+				if ((prevInputs & ~undecidedInputs & (1 << pos)) != 0) {
 					continue;
 				}
 				mask |= 1L << pos;
 				mask |= 1L << (pos + 20);
 
 				prevInputs |= 1 << pos;
+				undecidedInputs &= ~(1L << pos);
 			} else if ((pos = Inputs.TAS_STRING_OFF.indexOf(ch)) >= 0) {
-				if ((prevInputs & (1 << pos)) == 0) {
+				if (((prevInputs | undecidedInputs) & (1 << pos)) == 0) {
 					continue;
 				}
 				mask &= ~(1L << pos);
 				mask |= 1L << (pos + 40);
 
 				prevInputs &= ~(1 << pos);
+				undecidedInputs &= ~(1L << pos);
 			} else if (ch == '#') {
 				while (ch >= 0 && ch != '\r' && ch != '\n') {
 					ch = in.read();
@@ -146,11 +154,12 @@ public class TASReader {
 			} else if (ch == '(') {
 				String str = readUntilForkEnd(in);
 				TASReader fork = new TASReader(this, new StringReader(str));
-				long newMask = fork.frame(prevInputs, lookup);
+				long newMask = fork.frame(prevInputs, undecidedInputs, lookup);
 				if (newMask == -1) {
 					continue;
 				}
 				prevInputs = applyInputMask(newMask, prevInputs);
+				undecidedInputs = applyInputMaskToUndecided(newMask, undecidedInputs);
 				mask = mergeMasks(mask, newMask);
 				forks.add(fork);
 			}
@@ -189,5 +198,49 @@ public class TASReader {
 				b.append((char) ch);
 			}
 		}
+	}
+
+	public static String convertToBasicFormat(String original, TASLookup lookup) throws IOException {
+		TASReader reader = new TASReader(new StringReader(original));
+		TASWriter writer = new TASWriter();
+		int prevInputs = 0;
+		int undecidedInputs = 0x1FFFF;
+		StringBuilder result = new StringBuilder();
+		boolean hadEnd = false;
+		boolean hadFork = false;
+		boolean begin = true;
+		while (true) {
+			long mask = reader.frame(prevInputs, undecidedInputs, lookup);
+			String str = writer.frame(prevInputs, toInputs(mask));
+			if (begin && !str.isEmpty()) {
+				str = str.stripLeading();
+				begin = false;
+			}
+			result.append(str);
+			if ((mask & END_MASK) != 0) {
+				if (!hadEnd) {
+					hadEnd = true;
+					result.append(writer.end());
+					if (!reader.forks.isEmpty()) {
+						if (result.length() > 0 && result.charAt(result.length() - 1) != ' ') {
+							result.append(' ');
+						}
+						result.append("(");
+						hadFork = true;
+						begin = true;
+					}
+				}
+				if (reader.forks.isEmpty()) {
+					break;
+				}
+			}
+			prevInputs = applyInputMask(mask, prevInputs);
+			undecidedInputs = applyInputMaskToUndecided(mask, undecidedInputs);
+		}
+		String s = result.toString().stripTrailing();
+		if (hadFork) {
+			return s + ")";
+		}
+		return s;
 	}
 }

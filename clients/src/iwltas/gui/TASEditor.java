@@ -14,16 +14,121 @@ import java.nio.charset.*;
 import iwltas.*;
 
 public class TASEditor {
+	public static class CoolLayout implements LayoutManager {
+		public void addLayoutComponent(String name, Component comp) {
+		}
+
+		public void removeLayoutComponent(Component comp) {
+		}
+
+		public Dimension minimumLayoutSize(Container parent) {
+			Dimension top = parent.getComponent(0).getMinimumSize();
+			Dimension bottom = parent.getComponent(1).getMinimumSize();
+			return new Dimension(Math.max(top.width, bottom.width), top.height + bottom.height);
+		}
+
+		public Dimension preferredLayoutSize(Container parent) {
+			Dimension top = parent.getComponent(0).getPreferredSize();
+			Dimension bottom = parent.getComponent(1).getPreferredSize();
+			return new Dimension(Math.max(top.width, bottom.width), top.height + bottom.height);
+		}
+
+		public void layoutContainer(Container parent) {
+			Dimension outerSize = parent.getSize();
+
+			Component top = parent.getComponent(0);
+			Component bottom = parent.getComponent(1);
+			Dimension bottomMin = bottom.getMinimumSize();
+			top.setBounds(0, 0, outerSize.width, outerSize.height - bottomMin.height);
+			bottom.setBounds(0, outerSize.height - bottomMin.height, outerSize.width, bottomMin.height);
+		}
+	}
 	public static void main(String[] args) throws BadLocationException {
 		JFrame frame = new JFrame("TAS Editor");
 
-		JTextPane pane = new JTextPane();
+		TASEditor editor = new TASEditor();
+
+		JFileChooser chooser = new JFileChooser(".");
+		FileNameExtensionFilter filter = new FileNameExtensionFilter("TAS Files", "txt");
+		chooser.setFileFilter(filter);
+
+		File[] openFile = new File[1];
+
+		editor.pane.addKeyListener(new KeyAdapter() {
+			public void keyPressed(KeyEvent ev) {
+				if (ev.isControlDown()) {
+					switch (ev.getKeyCode()) {
+					case KeyEvent.VK_S:
+						if (ev.isShiftDown() || openFile[0] == null) {
+							int option = chooser.showSaveDialog(frame);
+							if (option != JFileChooser.APPROVE_OPTION) {
+								break;
+							}
+							openFile[0] = chooser.getSelectedFile();
+							frame.setTitle("TAS Editor - " + openFile[0].getName());
+							editor.openedTASName = openFile[0].getName();
+						}
+						try (FileWriter fout = new FileWriter(openFile[0], StandardCharsets.UTF_8)) {
+							fout.write(editor.pane.getText());
+						} catch (Exception ex) {
+							JOptionPane.showMessageDialog(frame, "An error occurred while trying to save: " + ex, "Error", JOptionPane.ERROR_MESSAGE);
+						}
+						break;
+					case KeyEvent.VK_O:
+						int option = chooser.showOpenDialog(frame);
+						if (option != JFileChooser.APPROVE_OPTION) {
+							break;
+						}
+						openFile[0] = chooser.getSelectedFile();
+						frame.setTitle("TAS Editor - " + openFile[0].getName());
+						editor.openedTASName = openFile[0].getName();
+						try (FileInputStream fin = new FileInputStream(openFile[0])) {
+							editor.pane.setText(new String(fin.readAllBytes(), StandardCharsets.UTF_8));
+						} catch (Exception ex) {
+							JOptionPane.showMessageDialog(frame, "An error occurred while trying to open the file: " + ex, "Error", JOptionPane.ERROR_MESSAGE);
+						}
+						editor.undo.discardAllEdits();
+						break;
+					}
+				}
+			}
+		});
+
+		frame.setLayout(new CoolLayout());
+		frame.add(editor.scroll);
+		frame.add(editor.startingPoint);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500, 500);
+		frame.setVisible(true);
+
+		try (TASClient client = new TASClient()) {
+			client.runBlocking(editor.cache);
+		} catch (Exception ex) {
+			System.err.println("Couldn't connect to remote: " + ex);
+		}
+	}
+
+	public TASLookup lookup = TASLookup.fromLookupDirectory(new File("../tas"));
+
+	public JTextPane pane;
+	public FormattingListener listen;
+	public UndoManager undo;
+	public JScrollPane scroll;
+
+	public SaveStateCache cache;
+
+	public JTextField startingPoint;
+
+	public String openedTASName = "";
+
+	public TASEditor() {
+		pane = new JTextPane();
 		pane.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 16));
 
-		FormattingListener listen = new FormattingListener(pane.getStyledDocument());
+		listen = new FormattingListener(pane.getStyledDocument());
 		pane.getDocument().addDocumentListener(listen);
 
-		UndoManager undo = new UndoManager();
+		undo = new UndoManager();
 		pane.getDocument().addUndoableEditListener(new UndoableEditListener() {
 			@Override
 			public void undoableEditHappened(UndoableEditEvent ev) {
@@ -33,13 +138,6 @@ public class TASEditor {
 				undo.undoableEditHappened(ev);
 			}
 		});
-
-		JFileChooser chooser = new JFileChooser(".");
-		FileNameExtensionFilter filter = new FileNameExtensionFilter("TAS Files", "txt");
-		chooser.setFileFilter(filter);
-
-		File[] openFile = new File[1];
-
 		pane.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent ev) {
 				if (ev.isControlDown()) {
@@ -56,46 +154,118 @@ public class TASEditor {
 						} catch (CannotRedoException ex) {
 						}
 						break;
-					case KeyEvent.VK_S:
-						if (ev.isShiftDown() || openFile[0] != null) {
-							int option = chooser.showSaveDialog(frame);
-							if (option != JFileChooser.APPROVE_OPTION) {
-								break;
+					case KeyEvent.VK_Q:
+						try {
+							Caret c = pane.getCaret();
+							int start = c.getDot();
+							int end = c.getMark();
+							boolean inv = false;
+							if (start > end) {
+								int temp = start;
+								start = end;
+								end = temp;
+
+								inv = true;
 							}
-							openFile[0] = chooser.getSelectedFile();
-							frame.setTitle("TAS Editor - " + openFile[0].getName());
+							Document doc = pane.getDocument();
+							String str = doc.getText(start, end - start);
+							String newStr = TASReader.convertToBasicFormat(str, lookup);
+							if (!newStr.equals(str)) {
+								doc.remove(start, end - start);
+								doc.insertString(start, newStr, null);
+								if (inv) {
+									c.setDot(start);
+									c.moveDot(start + newStr.length());
+								} else {
+									c.setDot(start + newStr.length());
+									c.moveDot(start);
+								}
+							}
+						} catch (BadLocationException | IOException ex) {
 						}
-						try (FileWriter fout = new FileWriter(openFile[0], StandardCharsets.UTF_8)) {
-							fout.write(pane.getText());
-						} catch (Exception ex) {
-							JOptionPane.showMessageDialog(frame, "An error occurred while trying to save: " + ex, "Error", JOptionPane.ERROR_MESSAGE);
-						}
-						break;
-					case KeyEvent.VK_O:
-						int option = chooser.showOpenDialog(frame);
-						if (option != JFileChooser.APPROVE_OPTION) {
-							break;
-						}
-						openFile[0] = chooser.getSelectedFile();
-						frame.setTitle("TAS Editor - " + openFile[0].getName());
-						try (FileInputStream fin = new FileInputStream(openFile[0])) {
-							pane.setText(new String(fin.readAllBytes(), StandardCharsets.UTF_8));
-						} catch (Exception ex) {
-							JOptionPane.showMessageDialog(frame, "An error occurred while trying to open the file: " + ex, "Error", JOptionPane.ERROR_MESSAGE);
-						}
-						undo.discardAllEdits();
 						break;
 					}
 				}
 			}
 		});
 
-		JScrollPane scroll = new JScrollPane(pane);
+		cache = new SaveStateCache();
+		startingPoint = new JTextField();
+		startingPoint.getDocument().addDocumentListener(new DocumentListener() {
+			public void changedUpdate(DocumentEvent ev) {
+				updateCacheTarget();
+			}
 
-		frame.add(scroll);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(500, 500);
-		frame.setVisible(true);
+			public void insertUpdate(DocumentEvent ev) {
+				updateCacheTarget();
+			}
+
+			public void removeUpdate(DocumentEvent ev) {
+				updateCacheTarget();
+			}
+		});
+
+		pane.addCaretListener(new CaretListener() {
+			public void caretUpdate(CaretEvent ev) {
+				queuedUpdateCacheTarget = true;
+				SwingUtilities.invokeLater(TASEditor.this::updateCacheTarget);
+			}
+		});
+
+		scroll = new JScrollPane(pane);
+	}
+
+	private class SpecialBreakpointLookup implements TASLookup {
+		boolean end;
+
+		@Override
+		public Reader open(String name) throws IOException {
+			if (!(name + ".txt").equals(openedTASName)) {
+				return lookup.open(name);
+			}
+			Document doc = pane.getDocument();
+			String allText = "";
+			try {
+				allText = doc.getText(0, doc.getLength());
+			} catch (BadLocationException ex) {}
+			return new StringReaderWithBreakpoint(allText, pane.getCaret().getDot(), () -> end = true);
+		}
+	}
+
+	boolean queuedUpdateCacheTarget;
+
+	public void updateCacheTarget() {
+		if (!queuedUpdateCacheTarget) {
+			return;
+		}
+		queuedUpdateCacheTarget = false;
+
+		InputSequence seq = new InputSequence();
+		String text = startingPoint.getText();
+
+		TASReader reader = new TASReader(new StringReader(text));
+		int prevInputs = 0;
+
+		SpecialBreakpointLookup newLookup = new SpecialBreakpointLookup();
+		try {
+			while (true) {
+				long inputMask = reader.frame(prevInputs, newLookup);
+				if (newLookup.end) {
+					seq = null;
+					break;
+				} else if ((inputMask & TASReader.END_MASK) != 0) {
+					break;
+				}
+				seq.add(inputMask);
+				prevInputs = TASReader.applyInputMask(inputMask, prevInputs);
+			}
+		} catch (IOException ex) {
+			seq = null;
+			return;
+		}
+		synchronized (cache) {
+			cache.target = seq;
+		}
 	}
 
 	public static final MutableAttributeSet base = new SimpleAttributeSet();
@@ -140,6 +310,8 @@ public class TASEditor {
 				if (compoundUpdatesStart > compoundUpdatesEnd) {
 					return;
 				}
+				compoundUpdatesStart = Math.max(0, compoundUpdatesStart);
+				compoundUpdatesEnd = Math.min(doc.getLength(), compoundUpdatesEnd);
 				suppressUpdates = true;
 				try {
 					doFormatting(doc, compoundUpdatesStart, compoundUpdatesEnd);

@@ -41,54 +41,17 @@ public class Recorder extends WaitingTASFrameHandler {
 		}
 	}
 
-	/**
-	 * The accumulated delay after the last input.
-	 */
-	private int recordDelay;
+	private TASWriter writer = new TASWriter();
 
 	@Override
 	public void frame(TASClient client) throws IOException {
 		Inputs in = client.getInputs();
-		if ((in.pressed | in.released) == 0) {
-			recordDelay++;
-			waitUntilNextFrame();
+		int prev = 0;
+		if ((in.pressed | in.released) != 0) {
+			prev = client.previousInputMask();
 			return;
 		}
-		StringBuilder b = new StringBuilder();
-		if (recordDelay != 0) {
-			b.append(" ").append(recordDelay).append(" ");
-			recordDelay = 0;
-		}
-		int prev = client.previousInputMask();
-		for (int i = 0; i < 17; i++) {
-			int mask = 1 << i;
-			if ((mask & in.pressed) != 0 && (mask & in.released) == 0) {
-				// Was pressed, not released
-				b.append(Inputs.TAS_STRING.charAt(i));
-			} else if ((mask & in.pressed) == 0 && (mask & in.released) != 0) {
-				// Was released, not pressed
-				b.append(Inputs.TAS_STRING_OFF.charAt(i));
-			} else if ((mask & in.pressed) != 0 && (mask & in.released) != 0) {
-				// Was pressed and released
-				if ((mask & prev) != 0) {
-					b.append(Inputs.TAS_STRING_OFF.charAt(i));
-					b.append(Inputs.TAS_STRING.charAt(i));
-				} else {
-					b.append(Inputs.TAS_STRING.charAt(i));
-					b.append(Inputs.TAS_STRING_OFF.charAt(i));
-				}
-				if ((mask & (prev ^ in.held)) != 0) {
-					if ((mask & prev) != 0) {
-						b.append(Inputs.TAS_STRING_OFF.charAt(i));
-					} else {
-						b.append(Inputs.TAS_STRING.charAt(i));
-					}
-				}
-			}
-		}
-		System.out.print(b);
-
-		recordDelay++;
+		System.out.print(writer.frame(prev, in));
 		waitUntilNextFrame();
 	}
 }
