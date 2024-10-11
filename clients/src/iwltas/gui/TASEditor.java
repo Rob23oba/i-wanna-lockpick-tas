@@ -130,6 +130,8 @@ public class TASEditor {
 		}
 	};
 
+	public Analyzer analyzer;
+
 	public TASEditor() {
 		pane = new JTextPane() {
 			public boolean getScrollableTracksViewportWidth() {
@@ -201,6 +203,8 @@ public class TASEditor {
 		});
 
 		scroll = new JScrollPane(pane);
+
+		analyzer = new Analyzer();
 	}
 
 	public static class UndoFilter extends DocumentFilter {
@@ -384,6 +388,15 @@ public class TASEditor {
 				}
 			} catch (BadLocationException | IOException ex) {
 			}
+			break;
+		case KeyEvent.VK_T:
+			analyzer.showFrame();
+			analyzer.frame.addWindowListener(new WindowAdapter() {
+				public void windowClosing(WindowEvent ev) {
+					cache.analyzer = null;
+				}
+			});
+			cache.analyzer = analyzer::tick;
 			break;
 		}
 	}

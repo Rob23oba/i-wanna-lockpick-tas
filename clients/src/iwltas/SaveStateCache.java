@@ -1,6 +1,7 @@
 package iwltas;
 
 import java.util.*;
+import java.util.function.*;
 import java.io.*;
 
 public class SaveStateCache extends WaitingTASFrameHandler {
@@ -13,6 +14,8 @@ public class SaveStateCache extends WaitingTASFrameHandler {
 	public Thread th;
 
 	int room;
+
+	public BiConsumer<double[][], TASClient> analyzer;
 
 	public void clear() {
 		saveStates.clear();
@@ -41,12 +44,19 @@ public class SaveStateCache extends WaitingTASFrameHandler {
 			room = info.room;
 		}
 		if (target == null) {
+			if (analyzer != null) {
+				double[][] saveState = client.getSaveState();
+				analyzer.accept(saveState, client);
+			}
 			currentSequence.clear();
 			frameRate = 50;
 			waitUntilNextFrame();
 			return;
 		}
 		double[][] saveState = client.getSaveState();
+		if (analyzer != null) {
+			analyzer.accept(saveState, client);
+		}
 		int prevInputs = (int) saveState[0][0];
 		if (currentSequence.isEmpty() && prevInputs != 0) {
 			client.release(prevInputs);

@@ -98,7 +98,10 @@ while 1
                 network_send_text(global.tasPrevHeld, " ", x, " ", y, " ", vspeed, " ", flags, " ", masterMode, " ", brownMode, " ", downTime, " ", downDir, " ", global.fAnimTimer, " ", global.fAnimSpd)
             }
             if (!instance_exists(objPlayer))
-                network_send_text("")
+            {
+                flags = (((global.runSwitch << (3 << 0)) | (global.complexMode << (4 << 0))) | (global.fAnimIsNormal << (9 << 0)))
+                network_send_text(global.tasPrevHeld, " 0 0 0 ", flags, " 0 0 0 0 ", global.fAnimTimer, " ", global.fAnimSpd)
+            }
             for (i = 0; i < 16; i++)
                 network_send_text(global.key[i], " ", global.ikey[i])
             with (oKeyBulk)
@@ -121,12 +124,7 @@ while 1
             with (oKeyPart)
                 instance_destroy()
             query = network_check_text(1)
-            if ((query == ""))
-            {
-                with (objPlayer)
-                    instance_destroy()
-            }
-            else if (!instance_exists(objPlayer))
+            if (!instance_exists(objPlayer))
                 instance_create(0, 0, objPlayer)
             with (objPlayer)
             {
