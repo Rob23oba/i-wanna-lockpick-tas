@@ -30,9 +30,27 @@ while 1
                 network_send_text("room=", room)
             break
         case "set_inputs":
-            scrAddTASOverrides(network_check_text(1), 1)
-            scrAddTASOverrides(network_check_text(1), 4)
-            scrAddTASOverrides(network_check_text(1), 16)
+            heldString = network_check_text(1)
+            if is_undefined(heldString)
+            {
+                scrCheckTASIntegrity()
+                exit
+            }
+            pressedString = network_check_text(1)
+            if is_undefined(pressedString)
+            {
+                scrCheckTASIntegrity()
+                exit
+            }
+            releasedString = network_check_text(1)
+            if is_undefined(releasedString)
+            {
+                scrCheckTASIntegrity()
+                exit
+            }
+            scrAddTASOverrides(heldString, 1)
+            scrAddTASOverrides(pressedString, 4)
+            scrAddTASOverrides(releasedString, 16)
             scrCheckTASIntegrity()
             break
         case "get_inputs":
@@ -79,6 +97,8 @@ while 1
                 flags = (((((((((djump | (frozen << (1 << 0))) | (onPlatform << (2 << 0))) | (global.runSwitch << (3 << 0))) | (global.complexMode << (4 << 0))) | (aura[0] << (5 << 0))) | (aura[1] << (6 << 0))) | (aura[2] << (7 << 0))) | (recentJump << (8 << 0))) | (global.fAnimIsNormal << (9 << 0)))
                 network_send_text(global.tasPrevHeld, " ", x, " ", y, " ", vspeed, " ", flags, " ", masterMode, " ", brownMode, " ", downTime, " ", downDir, " ", global.fAnimTimer, " ", global.fAnimSpd)
             }
+            if (!instance_exists(objPlayer))
+                network_send_text("")
             for (i = 0; i < 16; i++)
                 network_send_text(global.key[i], " ", global.ikey[i])
             with (oKeyBulk)
@@ -100,11 +120,17 @@ while 1
                 instance_destroy()
             with (oKeyPart)
                 instance_destroy()
-            if (!instance_exists(objPlayer))
+            query = network_check_text(1)
+            if ((query == ""))
+            {
+                with (objPlayer)
+                    instance_destroy()
+            }
+            else if (!instance_exists(objPlayer))
                 instance_create(0, 0, objPlayer)
             with (objPlayer)
             {
-                string_split_initialize(network_check_text(1))
+                string_split_initialize(query)
                 global.tasPrevHeld = string_split_next_int()
                 x = string_split_next_float()
                 y = string_split_next_float()

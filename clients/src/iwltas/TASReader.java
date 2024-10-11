@@ -72,6 +72,16 @@ public class TASReader {
 	 */
 	int waitDecimal;
 
+	/**
+	 * Stack of push back characters.
+	 */
+	Stack<Integer> pushBackStack = new Stack<>();
+
+	/**
+	 * Any character that was read but not consumed and should be used again or -1.
+	 */
+	int pushBackChar = -1;
+
 	public static final long END_MASK = Long.MIN_VALUE;
 
 	public long frame(int prevInputs, TASLookup lookup) throws IOException {
@@ -97,12 +107,19 @@ public class TASReader {
 			return mask;
 		}
 		while (waitTime <= 0) {
-			int ch = in.read();
+			int ch;
+			if (pushBackChar >= 0) {
+				ch = pushBackChar;
+				pushBackChar = -1;
+			} else {
+				ch = in.read();
+			}
 			if (ch < 0) {
 				if (stack.isEmpty()) {
 					return mask | END_MASK;
 				}
 				in = stack.pop();
+				pushBackChar = pushBackStack.pop();
 				continue;
 			}
 			if (ch >= '0' && ch <= '9') {
@@ -136,9 +153,10 @@ public class TASReader {
 				}
 			} else if (ch == '$') {
 				StringBuilder b = new StringBuilder();
-				while ((ch = in.read()) >= 0 && !Character.isWhitespace(ch)) {
+				while (!isStopCharacter(ch = in.read())) {
 					b.append((char) ch);
 				}
+				pushBackChar = ch;
 				String str = b.toString();
 				Reader newIn;
 				try {
@@ -149,6 +167,8 @@ public class TASReader {
 				}
 				if (ch >= 0) {
 					stack.push(in);
+					pushBackStack.push(pushBackChar);
+					pushBackChar = -1;
 				}
 				in = newIn;
 			} else if (ch == '(') {
@@ -168,11 +188,67 @@ public class TASReader {
 		return mask;
 	}
 
+	public long getLength(TASLookup lookup) throws IOException {
+		long length = waitTime;
+		waitTime = 0;
+		while (true) {
+			int ch;
+			if (pushBackChar >= 0) {
+				ch = pushBackChar;
+				pushBackChar = -1;
+			} else {
+				ch = in.read();
+			}
+			if (ch < 0) {
+				if (stack.isEmpty()) {
+					return length;
+				}
+				in = stack.pop();
+				pushBackChar = pushBackStack.pop();
+				continue;
+			}
+			if (ch >= '0' && ch <= '9') {
+				length += waitDecimal * 9 + (ch - '0');
+				waitDecimal = waitDecimal * 10 + (ch - '0');
+				continue;
+			}
+			waitDecimal = 0;
+			if (ch == '#') {
+				while (ch >= 0 && ch != '\r' && ch != '\n') {
+					ch = in.read();
+				}
+			} else if (ch == '$') {
+				StringBuilder b = new StringBuilder();
+				while (!isStopCharacter(ch = in.read())) {
+					b.append((char) ch);
+				}
+				pushBackChar = ch;
+				String str = b.toString();
+				Reader newIn;
+				try {
+					newIn = lookup.open(str);
+				} catch (IOException ex) {
+					System.err.println("Could not open " + str);
+					continue;
+				}
+				if (ch >= 0) {
+					stack.push(in);
+					pushBackStack.push(pushBackChar);
+					pushBackChar = -1;
+				}
+				in = newIn;
+			} else if (ch == '(') {
+				readUntilForkEnd(in);
+			}
+		}
+	}
+
 	public static String readUntilForkEnd(Reader in) throws IOException {
 		StringBuilder b = new StringBuilder();
 		int depth = 1;
 		while (true) {
 			int ch = in.read();
+do {
 			if (ch < 0) {
 				return b.toString();
 			} else if (ch == '(') {
@@ -191,13 +267,20 @@ public class TASReader {
 			} else if (ch == '$') {
 				b.append((char) ch);
 
-				while ((ch = in.read()) >= 0 && !Character.isWhitespace(ch)) {
+				while (!isStopCharacter(ch = in.read())) {
 					b.append((char) ch);
 				}
+				continue;
 			} else {
 				b.append((char) ch);
 			}
+break;
+} while (true);
 		}
+	}
+
+	public static boolean isStopCharacter(int ch) {
+		return ch < 0 || Character.isWhitespace(ch) || ch == '#' || ch == '(' || ch == ')';
 	}
 
 	public static String convertToBasicFormat(String original, TASLookup lookup) throws IOException {

@@ -125,16 +125,16 @@ void append_to_out_buffer(int paramCount, struct gm_value *parameters) {
 		unsigned int n = 0;
 		switch (parameters[i].type) {
 		case TYPE_NUMBER:
-			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos, "%.17g", parameters[i].value.number);
+			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos + 1, "%.17g", parameters[i].value.number);
 			break;
 		case TYPE_INT32:
-			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos, "%d", parameters[i].value.i32);
+			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos + 1, "%d", parameters[i].value.i32);
 			break;
 		case TYPE_INT64:
-			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos, "%lld", parameters[i].value.i64);
+			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos + 1, "%lld", parameters[i].value.i64);
 			break;
 		case TYPE_PTR:
-			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos, "%p", parameters[i].value.ptr);
+			n = snprintf(g_outBuffer + g_outBufferPos, MAX_MSG_LEN - g_outBufferPos + 1, "%p", parameters[i].value.ptr);
 			break;
 		default:
 			const char *str = gm_param_as_string(parameters, i);
@@ -191,10 +191,11 @@ void gm_api_network_append_text(struct gm_value *target, struct gm_instance *sel
 }
 
 void flush_data() {
-	if (g_outBufferPos > 0) {
-		send(g_clientSocket, g_outBuffer, g_outBufferPos, 0);
+	if (g_outBufferMsgStart > 0) {
+		send(g_clientSocket, g_outBuffer, g_outBufferMsgStart, 0);
 	}
-	g_outBufferPos = 0;
+	g_outBufferPos -= g_outBufferMsgStart;
+	g_outBufferMsgStart = 0;
 }
 
 int test_buffer_string(struct gm_value *target) {

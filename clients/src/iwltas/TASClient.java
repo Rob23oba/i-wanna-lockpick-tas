@@ -54,6 +54,7 @@ public class TASClient implements Closeable {
 	 */
 	public void send(String str) throws IOException {
 		out.println(str);
+		//System.out.println("[Client] " + str);
 	}
 
 	/**
@@ -62,7 +63,9 @@ public class TASClient implements Closeable {
 	 * @return the response.
 	 */
 	public String get() throws IOException {
-		return in.readLine();
+		String str = in.readLine();
+		//System.out.println("[Server] " + str);
+		return str;
 	}
 
 	/**

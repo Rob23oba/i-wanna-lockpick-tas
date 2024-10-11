@@ -8,6 +8,7 @@ public class SaveStateCache extends WaitingTASFrameHandler {
 	InputSequence currentSequence = new InputSequence();
 
 	public volatile InputSequence target;
+	boolean reachedTarget;
 
 	public Thread th;
 
@@ -15,15 +16,16 @@ public class SaveStateCache extends WaitingTASFrameHandler {
 
 	public void clear() {
 		saveStates.clear();
+		currentSequence.clear();
 	}
 
 	public void interrupt() {
 		if (th != null) {
+			lastFrameTime = System.nanoTime();
+			reachedTarget = false;
 			th.interrupt();
-			lastFrameTime = System.nanoTime() - 1_000_000_000L;
 		}
 	}
-
 
 	public void frame(TASClient client) throws IOException {
 		th = Thread.currentThread();
@@ -89,7 +91,13 @@ public class SaveStateCache extends WaitingTASFrameHandler {
 		currentSequence = targetCopy;
 		currentSequence.add(inputMask);
 
+		Thread.interrupted(); // Clear interrupted flag
+
 		if (currentSequence.size >= target.size) {
+			if (!reachedTarget) {
+				reachedTarget = true;
+				return;
+			}
 			frameRate = 5;
 			waitUntilNextFrame();
 		}

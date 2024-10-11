@@ -2,12 +2,13 @@ package iwltas.gui;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.geom.*;
 import javax.swing.*;
 import javax.swing.filechooser.*;
 import javax.swing.text.*;
-import javax.swing.undo.*;
 import javax.swing.event.*;
 
+import java.util.*;
 import java.io.*;
 import java.nio.charset.*;
 
@@ -43,6 +44,7 @@ public class TASEditor {
 			bottom.setBounds(0, outerSize.height - bottomMin.height, outerSize.width, bottomMin.height);
 		}
 	}
+
 	public static void main(String[] args) throws BadLocationException {
 		JFrame frame = new JFrame("TAS Editor");
 
@@ -52,23 +54,21 @@ public class TASEditor {
 		FileNameExtensionFilter filter = new FileNameExtensionFilter("TAS Files", "txt");
 		chooser.setFileFilter(filter);
 
-		File[] openFile = new File[1];
-
 		editor.pane.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent ev) {
 				if (ev.isControlDown()) {
 					switch (ev.getKeyCode()) {
 					case KeyEvent.VK_S:
-						if (ev.isShiftDown() || openFile[0] == null) {
+						if (ev.isShiftDown() || editor.openFile == null) {
 							int option = chooser.showSaveDialog(frame);
 							if (option != JFileChooser.APPROVE_OPTION) {
 								break;
 							}
-							openFile[0] = chooser.getSelectedFile();
-							frame.setTitle("TAS Editor - " + openFile[0].getName());
-							editor.openedTASName = openFile[0].getName();
+							editor.openFile = chooser.getSelectedFile();
+							frame.setTitle("TAS Editor - " + editor.openFile.getName());
+							editor.openedTASName = editor.openFile.getName();
 						}
-						try (FileWriter fout = new FileWriter(openFile[0], StandardCharsets.UTF_8)) {
+						try (FileWriter fout = new FileWriter(editor.openFile, StandardCharsets.UTF_8)) {
 							fout.write(editor.pane.getText());
 						} catch (Exception ex) {
 							JOptionPane.showMessageDialog(frame, "An error occurred while trying to save: " + ex, "Error", JOptionPane.ERROR_MESSAGE);
@@ -79,10 +79,10 @@ public class TASEditor {
 						if (option != JFileChooser.APPROVE_OPTION) {
 							break;
 						}
-						openFile[0] = chooser.getSelectedFile();
-						frame.setTitle("TAS Editor - " + openFile[0].getName());
-						editor.openedTASName = openFile[0].getName();
-						try (FileInputStream fin = new FileInputStream(openFile[0])) {
+						editor.openFile = chooser.getSelectedFile();
+						frame.setTitle("TAS Editor - " + editor.openFile.getName());
+						editor.openedTASName = editor.openFile.getName();
+						try (FileInputStream fin = new FileInputStream(editor.openFile)) {
 							editor.pane.setText(new String(fin.readAllBytes(), StandardCharsets.UTF_8));
 						} catch (Exception ex) {
 							JOptionPane.showMessageDialog(frame, "An error occurred while trying to open the file: " + ex, "Error", JOptionPane.ERROR_MESSAGE);
@@ -108,11 +108,9 @@ public class TASEditor {
 		}
 	}
 
-	public TASLookup lookup = TASLookup.fromLookupDirectory(new File("../tas"));
-
 	public JTextPane pane;
 	public FormattingListener listen;
-	public UndoManager undo;
+	public UndoFilter undo;
 	public JScrollPane scroll;
 
 	public SaveStateCache cache;
@@ -120,72 +118,61 @@ public class TASEditor {
 	public JTextField startingPoint;
 
 	public String openedTASName = "";
+	public File openFile;
+
+	public TASLookup lookup = name -> {
+		if (openFile == null) {
+			throw new IOException("No file opened");
+		}
+		File f = new File(openFile.getParentFile(), name + ".txt");
+		try (FileInputStream fin = new FileInputStream(f)) {
+			return new StringReader(new String(fin.readAllBytes()).stripTrailing());
+		}
+	};
 
 	public TASEditor() {
-		pane = new JTextPane();
+		pane = new JTextPane() {
+			public boolean getScrollableTracksViewportWidth() {
+				return false;
+			}
+
+			public void setSize(Dimension d) {
+				if (d.width < getParent().getSize().width) {
+					d.width = getParent().getSize().width;
+				}
+				super.setSize(d);
+			}
+		};
+		Insets i = pane.getInsets();
+		pane.addCaretListener(new CaretListener() {
+			public void caretUpdate(CaretEvent ev) {
+				SwingUtilities.invokeLater(() -> {
+					try {
+						JTextComponent c = (JTextComponent) ev.getSource();
+						int pos = c.getCaretPosition();
+						Rectangle2D r = c.modelToView2D(pos);
+						c.scrollRectToVisible(new Rectangle2D.Double(
+							r.getX() - i.left,
+							r.getY() - i.top,
+							r.getWidth() + i.left + i.right,
+							r.getHeight() + i.top + i.bottom
+						).getBounds());
+					} catch (BadLocationException ex) {
+					}
+				});
+			}
+		});
 		pane.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 16));
 
 		listen = new FormattingListener(pane.getStyledDocument());
 		pane.getDocument().addDocumentListener(listen);
 
-		undo = new UndoManager();
-		pane.getDocument().addUndoableEditListener(new UndoableEditListener() {
-			@Override
-			public void undoableEditHappened(UndoableEditEvent ev) {
-				if (listen.suppressUpdates) {
-					return;
-				}
-				undo.undoableEditHappened(ev);
-			}
-		});
+		undo = new UndoFilter();
+		((AbstractDocument) pane.getDocument()).setDocumentFilter(undo);
+
 		pane.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent ev) {
-				if (ev.isControlDown()) {
-					switch (ev.getKeyCode()) {
-					case KeyEvent.VK_Z:
-						try {
-							undo.undo();
-						} catch (CannotUndoException ex) {
-						}
-						break;
-					case KeyEvent.VK_Y:
-						try {
-							undo.redo();
-						} catch (CannotRedoException ex) {
-						}
-						break;
-					case KeyEvent.VK_Q:
-						try {
-							Caret c = pane.getCaret();
-							int start = c.getDot();
-							int end = c.getMark();
-							boolean inv = false;
-							if (start > end) {
-								int temp = start;
-								start = end;
-								end = temp;
-
-								inv = true;
-							}
-							Document doc = pane.getDocument();
-							String str = doc.getText(start, end - start);
-							String newStr = TASReader.convertToBasicFormat(str, lookup);
-							if (!newStr.equals(str)) {
-								doc.remove(start, end - start);
-								doc.insertString(start, newStr, null);
-								if (inv) {
-									c.setDot(start);
-									c.moveDot(start + newStr.length());
-								} else {
-									c.setDot(start + newStr.length());
-									c.moveDot(start);
-								}
-							}
-						} catch (BadLocationException | IOException ex) {
-						}
-						break;
-					}
-				}
+				keyAction(ev);
 			}
 		});
 
@@ -216,6 +203,191 @@ public class TASEditor {
 		scroll = new JScrollPane(pane);
 	}
 
+	public static class UndoFilter extends DocumentFilter {
+		record Undo(int off, String prevText, String newText) {
+		}
+
+		Vector<Undo> undos = new Vector<>();
+		int undoPos = 0;
+		boolean suppressUpdates;
+
+		public static Undo mergeUndos(Undo first, Undo second) {
+			return null; // don't merge undos
+		}
+
+		public void discardAllEdits() {
+			undos.clear();
+			undoPos = 0;
+		}
+
+		public void undo(Document doc) {
+			if (undoPos <= 0) {
+				return;
+			}
+			suppressUpdates = true;
+
+			try {
+				Undo undo = undos.get(--undoPos);
+				if (!undo.newText().isEmpty()) {
+					doc.remove(undo.off(), undo.newText().length());
+				}
+				if (!undo.prevText().isEmpty()) {
+					doc.insertString(undo.off(), undo.prevText(), null);
+				}
+			} catch (BadLocationException ex) {
+				ex.printStackTrace();
+			} finally {
+				suppressUpdates = false;
+			}
+		}
+
+		public void redo(Document doc) {
+			if (undoPos >= undos.size()) {
+				return;
+			}
+			suppressUpdates = true;
+
+			try {
+				Undo undo = undos.get(undoPos++);
+				if (!undo.prevText().isEmpty()) {
+					doc.remove(undo.off(), undo.prevText().length());
+				}
+				if (!undo.newText().isEmpty()) {
+					doc.insertString(undo.off(), undo.newText(), null);
+				}
+			} catch (BadLocationException ex) {
+				ex.printStackTrace();
+			} finally {
+				suppressUpdates = false;
+			}
+		}
+
+		public void addUndo(int off, String prevText, String newText) {
+			Undo newUndo = new Undo(off, prevText, newText);
+			if (undos.size() > undoPos) {
+				undos.setSize(undoPos);
+			}
+			if (undoPos > 0) {
+				Undo merge = mergeUndos(undos.get(undoPos - 1), newUndo);
+				if (merge != null) {
+					undos.set(undoPos - 1, merge);
+					return;
+				}
+			}
+			undos.add(newUndo);
+			undoPos++;
+		}
+
+		public void insertString(DocumentFilter.FilterBypass fb, int offset, String string, AttributeSet attr) throws BadLocationException {
+			if (!suppressUpdates) {
+				addUndo(offset, "", string);
+			}
+			fb.insertString(offset, string, attr);
+		}
+
+		public void remove(DocumentFilter.FilterBypass fb, int offset, int length) throws BadLocationException {
+			if (!suppressUpdates) {
+				String text;
+				try {
+					text = fb.getDocument().getText(offset, length);
+				} catch (BadLocationException ex) {
+					text = "";
+					ex.printStackTrace();
+				}
+				addUndo(offset, text, "");
+			}
+			fb.remove(offset, length);
+		}
+
+		public void replace(DocumentFilter.FilterBypass fb, int offset, int length, String newText, AttributeSet attr) throws BadLocationException {
+			if (!suppressUpdates) {
+				String text;
+				try {
+					text = fb.getDocument().getText(offset, length);
+				} catch (BadLocationException ex) {
+					text = "";
+					ex.printStackTrace();
+				}
+				addUndo(offset, text, newText);
+			}
+			fb.replace(offset, length, newText, attr);
+		}
+	}
+
+	public void keyAction(KeyEvent ev) {
+		if (!ev.isControlDown()) {
+			return;
+		}
+		switch (ev.getKeyCode()) {
+		case KeyEvent.VK_Z:
+			undo.undo(pane.getDocument());
+			break;
+		case KeyEvent.VK_Y:
+			undo.redo(pane.getDocument());
+			break;
+		case KeyEvent.VK_Q:
+			try {
+				Caret c = pane.getCaret();
+				int start = c.getDot();
+				int end = c.getMark();
+				boolean inv = false;
+				if (start > end) {
+					int temp = start;
+					start = end;
+					end = temp;
+
+					inv = true;
+				}
+				Document doc = pane.getDocument();
+				String str = doc.getText(start, end - start);
+				String newStr = TASReader.convertToBasicFormat(str, lookup);
+				if (!newStr.equals(str)) {
+					doc.remove(start, end - start);
+					doc.insertString(start, newStr, null);
+					if (inv) {
+						c.setDot(start);
+						c.moveDot(start + newStr.length());
+					} else {
+						c.setDot(start + newStr.length());
+						c.moveDot(start);
+					}
+				}
+			} catch (BadLocationException | IOException ex) {
+			}
+			break;
+		case KeyEvent.VK_L:
+			try {
+				Caret c = pane.getCaret();
+				int start = c.getDot();
+				int end = c.getMark();
+				boolean inv = false;
+				if (start > end) {
+					int temp = start;
+					start = end;
+					end = temp;
+
+					inv = true;
+				}
+				Document doc = pane.getDocument();
+				String str = doc.getText(start, end - start);
+				TASReader reader = new TASReader(new StringReader(str));
+				long length = reader.getLength(lookup);
+				String suffix = ") " + length;
+				doc.insertString(end, suffix, null);
+				doc.insertString(start, "(", null);
+				if (inv) {
+					c.setDot(start);
+					c.moveDot(end + suffix.length() + 1);
+				} else {
+					c.setDot(end + suffix.length() + 1);
+					c.moveDot(start);
+				}
+			} catch (BadLocationException | IOException ex) {
+			}
+			break;
+		}
+	}
+
 	private class SpecialBreakpointLookup implements TASLookup {
 		boolean end;
 
@@ -234,6 +406,7 @@ public class TASEditor {
 	}
 
 	boolean queuedUpdateCacheTarget;
+	String oldStartingPoint = "";
 
 	public void updateCacheTarget() {
 		if (!queuedUpdateCacheTarget) {
@@ -264,9 +437,95 @@ public class TASEditor {
 			seq = null;
 		}
 		synchronized (cache) {
+			if (!text.equals(oldStartingPoint)) {
+				cache.clear();
+				oldStartingPoint = text;
+			}
 			cache.target = seq;
 			cache.interrupt();
 		}
+	}
+
+	public static class FormattingListener implements DocumentListener {
+		boolean suppressUpdates;
+		int compoundUpdatesStart = Integer.MAX_VALUE;
+		int compoundUpdatesEnd = -1;
+
+		StyledDocument doc;
+
+		public FormattingListener(StyledDocument doc) {
+			this.doc = doc;
+		}
+
+		public void changedUpdate(DocumentEvent ev) {
+			//System.out.println("Change " + ev.getOffset() + " " + ev.getLength());
+		}
+
+		public void formatUpdate() {
+			if (compoundUpdatesEnd < 0) {
+				return;
+			}
+			//compoundUpdatesStart = Math.max(0, compoundUpdatesStart);
+			//compoundUpdatesEnd = Math.min(doc.getLength(), compoundUpdatesEnd);
+			suppressUpdates = true;
+			try {
+				doFormatting(doc, compoundUpdatesStart, compoundUpdatesEnd);
+			} catch (BadLocationException ex) {
+				ex.printStackTrace();
+			}
+			suppressUpdates = false;
+			compoundUpdatesStart = Integer.MAX_VALUE;
+			compoundUpdatesEnd = -1;
+			System.out.println("Formatting done");
+		}
+
+		public void insertUpdate(DocumentEvent ev) {
+			System.out.println("Insertion " + ev.getOffset() + " " + ev.getLength());
+			if (compoundUpdatesEnd < 0) {
+				SwingUtilities.invokeLater(this::formatUpdate);
+				compoundUpdatesStart = ev.getOffset();
+				compoundUpdatesEnd = ev.getOffset() + ev.getLength();
+				return;
+			}
+			compoundUpdatesStart = Math.min(compoundUpdatesStart, ev.getOffset());
+			if (ev.getOffset() <= compoundUpdatesEnd) {
+				compoundUpdatesEnd += ev.getLength();
+			} else {
+				compoundUpdatesEnd = ev.getOffset() + ev.getLength();
+			}
+		}
+
+		public void removeUpdate(DocumentEvent ev) {
+			System.out.println("Deletion " + ev.getOffset() + " " + ev.getLength());
+			try {
+				Document doc = ev.getDocument();
+				String text = doc.getText(0, doc.getLength());
+				System.out.println(text);
+			} catch (BadLocationException ex) {
+				ex.printStackTrace();
+			}
+			if (compoundUpdatesEnd < 0) {
+				SwingUtilities.invokeLater(this::formatUpdate);
+				compoundUpdatesStart = ev.getOffset();
+				compoundUpdatesEnd = compoundUpdatesStart;
+				return;
+			}
+			compoundUpdatesStart = Math.min(compoundUpdatesStart, ev.getOffset());
+			int deletionEnd = ev.getOffset() + ev.getLength();
+			if (deletionEnd <= compoundUpdatesEnd) {
+				compoundUpdatesEnd -= ev.getLength();
+			} else {
+				compoundUpdatesEnd = ev.getOffset();
+			}
+		}
+	}
+
+	public static void printStuff(StyledDocument doc) throws BadLocationException {
+		String text = doc.getText(0, doc.getLength());
+		for (int i = 0; i < text.length(); i++) {
+			System.out.print(text.charAt(i) + " " + doc.getCharacterElement(i).getAttributes().getAttribute("state") + " ");
+		}
+		System.out.println();
 	}
 
 	public static final MutableAttributeSet base = new SimpleAttributeSet();
@@ -288,58 +547,6 @@ public class TASEditor {
 		state0.addAttribute("state", 0);
 		state1.addAttribute("state", 1);
 		state2.addAttribute("state", 2);
-	}
-
-	public static class FormattingListener implements DocumentListener {
-		boolean suppressUpdates;
-		int compoundUpdatesStart = Integer.MAX_VALUE;
-		int compoundUpdatesEnd = 0;
-
-		StyledDocument doc;
-
-		public FormattingListener(StyledDocument doc) {
-			this.doc = doc;
-		}
-
-		public void changedUpdate(DocumentEvent ev) {
-			if (suppressUpdates) {
-				return;
-			}
-			compoundUpdatesStart = Math.min(compoundUpdatesStart, ev.getOffset());
-			compoundUpdatesEnd = Math.max(compoundUpdatesEnd, ev.getOffset() + ev.getLength());
-			SwingUtilities.invokeLater(() -> {
-				if (compoundUpdatesStart > compoundUpdatesEnd) {
-					return;
-				}
-				compoundUpdatesStart = Math.max(0, compoundUpdatesStart);
-				compoundUpdatesEnd = Math.min(doc.getLength(), compoundUpdatesEnd);
-				suppressUpdates = true;
-				try {
-					doFormatting(doc, compoundUpdatesStart, compoundUpdatesEnd);
-				} catch (BadLocationException ex) {
-					ex.printStackTrace();
-				}
-				suppressUpdates = false;
-				compoundUpdatesStart = Integer.MAX_VALUE;
-				compoundUpdatesEnd = 0;
-			});
-		}
-
-		public void insertUpdate(DocumentEvent ev) {
-			changedUpdate(ev);
-		}
-
-		public void removeUpdate(DocumentEvent ev) {
-			changedUpdate(ev);
-		}
-	}
-
-	public static void printStuff(StyledDocument doc) throws BadLocationException {
-		String text = doc.getText(0, doc.getLength());
-		for (int i = 0; i < text.length(); i++) {
-			System.out.print(text.charAt(i) + " " + doc.getCharacterElement(i).getAttributes().getAttribute("state") + " ");
-		}
-		System.out.println();
 	}
 
 	/**
@@ -373,8 +580,9 @@ public class TASEditor {
 			curState = transitionSingle(attrHolder, curState, text.charAt(i - start));
 			if (attrHolder[0] != prevAttr || prevAttrState != curState) {
 				if (prevAttr != null) {
-					doc.setCharacterAttributes(prevAttrStart, i - prevAttrStart, prevAttr, true);
-					doc.setCharacterAttributes(prevAttrStart, i - prevAttrStart, states[prevAttrState], false);
+					SimpleAttributeSet newAttr = new SimpleAttributeSet(prevAttr);
+					newAttr.addAttribute("state", prevAttrState);
+					doc.setCharacterAttributes(prevAttrStart, i - prevAttrStart, newAttr, true);
 				}
 				prevAttrStart = i;
 				prevAttr = attrHolder[0];
@@ -397,8 +605,9 @@ public class TASEditor {
 			}
 		}
 		if (prevAttr != null) {
-			doc.setCharacterAttributes(prevAttrStart, i - prevAttrStart, prevAttr, true);
-			doc.setCharacterAttributes(prevAttrStart, i - prevAttrStart, states[prevAttrState], false);
+			SimpleAttributeSet newAttr = new SimpleAttributeSet(prevAttr);
+			newAttr.addAttribute("state", prevAttrState);
+			doc.setCharacterAttributes(prevAttrStart, i - prevAttrStart, newAttr, true);
 		}
 	}
 
@@ -423,9 +632,8 @@ public class TASEditor {
 			}
 			break;
 		case 1:
-			if (Character.isWhitespace(ch)) {
-				style[0] = base;
-				return 0;
+			if (TASReader.isStopCharacter(ch)) {
+				return transitionSingle(style, 0, ch);
 			} else {
 				style[0] = call;
 				return 1;
