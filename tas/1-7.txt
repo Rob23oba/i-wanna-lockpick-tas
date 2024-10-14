@@ -1,24 +1,15 @@
-L 6 l
-Jj 1 J 1 jJ 1 lR jJ 1 j 9
-43 Lr 28 lR 11
-
-J 4 Lr 5 jJ 2 j 4
-J 4 Lr 5 jJ 2 j 3
-65 l 3 R 19 Lr 11
-J 4 lR 5 jJ 2 j 1
-J 4 lR 5 jJ 2 j 3
-12 Lr 15 lR 28 Lr 11
-J 4 lR 5 jJ 2 j 1
-J 4 lR 5 jJ 2 j 3
-72 r 6 L 19 lR 11
-J 4 Lr 5 jJ 2 j 3
-26 lR 28 Lr 38 lR 21
-J 4 Lr 5 jJ 2 j 1
-J 4 Lr 5 jJ 2 j 3
-J 4 Lr 5 jJ 2 j 3
-55 l 6 R 30 Lr 21
-J 4 lR 5 jJ 2 j 1
-J 4 lR 5 jJ 2 j 3
-28
-J 9 jJ 2 j 3
-19 r
+L 3 (J 1 jJ 2 jJ 1 j 9) 4 lR 9
+43 rL 27 O 1 olR 10
+(J 9 jJ 2 j 1) 4 rL 8 4 J 9 jJ 2 j 1
+65 l 3 R 18 O 1 orL 10
+(J 9 jJ 2 j 1) 4 lR 8 J 9 jJ 2 j 1
+13 O 1 orL 14 lR 27 O 1 orL 10
+(J 9 jJ 2 j 1) 4 lR 8 J 9 jJ 2 j 1
+74 r 6 L 18 O 1 olR 10
+(J 9 jJ 2 j 1) 4 rL 8
+27 O 1 olR 27 rL 37 O 1 olR 20
+(J 9 jJ 2 j 1) 4 rL 8
+J 9 jJ 2 j 1 4 J 9 jJ 2 j 1
+55 l 6 R 29 O 1 orL 20
+(J 9 jJ 2 j 1) 4 lR 8 J 9 jJ 2 j 1
+30 J 9 jJ 2 j 1 20 r

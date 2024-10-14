@@ -1,11 +1,8 @@
 #room r01 337 375
 lRudjznspcxbwaefo
-15
-(5 rL) J 11 j 1 J 4 j 2 JjJ 1 j
-15
-(6 l) J 6 j 1 J 2 jJ 1 jJ 1 jJj
-R 28
-Jj 8 J 2 j
-32
-J 9 jJ 1 jJ 1 jJj
-rL 30 lR 34 J 1 r
+
+R 15 (J 9 j 1 J 6 jJ 1 j 1) 5 rL 13
+12 (J 9 jJ 1 jJ 1 j 18) 7 lR 22
+11 Jj 10 Jj 19
+12 (J 9 jJ 1 jJ 1 j 18) 11 rL 18
+12 lR 34 J 1 rj

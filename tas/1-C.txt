@@ -1,21 +1,38 @@
-R J 1 r 1 j 1 J 4 jJ 1 jJ L 1 j 17
-J 1 j 1 J 3 jJ 1 jJ 1 j 1
-J 13 j 1 J l 6 L 6 jJ 1 j 1
-45 lR 37
-J 4 Lr 5 jJ 2 j 3
-15 lR 49 Lr 35 lR 13
-J 8 Lr j 1 J 7 j 2
-J 13 j 1 J l 6 L 6 jJ 1 j 1
-54 lR 48
-J 4 Lr 5 jJ 2 j 3
-37 lR 32
-J 4 Lr 5 jJ 2 j 3
-10 lR 53 r 7 L 37 lR 24
-J 8 Lr j 1 J 7 j 3
-J 13 j 1 J l 6 L 6 jJ 1 j 2
-J 13 j 1 J l 6 L 6 jJ 1 j 1
-34 lR 33 Lr 60 lR 71 r 1 L 35 lR 33 Lr 56 lR 35
-J 8 Lr j 1 J 7 j 2
-J 13 j 1 J l 6 L 6 jJ 1 j 1
-J 13 j 1 J l 6 L 6 jJ 1 j 1
-44 lR 65 r 2 L 30 lR 28 Lr 65 lR 55 Lr 79 Jj 2 l
+# white 2-key
+(J 6 jJ 1 jJ 1 j 16) OR 4 or 3 L 17 1
+J 3 j 2 Jj 1 Jj 1
+
+# purple 2-key
+J 9 jJ 2 j 1 J 9 jJ 2 j 1
+43 O 1 olR 36
+(J 9 jJ 2 j 1) 4 rL 8
+16 O 1 olR 16 32 rL
+24 O 1 olR 13
+
+# pink 2-key
+(J 8 j 1 J 7 j 2) 8 rL 10
+J 9 jJ 2 j 1 J 9 jJ 2 j 1
+53 O 1 olR 47
+(J 9 jJ 2 j 1) 4 rL 8
+38 O 1 olR 31
+(J 9 jJ 2 j 1) 4 rL 8
+12 lR 11 F 1 fJ 2 j 40 rL
+35 O 1 olR 23
+
+# cyan 2-key
+(J 8 j 1 J 7 j 2) 8 rL 10
+J 9 jJ 2 j 1 J 9 jJ 2 j 1 J 9 jJ 2 j 1
+48 O 1 olR 42
+(J 9 jJ 2 j 1) 4 rL 8
+32 O 1 olR 64 rL
+33 O 1 olR 33 rL
+55 O 1 olR 34
+
+# goal
+(J 8 j 1 J 7 j 2) 8 rL 10
+54 O 1 olR 47
+(J 9 jJ 2 j 1) 4 rL 8
+J 9 jJ 2 j 1 J 9 jJ 2 j 1 J 9 jJ 2 j 1
+43 O 1 olR 64 r 2 L
+29 O 1 olR 38 r 5 L
+70 J 1 lj

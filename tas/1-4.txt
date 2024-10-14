@@ -1,15 +1,9 @@
 #room r04 369 247
 lrudjznspcxbwaefo
 
-L 10 lR 30 rL
-
-5 J 2 l 7 RjJ 2 j 30
-JjJ 1 j 23 Lr 20
-JjJ 1 j 31
-
-Jj 9 J 1 lR 14 j 39 rL 22
-
-
-lJ 9 RjJ 2 j 23 J 3 jr
-
-#lJ 10 jR 25 J 3 jr 100
+L 10 lR 30 rL 5
+(J 9 jJ 2 j 1) 4 lR 8 28
+4 JjJ 1 j 2 16 F 1 frL 16
+4 JjJ 1 j 2 28
+Jj 9 J 1 lR 14 j 38 F 1 frL 20
+(J 9 jJ 2 j 1) 4 lR 8 22 J 2 rj

@@ -1,40 +1,52 @@
 # Crazy jump: J 4 j 6 J 6 j 1 RJ 11 j 3
+# New Crazy jumps (1): RJ 6 j 1 J 11 jJ 1 rLj 1 lR
+# New Crazy jumps (2): J 14 Rj 2 J 11 rLjJj 1
 
-1 L 2 l
-J 7 L 3 lR 2 j 5 J 17 j 1
-6
-J 2 Lr 7 jJ 2 j 3 l
-J 4 j 6 J 6 j 1 RJ 11 j 1 Lr 2 lR
-47 JjJ 1 j
-6
-J 7 Lr j 1 J 6 l j 20
-J 13 j 1 RJ 12 rL jJ 1 jJ 1
-30 lR 31 jLr 28 lR
-2
-J 11 Lr j 2 J 4 jJ 1 j 1
-J 4 j 1 J l 3 L 2 jJ 1 jJ 1 j 1
-24 lR 10 Lr 28 lR
-2
-J 11 Lr j 2 J 4 jJ 1 j 1
-J 4 j 1 J l 3 L 2 jJ 1 jJ 1 j 1
+# jump from Middle to Right's top-left
+1 L 2 (J 12 j 5 J 17 j 1) l 7 L 3 lR 25
+
+# pick key at Right's top-left
+6 (J 9 jJ 2 j 1) 4 rL 8
+2 J 4 j 6
+(J 6 j 1 J 11 jJ 1 j) lR 19 rL 1 lR 41
+
+# pick key at Right's top-right
+4 4 JjJ 1 j 3
+(J 7 j 15) 7 r 15
+(J 14 j 2 J 11 jJj) 14 R 13 rL 29 lR 6
+
+# pick key at Right's bottom-right
+25 rL 28 lR 2
+
+# pick key at Right's bottom-left
+(J 9 j 1 J 6 j 1) 6 rL 11
+J 9 jJ 2 j 1
+24 lR 10 rL 28 lR 2
+
+# pick key at Left's bottom-right
+(J 9 j 1 J 6 jJ 1 j 1) 6 rL 12
+J 9 jJ 2 j 1
 11
-10 J 3 jJ 2 j 3
-31 lR 28 Lr
-2
-J 11 lR j 2 J 4 jJ 1 j 1
-J 4 j 1 J 2 Lr 3 jJ 1 jJ 1 j 1
-J 1 j 1 J 3 jJ 1 jJ 2 j 1
-31 lR 28 Lr
-2
-J 11 lR j 2 J 4 jJ 1 j 1
-J 4 j 1 J r 3 R 2 jJ 1 jJ 1 j 1
-5
-J 2 Lr 7 j 1 Jj 1 JjJ 2 j 1
-4
-J 1 j 1 J 3 jJ 1 jJ 1 j 2
-J 4 j 6 J 6 j 1 RJ 11 j 1 Lr 2 lR
-41 JjJ 1 j
-11
-J 4 j 1 J 5 jJ 2 j 10
-J 4 j 6 J 6 j 1 LrJ 11 j 1 lR 2 Lr
-23 lR 42 r 14
+9 J 3 jJ 1 j 6
+31 lR 28 rL 2
+
+# pick key at Left's bottom-left
+(J 9 j 1 J 6 j 1) 6 lR 11
+(J 9 jJ 2 j 1) 4 rL 8
+1 J 3 j 2 JjJ 1 jJ 1 j
+31 lR 28 rL 2
+
+# pick key at Left's top-left
+(J 9 j 1 J 6 j 1) 6 lR 11
+J 9 jJ 2 j 1
+6 (J 9 jJ 2 j 1) 4 rL 8
+7 J 3 j 2 Jj 1 Jj 1 1
+J 4 j 6
+(J 6 j 1 J 11 jJ 1 j) lR 19 rL 1 lR 35
+
+# pick key at Left's top-right, arrive goal
+3 3 JjJ 1 j 4
+7 J 9 jJ 2 j 1
+1 J 4 j 6
+(J 6 j 1 J 11 jJ 1 j) rL 6 l 12 L 1 lR 1 rL 23 lR 18
+24 r 14
