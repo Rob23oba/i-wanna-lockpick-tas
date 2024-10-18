@@ -152,7 +152,8 @@ public class Analyzer extends JPanel {
 			"X: " + Float.toString((float) saveState[0][1]) + "\n" +
 			"Y: " + Float.toString((float) saveState[0][2]) + "\n" +
 			"V speed:\n" + Float.toString((float) saveState[0][3]) + "\n" +
-			"Flags: " + flagJoin.toString(), 11 * scale);
+			"Flags: " + flagJoin.toString() + "\n" + 
+			"FAn: " + (int) saveState[0][9] + "f, " + Math.round(saveState[0][10] * 20), 11 * scale);
 	}
 
 	public synchronized void tick(double[][] saveState, TASClient client) {
