@@ -1,0 +1,20 @@
+#Go to the right
+R 46 J 3 j 2 Jj 1 Jj 1
+
+#Climb up
+27 (J 9 jJ 2 j 1) 4 Lr 8
+11 (J 9 jJ 2 j 1) 4 lR 8
+11 (J 9 jJ 2 j 1) 4 Lr 8
+11 (J 9 jJ 2 j 1) 4 lR 8
+
+#Pick the key and get up
+28 rL 24 J 13 j 1 J 12 j
+
+#Climb down
+28 lR 28 rL 28 lR 28 rL 62
+
+#Open the door
+(J 13 j 2 J 12 jJj 1) 13 l 2 R 13
+
+#Jump to the warp
+J 5 j 5 r

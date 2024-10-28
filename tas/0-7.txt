@@ -1,0 +1,82 @@
+L 25 J 9 jJ 2 j 1
+
+# part 1: copy doors: x11, x19, x18, x19, x14
+
+# 2,3 ; 4,5
+16
+(J 7 j 16) Xx 1 l 7 R Xx 15
+(J 7 j 16) Xx 4 r 4 L Xx 15
+
+# {(2,1),3 ; (4,5),3} x2
+3
+(J 7 j 8 J 3 j 15) Xx 8 lR Xx 7 Xx 16 r 2 R
+(J 7 j 8 J 3 j 15) Xx 8 rL Xx 7 Xx 16 l 2 L
+(J 7 j 8 J 3 j 15) Xx 8 lR Xx 7 Xx 16 r 2 R
+(J 7 j 8 J 3 j 15) Xx 8 rL Xx 7 Xx 17 l 1 L
+
+# (1,2),(3,2) x2
+(J 7 j 9 J 3 j 16) Xx 7 lR 1 Xx 8 Xx 3 rL 1 Xx 11 l 4
+(J 7 j 9 J 3 j 16) Xx 7 R 1 Xx 8 Xx 3 rL 1 l Xx 15
+
+# (2,3),(4,3) x1
+(J 7 j 9 J 3 j 16) Xx 7 R 1 Xx 8 Xx 3 rL 1 lR Xx 9 r 6
+
+# (4,5),(4,5) x5
+XxJ 8 Xxj 8 XxJ 4 Xxj 15
+XxJ 8 Xxj 8 XxJ 4 Xxj 15
+XxJ 8 Xxj 8 XxJ 4 Xxj 15
+XxJ 8 Xxj 8 XxJ 4 Xxj 15
+XxJ 8 Xxj 8 XxJ 4 Xxj (L 10 l 5) 15
+
+# (3,4),(3,4) x2
+XxJ 8 Xxj 8 XxJ 4 Xxj 15
+XxJ 8 Xxj 8 XxJ 4 Xxj (L 11 l 4) 15
+
+# (2,3),(2,3) x2
+XxJ 8 Xxj 8 XxJ 4 Xxj 15
+XxJ 8 Xxj 8 XxJ 4 Xxj (L 11 l 4) 15
+
+# (1,2),(1,2) x3
+XxJ 8 Xxj 8 XxJ 4 Xxj 15
+XxJ 8 Xxj 8 XxJ 4 Xxj 15
+XxJ 8 Xxj 8 XxJ 4 Xxj (13 LO 1 lo) 14
+
+
+# part 2: open doors
+
+# 1x10, 1x1 & 2x2
+J 8 j 7 J 4 j 14
+J 8 j 7 J 4 j 14
+J 8 j 7 J 4 j 14
+J 8 j 7 J 4 j 14
+J 8 j 7 J 4 j 14
+J 6 j 1 J 2 jJ 1 jJ 1 j 18
+
+# 2x16, 2x1 & 3x2
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j (10 R 8 r) 18
+(6 R 2 r) J 6 j 1 J 2 jJ 1 jJ 1 j 18
+
+# 3x15, 3x1 & 4x2
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j 18
+J 11 j 6 Jj 1 Jj 1 Jj (12 R 8 r) 20
+(6 R 2 r) J 6 j 1 J 2 jJ 1 jJ 1 j 18
+
+# 4x16, 4x1 & 5x2
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j (10 R 8 r) 18
+(6 R 2 r) J 6 j 1 J 2 jJ 1 jJ 1 j 18
+
+# 5x12
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j 18
+J 9 j 16 J 8 j (10 R 8) 18
+
+# arrive goal
+87 J 10 rj
