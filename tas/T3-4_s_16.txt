@@ -1,0 +1,13 @@
+# pick master key
+L 14
+(J 9 j 1 J 6 jJ 1 j 1) 6 lR 12 rL
+J 11 j 1 J 4 j 1 J 1 j
+5 lR 5
+10 J 3 jJ 2 j 3
+16 (J 1 jJ 1 jJ 1 j 8) 5 O 1 orL 5
+
+# do the rest
+16 10 J 3 jJ 2 j 3
+17 6 J 7 j 5 
+6 Xx 8 F 1 flR
+25 r 9 L 51 l

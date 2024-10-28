@@ -1,0 +1,7 @@
+R 65 rL 112 lR 112 rL
+24 lR
+2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+88 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+88 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10
+65 (J 6 jJ 1 jJ 1 j 16) 8 lR 16
+62 rL 110 lR 110 rL 45 Xx l

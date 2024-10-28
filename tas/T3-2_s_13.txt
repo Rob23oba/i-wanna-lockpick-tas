@@ -1,0 +1,5 @@
+L 8 lR 1
+(J 13 j 1 J 12 j 1) 15 rL 12
+J 9 j 1 J 6 jJ 1 j 1
+J 3 j 2 JjJ 1 jJ 1 j
+6 l

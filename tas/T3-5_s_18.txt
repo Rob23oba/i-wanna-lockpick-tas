@@ -1,0 +1,4 @@
+R 66 rL 102 lR
+79 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+59 (J 6 j 1 J 6 jJ 1 jJ 1 j 20) 13 lR 6 O 2 or 7 R 7
+62 rL 110 lR 34 r

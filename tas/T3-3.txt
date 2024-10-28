@@ -1,0 +1,12 @@
+L 4
+(J 3 jJ 1 jJ 2 j 12) 1 l 2 L 11 lR 4
+12 J 2 jJ 1 jJ 1 j 11
+3 J 3 j 2 Jj 1 Jj 1
+
+55 rL 46 Xx 28 lR 28
+
+4 4 JjJ 1 j 2
+6 4 JjJ 1 j 3
+18 J 1 rj
+
+

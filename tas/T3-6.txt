@@ -1,0 +1,77 @@
+# pick master -1i key, cyan -10i key
+L 7 lR
+Jj 1 Jj 1 Jj 4
+6 J 3 j 31 J 1 jJ 6 j 6
+
+# combo door: make +i copy, open +i copy
+Ss 3 r Xx 48 L
+
+# pick master +1i & -1 keys, cyan -10 key
+2 J 10 j 15 J 3 j 12
+28 lR
+
+5 J 3 j 2 Jj 1 Jj 2
+J 4 jJ 1 jJ 1 j 14
+1 J 10 jJ 2 j 28
+
+# combo door: make -i copy & +1 copy, open +1 copy
+3 r Xx (40 Ss 8) 48 Xx 46 L
+
+# pick master +1 key, cyan signflip key
+2 J 10 j 15 J 3 j 12
+34 J 10 jJ 1 jJ 1 j 2 lR
+
+28 J 3 j 2 Jj 1 Jj 1
+11 J 10 jJ 4 jJ 1 j 26
+
+# combo door: open +1 copy, make -1 copy
+3 r 58 Xx L
+
+# pick master +1 key
+2 J 10 j 15 J 3 j 12
+34 J 9 jJ 2 j 1
+15 lR
+
+44 J 3 j 2 Jj 1 Jj 1
+11 J 10 jJ 4 jJ 1 j 26
+
+# combo door: make -1 copy
+3 Xx rL
+
+# pick master -1 key, cyan exact 10 key
+2 J 10 j 15 J 3 j 12
+34 J 9 jJ 2 j 1
+14 J 11 j 1 J 4 j 1 J 1 j
+6
+(J 13 j 1 J 12 jJ 1 j 26) 10 lR 15 r 1 R 1 rL 1 lR 25
+
+71 J 3 j 2 Jj 1 Jj 1
+11 J 10 jJ 4 jJ 1 j 26
+
+# combo door: open -1 copy
+3 rL
+
+# pick cyan exact -10+10i key
+2 J 10 j 15 J 3 j 12
+34 J 9 jJ 2 j 1
+14 J 11 j 1 J 4 j 1 J 1 j
+6 (J 13 j 1 J 12 j) 10 lR 16
+22 1 JjJ 2 j 6 r
+
+1 L 5 JjJ 1 j 3
+14 J 1 j 6 J 3 j 5 lR
+90 J 3 j 2 Jj 1 Jj 1
+11 J 10 jJ 4 jJ 1 j 26
+
+# combo door: open -i copy
+3 Ss rL
+
+# make +1 copy to the lockless door, arrive goal
+2 J 10 j 15 J 3 j 12 Ss
+34 J 9 jJ 2 j 1
+14 J 11 j 1 J 4 j 1 J 1 j
+6 (J 13 j 1 J 12 j) 10 lR 16
+22 1 JjJ 2 j 6
+22 1 JjJ 3 jJ 1 j 5
+22 2 JjJ 3 j 6
+Xx 31 r
