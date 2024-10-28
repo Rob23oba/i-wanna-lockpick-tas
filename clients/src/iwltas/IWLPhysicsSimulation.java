@@ -91,7 +91,7 @@ public class IWLPhysicsSimulation {
 		if ((inputs & JUMP_RELEASED) != 0) {
 			// thanks again for being accurate
 			if (vspeed < -0.00001) {
-				vspeed *= 0.45;
+				vspeed = (float) (vspeed * 0.45);
 			}
 		}
 		vspeed += gravity;
@@ -126,9 +126,6 @@ public class IWLPhysicsSimulation {
 			}
 			if (hspeed != 0 && playerTouchMask(playerX + hspeed, playerY + vspeed) != 0) {
 				hspeed = 0;
-			}
-			if (playerTouchMask(playerX + hspeed, playerY + vspeed) != 0) {
-				System.out.println("AHHHH");
 			}
 			playerX += hspeed;
 			playerY += vspeed;

@@ -482,15 +482,12 @@ public class TASEditor {
 		}
 
 		public void changedUpdate(DocumentEvent ev) {
-			//System.out.println("Change " + ev.getOffset() + " " + ev.getLength());
 		}
 
 		public void formatUpdate() {
 			if (compoundUpdatesEnd < 0) {
 				return;
 			}
-			//compoundUpdatesStart = Math.max(0, compoundUpdatesStart);
-			//compoundUpdatesEnd = Math.min(doc.getLength(), compoundUpdatesEnd);
 			suppressUpdates = true;
 			try {
 				doFormatting(doc, compoundUpdatesStart, compoundUpdatesEnd);
@@ -500,11 +497,9 @@ public class TASEditor {
 			suppressUpdates = false;
 			compoundUpdatesStart = Integer.MAX_VALUE;
 			compoundUpdatesEnd = -1;
-			System.out.println("Formatting done");
 		}
 
 		public void insertUpdate(DocumentEvent ev) {
-			System.out.println("Insertion " + ev.getOffset() + " " + ev.getLength());
 			if (compoundUpdatesEnd < 0) {
 				SwingUtilities.invokeLater(this::formatUpdate);
 				compoundUpdatesStart = ev.getOffset();
@@ -520,14 +515,6 @@ public class TASEditor {
 		}
 
 		public void removeUpdate(DocumentEvent ev) {
-			System.out.println("Deletion " + ev.getOffset() + " " + ev.getLength());
-			try {
-				Document doc = ev.getDocument();
-				String text = doc.getText(0, doc.getLength());
-				System.out.println(text);
-			} catch (BadLocationException ex) {
-				ex.printStackTrace();
-			}
 			if (compoundUpdatesEnd < 0) {
 				SwingUtilities.invokeLater(this::formatUpdate);
 				compoundUpdatesStart = ev.getOffset();
@@ -542,14 +529,6 @@ public class TASEditor {
 				compoundUpdatesEnd = ev.getOffset();
 			}
 		}
-	}
-
-	public static void printStuff(StyledDocument doc) throws BadLocationException {
-		String text = doc.getText(0, doc.getLength());
-		for (int i = 0; i < text.length(); i++) {
-			System.out.print(text.charAt(i) + " " + doc.getCharacterElement(i).getAttributes().getAttribute("state") + " ");
-		}
-		System.out.println();
 	}
 
 	public static final MutableAttributeSet base = new SimpleAttributeSet();

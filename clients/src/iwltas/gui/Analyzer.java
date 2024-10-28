@@ -9,11 +9,13 @@ import java.util.List;
 
 import iwltas.*;
 
+@SuppressWarnings("serial")
 public class Analyzer extends JPanel {
 	double[][] saveState;
 	List<Obstacle> obstacles;
 	JFrame frame;
 
+	@SuppressWarnings("this-escape")
 	public Analyzer() {
 		setPreferredSize(new Dimension(800, 608));
 	}
@@ -124,8 +126,8 @@ public class Analyzer extends JPanel {
 
 		for (Obstacle o : obstacles) {
 			g.setColor(VisualizerPanel.getColor(o.object_index));
-			g.fillRect((int) o.bbx * scale + diffX, (int) o.bby * scale + diffY,
-				(int) o.bbwidth * scale, (int) o.bbheight * scale);
+			g.fillRect(o.bbx * scale + diffX, o.bby * scale + diffY,
+				o.bbwidth * scale, o.bbheight * scale);
 		}
 
 		Color playerColor = VisualizerPanel.getColor(19);
@@ -136,8 +138,8 @@ public class Analyzer extends JPanel {
 
 		for (Obstacle o : obstacles) {
 			g.setColor(new Color(0, 0, 0, 64));
-			g.drawRect((int) o.bbx * scale + diffX, (int) o.bby * scale + diffY,
-				(int) o.bbwidth * scale, (int) o.bbheight * scale);
+			g.drawRect(o.bbx * scale + diffX, o.bby * scale + diffY,
+				o.bbwidth * scale, o.bbheight * scale);
 		}
 		g.drawRect(playerX * scale + diffX, playerY * scale + diffY, 11 * scale, 21 * scale);
 

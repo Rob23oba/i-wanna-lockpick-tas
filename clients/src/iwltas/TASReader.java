@@ -3,7 +3,7 @@ package iwltas;
 import java.io.*;
 import java.util.*;
 
-public class TASReader {
+public class TASReader implements Closeable {
 	/**
 	 * The parent reader if this is a fork.
 	 */
@@ -65,12 +65,12 @@ public class TASReader {
 	/**
 	 * The time remaining to wait.
 	 */
-	int waitTime;
+	public int waitTime;
 
 	/**
 	 * The decimal number of the current wait command. Used for waits with multiple digits.
 	 */
-	int waitDecimal;
+	public int waitDecimal;
 
 	/**
 	 * Stack of push back characters.
@@ -96,6 +96,7 @@ public class TASReader {
 
 			long newMask = fork.frame(prevInputs, undecidedInputs, lookup);
 			if ((newMask & END_MASK) != 0) {
+				fork.close();
 				forkIt.remove();
 			}
 			prevInputs = applyInputMask(newMask, prevInputs);
@@ -118,6 +119,7 @@ public class TASReader {
 				if (stack.isEmpty()) {
 					return mask | END_MASK;
 				}
+				in.close();
 				in = stack.pop();
 				pushBackChar = pushBackStack.pop();
 				continue;
@@ -137,7 +139,7 @@ public class TASReader {
 				mask |= 1L << (pos + 20);
 
 				prevInputs |= 1 << pos;
-				undecidedInputs &= ~(1L << pos);
+				undecidedInputs &= ~(1 << pos);
 			} else if ((pos = Inputs.TAS_STRING_OFF.indexOf(ch)) >= 0) {
 				if (((prevInputs | undecidedInputs) & (1 << pos)) == 0) {
 					continue;
@@ -146,7 +148,7 @@ public class TASReader {
 				mask |= 1L << (pos + 40);
 
 				prevInputs &= ~(1 << pos);
-				undecidedInputs &= ~(1L << pos);
+				undecidedInputs &= ~(1 << pos);
 			} else if (ch == '#') {
 				while (ch >= 0 && ch != '\r' && ch != '\n') {
 					ch = in.read();
@@ -162,7 +164,6 @@ public class TASReader {
 				try {
 					newIn = lookup.open(str);
 				} catch (IOException ex) {
-					System.err.println("Could not open " + str);
 					continue;
 				}
 				if (ch >= 0) {
@@ -228,7 +229,6 @@ public class TASReader {
 				try {
 					newIn = lookup.open(str);
 				} catch (IOException ex) {
-					System.err.println("Could not open " + str);
 					continue;
 				}
 				if (ch >= 0) {
@@ -325,5 +325,10 @@ break;
 			return s + ")";
 		}
 		return s;
+	}
+
+	@Override
+	public void close() throws IOException {
+		in.close();
 	}
 }
