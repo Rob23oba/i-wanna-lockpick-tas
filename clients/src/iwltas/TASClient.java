@@ -233,10 +233,10 @@ public class TASClient implements Closeable {
 			o.y = Float.parseFloat(split[2]);
 			o.xscale = Float.parseFloat(split[3]);
 			o.yscale = Float.parseFloat(split[4]);
-			o.bbx = Float.parseFloat(split[5]);
-			o.bby = Float.parseFloat(split[6]);
-			o.bbwidth = Float.parseFloat(split[7]);
-			o.bbheight = Float.parseFloat(split[8]);
+			o.bbx = Integer.parseInt(split[5]);
+			o.bby = Integer.parseInt(split[6]);
+			o.bbwidth = Integer.parseInt(split[7]);
+			o.bbheight = Integer.parseInt(split[8]);
 			obstacles.add(o);
 		}
 	}

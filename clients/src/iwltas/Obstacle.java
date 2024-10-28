@@ -5,5 +5,6 @@ package iwltas;
  */
 public class Obstacle {
 	public int object_index;
-	public float x, y, xscale, yscale, bbx, bby, bbwidth, bbheight;
+	public float x, y, xscale, yscale;
+	public int bbx, bby, bbwidth, bbheight;
 }

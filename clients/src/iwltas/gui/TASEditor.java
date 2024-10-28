@@ -131,6 +131,7 @@ public class TASEditor {
 	};
 
 	public Analyzer analyzer;
+	public SimulationWindow simulation;
 
 	public TASEditor() {
 		pane = new JTextPane() {
@@ -205,6 +206,7 @@ public class TASEditor {
 		scroll = new JScrollPane(pane);
 
 		analyzer = new Analyzer();
+		simulation = new SimulationWindow();
 	}
 
 	public static class UndoFilter extends DocumentFilter {
@@ -398,6 +400,15 @@ public class TASEditor {
 			});
 			cache.analyzer = analyzer::tick;
 			break;
+		case KeyEvent.VK_U:
+			simulation.showFrame();
+			simulation.frame.addWindowListener(new WindowAdapter() {
+				public void windowClosing(WindowEvent ev) {
+					cache.analyzer = null;
+				}
+			});
+			cache.analyzer = simulation::tick;
+			break;
 		}
 	}
 
@@ -406,7 +417,7 @@ public class TASEditor {
 
 		@Override
 		public Reader open(String name) throws IOException {
-			if (!(name + ".txt").equals(openedTASName)) {
+			if (!name.isEmpty() && !(name + ".txt").equals(openedTASName)) {
 				return lookup.open(name);
 			}
 			Document doc = pane.getDocument();
