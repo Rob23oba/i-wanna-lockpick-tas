@@ -1,0 +1,22 @@
+R 21 J 9 jJ 5 j 5
+
+# through Middle 1st row
+(J 9 j 1 J 6 j 1) rL 3 lR 14
+(J 9 j 1 J 6 jJ 1 j) rL 3 lR 14 35
+
+# through Right 2nd row, open Right white1 & orange2
+49 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 12 lR 11
+
+# open bottom row
+r 34 L 34 lR 23
+
+# go back, open Middle orange1 & Left 1st row
+(J 11 j 1 J 4 j 2) 8 rL 10 lR
+(J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+33 4 JjJ 1 j 2 6 lR
+2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+33 16 Jj 2 Jj 11 17
+
+# arrive goal
+lR 16 J 18 j 11
+86 r 24 L 52 l

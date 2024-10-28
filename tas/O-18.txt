@@ -1,0 +1,23 @@
+(J 6 j 1 J 7 jJ 1 jJ 1 j 16) 2 L 4 O 2 olR 24
+
+29 J 9 jJ 2 j 1
+30 4 JjJ 1 j 2
+30 4 JjJ 1 j 2
+10 Xx 20
+
+21 rL 14 JjJ 6 j
+2 J 1 j 1 J 1 jJ 1 jJ 1 j
+
+15 Xx 15
+47 4 JjJ 1 j 2
+29 J 9 jJ 2 j 1
+30
+
+21 lR 12 J 3 j 13
+
+Xx 30
+46 J 9 jJ 2 j 1
+Xx 30 4 JjJ 1 j 2
+Xx 15 Xx 15
+
+12 r

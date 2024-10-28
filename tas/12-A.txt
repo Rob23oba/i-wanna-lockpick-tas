@@ -3,30 +3,33 @@
 # walk
 R 10
 
-# jump, do second 2 times
-(20 rL 1 lR 1 rL 3 lR) J 21 j 1 rL J 4 j
-
-# do first 6 times
-Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 3 r
-
+# jump
+(J 21 j 1 J 6 jJ 1 jJ 1 j 25)
 # second 2 times
-L 1 lR 1 Lr 1 lR 1 Lr 1 lR
-
-10 r 1
+20 rL 1 lR 1 rL 3 lR 1
+# first 6 times
+rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1
+rL 1 lR 3
+# second 3 times
+rL 1 lR 1 rL 1 lR 1 rL 1 lR 10
 
 # jump
-(J 18 j 1 J 8 j)
+(J 18 j 1 J 8 jJ 1 j 27)
+# second 1 time, third 2 times
+r 3 R 4 11 rL 3 O 2 ol 3
+# fourth 4 times, third 1 time
+R 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 8
+# second 3 times
+l 4 OR 1 orL 1 lR 1 rL 1 lR 1 r 5
 
-# third 2 times, last 6 times, third 1 time
-1 R 15 r 2 1 L 4 l 4 R 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 4 l 10 L 4 l 5
+#jump
+(J 12 j 14 J 1 jJ 2 jJ 1 j 18)
+# second 17 times
+6 L 1 lR 1
+rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1
+rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1
+rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1
+rL 1 lR 9
 
-# second 22 times
-(J 12 j 16 J 4 j)
-1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr
-1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr
-1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr
-1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr
-1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr 1 lR 1 Lr
-1 lR 1 Lr 1 lR 1 Lr 1 lR
-
-21 J 1 jr
+# goal
+15 J 1 rj
