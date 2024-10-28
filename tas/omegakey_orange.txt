@@ -1,0 +1,15 @@
+# orange, #28
+
+$enter_panel_lab
+$s_3,24
+$perk_1
+$exit_panel_to_warp
+
+$warp_lab_to_chapter_1
+$chapter_1_o_orange_s_28
+$salvage
+
+L 64 l
+$enter
+$T1-3_s_2_-veblast
+$salvage_to_warp

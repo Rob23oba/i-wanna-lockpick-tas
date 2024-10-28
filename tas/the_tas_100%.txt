@@ -1,7 +1,8 @@
 $skip_intro
 
 $main_hub_complete
-$finale
+$main_hub_r_start_to_finale
+$enter $finale $win
 $skip_finale_ending
 
 $select_save_continue
@@ -10,7 +11,9 @@ Nn 1
 $enter_world
 
 $backside_complete
-$graduation
+
+$great_beyond_r_start_to_graduation
+$enter $graduation $win
 Nn 1
 $great_beyond_complete
 

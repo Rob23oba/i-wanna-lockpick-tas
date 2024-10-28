@@ -3,6 +3,7 @@ $skip_intro
 $main_hub_clear
 
 $backside_clear
+
 $great_beyond_clear
 
 $chapter_1_clear

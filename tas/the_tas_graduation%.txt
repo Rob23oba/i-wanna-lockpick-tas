@@ -3,4 +3,6 @@ $skip_intro
 $main_hub_clear
 
 $backside_clear
-$graduation
+
+$great_beyond_r_start_to_graduation
+$enter $graduation $win

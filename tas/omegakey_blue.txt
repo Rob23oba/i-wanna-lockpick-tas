@@ -1,0 +1,21 @@
+# blue
+
+$warp_chapter_1_to_chapter_ex
+$enter_panel_chapter_ex
+$s_24-26,28,29,46,47
+$exit_panel_to_move
+
+$chapter_ex_r_panel_to_EX-3
+$enter $EX-3 $win
+$chapter_ex_r_EX-3_to_EX-4
+$enter $EX-4_s_50 $salvage
+$enter $EX-4_s_48_4black $salvage_to_warp
+
+$warp_chapter_ex_to_chapter_4
+$chapter_4_s_22_137iblack $salvage
+
+$chapter_4_r_start_to_T4-1c
+$enter $T4-1_s_23_red $salvage
+$chapter_4_r_T4-1c_to_T4-5c
+$enter $T4-5_o_blue $skip_item
+$exit

@@ -1,4 +1,5 @@
 $skip_intro
 
 $main_hub_clear
-$finale
+$main_hub_r_start_to_finale
+$enter $finale $win
