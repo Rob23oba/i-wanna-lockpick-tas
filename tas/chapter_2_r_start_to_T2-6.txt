@@ -1,0 +1,41 @@
+# start to -1 master key
+R 47 rL 27 F 1 flR
+
+# -1 Master key to right of combo cyan door
+3 J 3 j 2 Jj 1 Jj 1 2 J 3 j 2 Jj 1
+J 13 j 1 J 12 j 1
+J 3 j 2 Jj 1 Jj 1
+6 J 9 jJ 2 j 1
+22 J 2 jJ 5 j 12
+71 J 3 j 2 Jj 1 Jj 1
+
+# pick 50 pink key
+44 r 1 L 9 J 3 j 12 lR
+
+# copy and open #7
+71 J 3 j 1 Jj 2 Jj 1 6 Xx 48 rL 5
+
+# pick -50 pink key
+J 15 jJ 2 jJ 2 j 10
+21 J 9 jJ 2 j 1
+6 J 3 j 1 Jj 2 Jj 1 13 lR
+
+# open #7
+84 J 3 jJ 4 j 6 rL 5
+
+# pick -6 black key
+J 15 jJ 2 jJ 2 j 10
+21 J 9 jJ 2 j 1
+6 J 3 j 1 Jj 2 Jj 1 13
+4 JjJ 1 j 2 6 lR
+
+# open #8
+6 4 JjJ 1 j 2
+86 J 3 jJ 4 j 17 4 JjJ 1 j 2 3 rL
+2 3 JjJ 1 j 5 17
+
+# go to T2-6
+J 15 jJ 2 jJ 2 j 10
+21 J 9 jJ 2 j 1
+6 J 3 j 1 Jj 2 Jj 1 13
+4 JjJ 1 j 2 31 l

@@ -1,0 +1,24 @@
+# #95
+$enter
+L 6 4 JjJ 1 j 40 Xx 6 J 7 lj
+$salvage
+
+# #96
+$enter
+L 6 4 JjJ 1 j 40 Xx 17 J 7 lj
+$salvage
+
+# #97
+$enter
+L 6 4 JjJ 1 j 40 Xx 27 J 7 lj
+$salvage
+
+# #98
+$enter
+L 6 4 JjJ 1 j 40 Xx 43 J 7 lj
+$salvage
+
+# #99
+$enter
+L 6 4 JjJ 1 j 40 Xx 59 J 7 lj
+$salvage_to_warp

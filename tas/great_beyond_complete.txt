@@ -1,0 +1,17 @@
+R 20 J 9 jJ 2 j 1
+(J 13 j 1 J 12 j) rL 25 O 1 olR
+J 5 j 1 J 2 j 10
+12 J 9 j 1 J 6 jJ 1 j 6 r
+$enter $T0-1 $win
+$enter $T0-1_s_0 $salvage
+
+Nn 1
+
+R 20 J 9 jJ 2 j 1
+7 J 3 jJ 3 j
+48 J 3 j 2 Jj 1 Jj 1
+(J 1 jJ 1 jJ 1 j 8) 4 rL 7
+17 J 9 jJ 2 j 1
+11 lR 35 J 3 j 2 Jj 1 Jj 1
+31 r
+$enter_world

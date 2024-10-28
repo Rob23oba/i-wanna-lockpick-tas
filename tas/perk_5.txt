@@ -1,0 +1,8 @@
+# enter omega perks section
+Dd 1 Jj 1
+
+# buy 5 omega perk
+Dd 1 Dd 1 Jj 39
+
+# exit omega perks section
+Zz 1

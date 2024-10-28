@@ -1,0 +1,27 @@
+$skip_intro
+
+$main_hub_clear
+
+$backside_clear
+$great_beyond_clear
+
+$chapter_1_clear
+$chapter_2_clear
+$chapter_3_clear
+$chapter_4_clear
+
+L 15 J 3 j 2 Jj 1 Jj 1 5 l
+$enter_world
+$world_0
+
+$omegakeyrush_masterpiece
+$kina_heart
+
+L 5 l 20
+$enter_world
+$world_12_clear
+
+$chapter_ex
+$epilogue_masterpiece
+
+$world_omega_masterpiece

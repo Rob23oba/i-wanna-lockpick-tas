@@ -1,0 +1,45 @@
+R 11 r
+$skip_item
+R 15 r
+$enter $11-1 $win
+
+R 4 J 9 jJ 2 j 1 5 r
+$enter $11-2 $win
+
+RJ 9 j 1 J 6 jJ 1 j 5 r
+$enter $11-4 $win
+
+LJ 9 j 1 J 6 jJ 1 j 5 l
+$enter $11-5 $win
+
+R 8 Jj 1 j 9 Jj 1 j 18 6 r
+$enter $11-6 $win
+
+LJ 9 j 1 J 6 jJ 1 j 5 l
+$enter $11-7 $win
+
+R 1 J 9 jJ 2 j 1 5 r
+$enter $11-8 $win
+
+R 27 r
+$enter $11-9 $win
+
+L 15 lR 34 r
+$enter $11-11 $win
+
+L 6 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 5 r
+$enter $11-10 $win
+
+Nn 1
+
+R 29 4 J 9 jJ 2 j 1 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 5 l
+$enter $11-3 $win
+
+LJ 9 j 1 J 6 jJ 1 j 13 l
+$enter $11-A $win
+
+(J 13 j 1 J 12 j 1 Jj) R 13 rL 14 2 l
+$enter $11-B $win
+
+Nn 1
+$enter_world

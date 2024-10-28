@@ -1,0 +1,86 @@
+# EX-4
+
+$enter_panel_chapter_ex
+$s_48,50
+$exit_panel_to_move
+
+$chapter_ex_r_panel_to_EX-4
+$enter $EX-4_s_48_-5brown $salvage
+$enter $EX-4_s_49 $salvage
+
+Nn 1
+$enter_panel_chapter_ex
+$s_48,49
+$exit_panel_to_move
+
+$chapter_ex_r_panel_to_EX-4
+$enter $EX-4 $win
+
+
+# EX-5
+
+L 10 lR 82 J 9 jJ 2 j 1 6 r
+$enter $EX-5_s_51 $salvage
+$enter $EX-5_s_52_-5pure $salvage
+
+Nn 1
+$enter_panel_chapter_ex
+$s_51,52
+$exit_panel_to_move
+
+$chapter_ex_r_panel_to_EX-5
+$enter $EX-5_o_stone $skip_item
+Nn 1
+$EX-5_s_52_-veblast $salvage
+$enter $EX-5_s_53 $salvage
+
+Nn 1
+$enter_panel_chapter_ex
+$s_52,53
+$exit_panel_to_move
+
+$chapter_ex_r_panel_to_EX-5
+$enter $EX-5 $win
+
+
+# EX-6
+
+R 1 J 9 jJ 2 j 1 5 r
+$enter $EX-6_o_master_s_54 $salvage
+$enter $EX-6_s_55 $salvage
+$enter $EX-6_s_56 $salvage
+
+Nn 1
+$enter_panel_chapter_ex
+$s_54-56
+$exit_panel_to_move
+
+R 99
+J 9 jJ 2 j 1 10
+J 9 jJ 2 j 1 5 r
+$enter $EX-6 $win
+
+
+# EX-7
+
+R 1 J 9 jJ 2 j 1 5 r
+$enter $EX-7_o_glitch_s_57 $salvage
+$enter $EX-7_s_58 $salvage
+$enter $EX-7_s_59 $salvage
+
+Nn 1
+$enter_panel_chapter_ex
+$s_57-59
+$exit_panel_to_move
+
+R 99
+J 9 jJ 2 j 1 10
+J 9 jJ 2 j 1 10
+J 9 jJ 2 j 1 5 r
+$enter $EX-7 $win
+
+
+# enter Epilogue
+
+R 1 J 9 jJ 2 j 1 5 r
+$enter_world

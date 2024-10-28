@@ -1,0 +1,18 @@
+# step 1: open black -i door, open white 10 door
+R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 18
+30 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12 14 rL
+14 lR 51 4 JjJ 1 j 2
+3 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+(J 9 j 1 J 6 jJ 1 j 1) 6 lR 12 3 rL
+
+# step 2: touch input#22
+3 lR 18 r 2 L 7 J 3 j 11 l 2 R 22 rL
+69 O 1 olR
+
+# step 3: salvage blank black door
+48 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
+3 (J 9 j 1 J 6 j 2) 8 rL 10
+(J 9 j 1 J 6 jJ 1 j) 6 lR 11
+14 (J 13 j 1 J 13 j) 12 r 4 R 11 r

@@ -1,0 +1,4 @@
+R 30 (J 1 jJ 1 jJ 1 j 8) 7 rL 4
+7 J 9 j 1 J 6 jJ 1 j 1
+18 lR 24 rL
+(J 13 j 1 J 12 j 1) 13 lR 14 69 r

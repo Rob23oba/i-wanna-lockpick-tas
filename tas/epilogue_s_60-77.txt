@@ -1,0 +1,14 @@
+$epilogue_s_64_9999 $salvage
+$epilogue_s_65_9999 $salvage
+$epilogue_s_66_9999 $salvage
+$epilogue_s_67_99   $salvage
+$epilogue_s_68_9999 $salvage
+$epilogue_s_69_9999 $salvage
+$epilogue_s_70_999  $salvage
+$epilogue_s_71_999  $salvage
+$epilogue_s_72_5    $salvage
+$epilogue_s_73_9999 $salvage
+$epilogue_s_74_9999 $salvage
+$epilogue_s_75_-77  $salvage
+$epilogue_s_76_9999 $salvage
+$epilogue_s_77_9999 $salvage_to_warp

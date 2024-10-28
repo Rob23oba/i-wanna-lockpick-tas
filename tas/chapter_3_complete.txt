@@ -1,0 +1,35 @@
+$chapter_3_r_start_to_T3-1
+$enter $T3-1_s_12_1pure $salvage
+$enter $T3-1_s_12_blastorangewhite $salvage
+$enter $T3-1_s_12_-4orange $salvage
+$enter $T3-1 $win
+$enter $T3-1_s_12_combocyan $salvage
+
+$chapter_3_r_start_to_T3-1
+$enter $T3-2_s_13 $salvage
+$enter $T3-2 $win
+
+$chapter_3_r_start_to_T3-1
+$enter $T3-3_s_14 $salvage
+$enter $T3-3 $win
+
+$chapter_3_r_start_to_T3-1
+$enter $T3-4_s_15 $salvage
+$enter $T3-4_s_16 $salvage
+$enter $T3-4 $win
+
+$chapter_3_r_start_to_T3-1
+$enter $T3-5 $win
+$enter $T3-5_s_19 $salvage
+$enter $T3-5_s_17 $salvage
+$enter $T3-5_s_18 $salvage
+$enter $T3-5_s_20 $salvage
+$enter $T3-5_s_21 $salvage
+
+$chapter_3_r_start_to_T3-1
+$enter $T3-6 $win
+
+Nn 1
+
+$chapter_3_r_start_to_chapter_4
+$enter_world

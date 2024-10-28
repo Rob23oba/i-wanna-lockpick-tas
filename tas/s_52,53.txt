@@ -1,0 +1,14 @@
+Jj 1
+
+# #52
+Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Dd 1 DdJj 1
+$s_white
+Zz 1
+
+# #53
+DdJj 1
+$s_stone
+Dd $s_white
+Zz 1
+
+Zz 1

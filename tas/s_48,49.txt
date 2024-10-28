@@ -1,0 +1,15 @@
+Jj 1
+
+# #49
+Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 UuJj 1
+$s_red
+Dd $s_green
+Zz 1
+
+# #48
+UuJj 1
+$s_green
+Dd $s_black
+Zz 1
+
+Zz 1

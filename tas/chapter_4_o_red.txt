@@ -1,0 +1,49 @@
+# step 1: pick white 2 key
+R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
+19 rL 5 J 9 j 1 J 6 j 2
+(J 9 j 1 J 6 jJ 1 j) 6 lR 11 3 rL
+66 l 3 L 18 lR
+5 J 9 j 1 J 6 jJ 1 j 1
+(J 9 j 1 J 6 jJ 1 j 1) 6 rL 12
+14 (J 13 j 1 J 12 j) 12 l 4 L 10
+44 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12
+5 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
+
+# step 2: open two allx3 doors, pick brown 1 key
+6 lR 105 rL 21 JjJ 2 j 3 11 lR
+10 (J 5 j 5 J 12 j) 12 rL 10
+14 (J 13 j 1 J 12 j) 12 l 4 L 10
+43 J 11 j 1 J 4 j 2
+(J 9 j 1 J 6 jJ 1 j 1) 4 lR 14
+29 J 3 j 2 Jj 1 Jj 1
+(J 9 jJ 2 j 1) 4 rL 8 lR
+(J 9 j 1 J 6 j 1) 6 rL 11
+J 9 j 1 J 6 jJ 1 j 1 11 O 1 olR
+
+# step 3: open bottom-right blast blue door
+22 r 19 L 47 lR 115 rL 46 F 1 flR
+55 4 JjJ 1 j 2
+60 rL 58 3 JjJ 1 j 5
+
+# step 4: open bottom-left every green-pink doors
+92 3 JjJ 1 j 5 11 lR
+2 J 9 j 1 J 6 jJ 1 j 1 11 rL
+10 3 JjJ 1 j 5
+23 4 JjJ 1 j 2
+23 4 JjJ 1 j 2
+6 lR 6 rL 24 lR
+10 JjJ 1 j 8 rL
+26 lR 16 4 JjJ 1 j 2
+23 JjJ 1 j 8 rL
+21 lR 37 rL
+(J 8 j 1 J 7 j 2) 4 lR 15 rL
+(J 5 j 5 J 12 j) 11 lR 11
+12 J 3 j 2 Jj 1 Jj 1
+
+# step 5: pick omega key (red)
+30 J 9 j 1 J 6 jJ 1 j 1
+(J 9 j 1 J 6 jJ 1 j 1) 4 rL 14
+14 (J 13 j 1 J 12 j) 12 l 4 L 10
+43 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12
+50 J 2 rj

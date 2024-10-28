@@ -1,0 +1,15 @@
+#Ch.EX entrance to Star View entrance, bh jump across #78
+
+R 14
+J 3 j 2 Jj 1 Jj 1 1 J 3 j 1 Jj 2 Jj 1
+110
+J 9 jJ 2 j 1 10
+J 9 jJ 2 j 1 10
+J 9 jJ 2 j 1 10
+J 9 jJ 2 j 1 10
+5
+J 22 j 11 J 18 j 23
+J 22 j 14 J 18 j 21
+68 r
+
+$enter_world

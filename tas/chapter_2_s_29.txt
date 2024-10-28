@@ -1,0 +1,15 @@
+# start to touch SID#29
+R 67 rL
+
+# SID#29 to right of combo cyan door
+(J 13 j 1 J 12 j 1) 13 lR 14
+J 3 j 2 Jj 1 Jj 1
+6 J 9 jJ 2 j 1
+22 J 2 jJ 5 j 12
+71 J 3 j 2 Jj 1 Jj 1
+
+# pick 50 pink key
+44 r 1 L 9 J 3 j 12 lR
+
+# salvage #7
+71 J 3 j 1 Jj 2 Jj 1 6 r

@@ -1,0 +1,102 @@
+Jj 1
+
+# #1
+DdJj 1
+$s_pink
+Zz 1
+
+# #2
+DdJj 1
+$s_pink
+Dd $s_pink
+Zz 1
+
+# #32
+Rr 1 Rr 1 RrJj 1
+$s_pink
+Dd 1
+Dd $s_purple
+Zz 1
+
+# #33
+DdJj 1
+$s_pink
+Dd $s_purple
+Dd $s_orange
+Zz 1
+
+# #34
+DdJj 1
+$s_pink
+Dd 1
+Dd $s_white
+Zz 1
+
+# #35
+DdJj 1
+$s_purple
+Zz 1
+
+# #36
+DdJj 1
+$s_white
+Zz 1
+
+# #37
+DdJj 1
+$s_orange
+Zz 1
+
+# #38
+DdJj 1
+$s_purple
+Zz 1
+
+# #39
+DdJj 1
+$s_purple
+Zz 1
+
+# #40
+DdJj 1
+$s_orange
+Dd $s_white
+Dd $s_white
+Dd $s_white
+Dd $s_white
+Dd $s_white
+Dd $s_orange
+Dd $s_orange
+Dd $s_purple
+Dd $s_purple
+Zz 1
+
+# #41
+DdJj 1
+$s_white
+Dd $s_white
+Dd $s_white
+Dd $s_orange
+Dd $s_orange
+Dd $s_orange
+Dd $s_orange
+Dd $s_orange
+Dd $s_orange
+Dd $s_purple
+Zz 1
+
+# #42
+DdJj 1
+$s_purple
+Dd $s_white
+Dd $s_white
+Dd $s_white
+Dd $s_orange
+Dd $s_orange
+Dd $s_orange
+Dd $s_orange
+Dd $s_orange
+Dd $s_orange
+Zz 1
+
+Zz 1

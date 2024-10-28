@@ -1,0 +1,12 @@
+# obtain Omega Key (Pure)
+$epilogue_o_pure
+$skip_item
+
+# go to Chapter EX to modify color of #79
+$warp_epilogue_to_chapter_ex
+$enter_panel_chapter_ex
+$s_79
+$exit_panel_to_warp
+
+# go to World Omega
+$warp_chapter_ex_to_world_omega

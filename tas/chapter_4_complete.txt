@@ -1,0 +1,89 @@
+# T4-1
+
+$chapter_4_r_start_to_T4-1
+$enter $T4-1_s_23_blue $salvage
+
+Nn 1
+$chapter_4_s_22_comboorange $salvage
+
+$chapter_4_r_start_to_T4-1c
+$enter $T4-1_s_23_red $salvage
+$enter $T4-1 $win
+
+
+# T4-2
+
+$chapter_4_s_22_1stone_from_T4-1c $salvage
+
+$chapter_4_r_start_to_T4-2
+$enter $T4-2_s_24_blastglitch $salvage
+$enter $T4-2 $win
+
+
+# T4-3
+
+Nn 1
+$chapter_4_r_start_to_T4-1c
+$enter $T4-1_s_23_black $salvage
+
+$chapter_4_s_22_-iblack_from_T4-1c $salvage
+
+$chapter_4_r_start_to_T4-1c
+$enter $T4-1_s_23_green $salvage
+
+Nn 1
+$chapter_4_r_start_to_T4-3
+$enter $T4-3_s_25_blue $salvage
+
+Nn 1
+$chapter_4_r_start_to_T4-3c
+$enter $T4-3 $win
+
+
+# T4-4
+
+$chapter_4_s_22_1stone_from_T4-3c $salvage
+
+$chapter_4_r_start_to_T4-2c
+$enter $T4-2_s_24_blastx4orange $salvage
+
+Nn 1
+$chapter_4_s_22_33greenpink $salvage
+
+$chapter_4_r_start_to_T4-1c
+$enter $T4-1_s_23_blue $salvage
+
+Nn 1
+$chapter_4_r_start_to_T4-4
+$enter $T4-4_s26 $salvage
+$enter $T4-4 $win
+
+
+# T4-5
+
+Nn 1
+$chapter_4_r_start_to_T4-1c
+$enter $T4-1_s_23_red $salvage
+
+Nn 1
+$chapter_4_s_22_1brownwhite $salvage
+
+$chapter_4_r_start_to_T4-3c
+$enter $T4-3_s_25_cyan $salvage
+
+$chapter_4_s_22_1stone_from_T4-3c $salvage
+
+$chapter_4_r_start_to_T4-2c
+$enter $T4-2_s_24_comboglitch $salvage
+
+$chapter_4_r_T4-2c_to_T4-1c
+$enter $T4-1_s_23_black $salvage
+
+Nn 1
+$chapter_4_s_22_blankblack $salvage
+
+$chapter_4_r_start_to_T4-5
+$enter $T4-5 $win
+$enter $T4-5_s_27_purple $salvage
+
+$skip_warp_error

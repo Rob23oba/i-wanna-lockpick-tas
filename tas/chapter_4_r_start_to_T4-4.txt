@@ -1,0 +1,60 @@
+# step 1: open #23, pick orange 10 key, open #24
+R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 18
+30 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12 14 rL
+14 lR 51 4 JjJ 1 j 2
+38 O 1 orL
+23 J 9 j 1 J 6 jJ 1 j 1 11 lR
+
+# step 2: doors until pick blue rotor key
+67 J 11 j 1 J 4 j 1 J 1 j
+34 22 Jj 2 Jj 4 11 rL
+10 F 1 f 47 lR
+2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 17 lR
+16 J 5 j 5 J 12 j
+12 4 JjJ 1 j 3 10 F 1 frL
+
+# step 3: doors until pick orange star key
+10 3 JjJ 1 j 5
+11 22 JjJ 2 j 2 33 lR
+32 (J 5 j 5 J 12 j 1) 11 rL 12 6 lR
+5 4 JjJ 1 j 3
+1 J 9 j 1 J 6 jJ 1 j 1
+J 9 j 1 J 6 jJ 2 j 6 rL
+16 l 10 R 26 rL
+
+# step 4: doors until pick orange unstar key
+5 J 9 j 1 J 6 jJ 1 j 1
+11 46 lR
+13 J 9 j 1 J 6 j 2
+(J 9 j 1 J 6 jJ 1 j) 7 rL 10 16 lR
+16 4 JjJ 1 j 2
+2 J 11 j 1 J 4 j 2
+J 9 j 1 J 6 jJ 1 j 1 11 rL
+22 l 9 R 36 F 1 frL
+
+# step 5: doors until pick blue unstar key
+15 J 9 j 1 J 6 jJ 1 j 1
+11 3 JjJ 1 j 5 33 lR
+32 4 JjJ 1 j 2
+2 J 9 j 1 J 6 jJ 1 j 1 16 rL
+7 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 22 rL
+21 J 2 j 22 J 2 j 14
+34 lR 24 rL
+2 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 96 rL
+
+# step 6: open blue-orange -7 door, pick orange rotor key, open #25
+21 J 9 j 1 J 6 j 2
+(J 9 j 1 J 6 jJ 1 j) 6 lR 11 27 rL
+27 lR 21 JjJ 2 jJ 1 j 1 16 rL
+16 4 JjJ 1 j 2
+1 J 9 j 1 J 6 jJ 1 j 1
+J 9 j 1 J 6 jJ 1 j 1
+90 J 9 j 1 J 6 jJ 1 j 1
+J 9 j 1 J 6 jJ 1 j 1 19 lR
+
+# step 7: open remaining doors, reach T4-4 entrance
+102 rL 7 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+33 J 2 j 23 J 2 j 12 27 rL
+58 4 JjJ 1 j 3 38 lR
+38 rL 62 lR 67 r

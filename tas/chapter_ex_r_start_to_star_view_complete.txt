@@ -1,0 +1,14 @@
+#Ch.EX entrance to Star View entrance, run across #78
+
+R 14
+J 3 j 2 Jj 1 Jj 1 1 J 3 j 1 Jj 2 Jj 1
+110
+J 9 jJ 2 j 1 10
+J 9 jJ 2 j 1 10
+J 9 jJ 2 j 1 10
+J 9 jJ 2 j 1 10
+5
+76
+67 r
+
+$enter_world

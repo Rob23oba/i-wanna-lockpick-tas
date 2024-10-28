@@ -1,0 +1,71 @@
+L 3 J 11 j 1 J 4 j 1 J 1 j 3 l 1
+$enter $O-1 $win
+
+R 5 3 JjJ 1 j 5 3 r
+$enter $O-2 $win
+
+R 5 3 JjJ 1 j 5 3 r
+$enter $O-3 $win
+
+R 85 r
+$enter $O-4 $win
+
+R 5 r
+$enter $O-5 $win
+
+R 6 r
+$enter $O-6 $win
+
+R 5 r
+$enter $O-7 $win
+
+R 8 4 JjJ 1 j 3 8 r
+$enter $O-8 $win
+
+R 7 r
+$enter $O-9 $win
+
+R 7 r
+$enter $O-10 $win
+
+# Masterpiece salvage and change color, then come back
+R 9 J 9 jJ 2 j 1 29 J 3 j 4 J 2 rj
+$masterpiece_s_95-99
+
+$warp_world_omega_to_chapter_ex
+$enter_panel_chapter_ex
+$s_95-99
+$exit_panel_to_warp
+$warp_chapter_ex_to_world_omega
+
+R 101 J 13 j 1 J 12 jJ 1 j 11 r
+$enter $O-11 $win
+
+(J 9 j 1 J 6 jJ 1 j) 8 L 9 35 l
+$enter $O-12 $win
+
+R 5 r
+$enter $O-13 $win
+
+R 5 r
+$enter $O-14 $win
+
+R 5 r
+$enter $O-15 $win
+
+R 5 r
+$enter $O-16 $win
+
+R 5 3 JjJ 1 j 5 8 r
+$enter $O-17 $win
+
+R 7 r
+$enter $O-18 $win
+
+R 7 r
+$enter $O-19 $win
+
+R 66 J 3 j 4 J 2 rj
+$enter $masterpiece $win_to_warp
+
+$warp_world_omega_to_chapter_ex

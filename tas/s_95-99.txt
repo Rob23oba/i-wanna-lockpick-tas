@@ -1,0 +1,33 @@
+Jj 1
+
+# #99
+Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 RrJj 1
+$s_green
+Dd $s_white
+Dd $s_red
+Zz 1
+
+# #98
+UuJj 1
+$s_blue
+Dd $s_blue
+Zz 1
+
+# #97
+UuJj 1
+$s_cyan
+Dd $s_purple
+Zz 1
+
+# #96
+UuJj 1
+$s_black
+Zz 1
+
+# #95
+UuJj 1
+$s_pure
+Dd $s_red
+Zz 1
+
+Zz 1

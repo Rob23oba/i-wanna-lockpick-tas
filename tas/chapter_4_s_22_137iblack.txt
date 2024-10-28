@@ -1,0 +1,40 @@
+# step 1: middle: two allx2 doors & #23 & #25
+R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 18
+30 (J 11 j 1 J 4 j 1 J 1 j) 18 11 lR
+10 4 JjJ 1 j 2 15 rL
+5 (J 9 j 1 J 6 jJ 1 j 1) 6 lR 12 5 rL
+24 l 2 R 42 4 JjJ 1 j 2
+
+# step 2: top-left: stone 12 door & white 256 door
+3 (J 9 j 1 J 6 j 2) 8 rL 10
+(J 9 j 1 J 6 jJ 1 j) 6 lR 11
+14 (J 13 j 1 J 12 jJ 1 j) 12 r 4 R 11
+18 (J 9 j 1 J 6 jJ 1 j 1) 4 rL 13 O 1 olR
+J 10 j 1 Jj 1 Jj 1 Jj 5
+32 (J 9 j 1 J 3 j 20) 3 rL 30
+32 lR 54 rL
+
+# step 3: middle & top-left: #26 & two allx3 doors & white rotor key
+99 4 JjJ 1 j 2 6 lR
+24 r 2 L 7 J 3 j 11 l 2 R 22 rL
+34 lR
+12 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
+3 J 9 j 1 J 6 jJ 1 j 1 11 rL
+10 (J 5 j 5 J 12 j) 12 lR 10
+14 (J 13 j 1 J 12 j) 12 r 4 R 10
+69 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
+
+# step 4: middle & salvage black 137i door
+136 lR 14 rL 15 J 3 j 11 l 2 R 22 rL
+69 lR
+48 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
+3 (J 7 j 1 J 9 j 1) 8 rL 10
+(J 9 j 1 J 6 jJ 1 j) 6 lR 11
+14 (J 13 j 1 J 12 j) 12 r 4 R 10
+16 (J 9 j 1 J 6 jJ 1 j 1) 4 rL 13 O 1 olR
+J 10 jJ 2 jJ 1 j 5
+32 (J 9 j 1 J 6 jJ 1 j 1) 4 rL 14
+3 (J 13 j 1 J 12 j) 10 lR 16 24 r

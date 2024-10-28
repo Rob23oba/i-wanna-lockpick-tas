@@ -1,0 +1,35 @@
+Jj 1
+
+# #8
+Rr 1 Uu 1 UuJj 1
+$s_pink
+Dd $s_cyan
+Zz 1
+
+# #7
+UuJj 1
+$s_cyan
+Dd $s_pink
+Zz 1
+
+# #45
+Rr 1 Rr 1 Rr 1 Rr 1 Uu 1 UuJj 1
+$s_purple
+Dd $s_pink
+Dd $s_white
+Zz 1
+
+# #44
+UuJj 1
+Dd 1
+Dd $s_orange
+Zz 1
+
+# #43
+UuJj 1
+$s_orange
+Dd 1
+Dd $s_pink
+Zz 1
+
+Zz 1

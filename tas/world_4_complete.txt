@@ -1,0 +1,36 @@
+R 16 r 9
+$enter $4-1 $win
+
+R 7 r
+$enter $4-2 $win
+
+R 7 r
+$enter $4-3 $win
+
+RJ 9 j 1 J 6 jJ 1 j 16 r
+$enter $4-4 $win
+
+R 20 Lr 20 l
+$enter $4-A $win
+
+R 2 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10 28 J 11 j 1 J 4 j 1 J 1 j 8 l
+$enter $4-5 $win
+
+R 11 J 11 j 1 J 4 j 1 J 1 j 11 r
+$enter $4-7 $win
+
+RJ 9 j 1 J 6 jJ 1 j 5 r
+$enter $4-C $win
+
+L 36 J 9 j 1 J 6 jJ 1 j 1 5 l
+$enter $4-8 $win
+
+R 9 rL 52 l
+$enter $4-6 $win
+
+L 10 (J 13 j 1 J 12 j) 14 lR 12 5 r
+$enter $4-B $win
+
+Nn 1
+L 5 l
+$enter_world

@@ -1,0 +1,25 @@
+Jj 1
+
+# #59
+Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 UuJj 1
+$s_glitch
+Dd $s_orange
+Dd $s_purple
+Dd $s_glitch
+Zz 1
+
+# #58
+UuJj 1
+$s_orange
+Dd $s_orange
+Dd $s_glitch
+Zz 1
+
+# #57
+UuJj 1
+$s_glitch
+Dd $s_purple
+Dd $s_glitch
+Zz 1
+
+Zz 1

@@ -1,0 +1,16 @@
+R 3 J 3 j 2 Jj 1 Jj 1
+2 J 11 j 1 J 11 j 1
+J 13 j 1 J 12 j 1 Jj 1 79 r
+$enter_world
+
+1 (J 13 j 1 J 12 j 1) R 13 rL 14
+J 13 j 1 J 12 j 1 Jj 1
+6 J 3 j 2 Jj 1 Jj 1
+12 J 3 j 2 Jj 1 Jj 1
+14 (J 13 j 1 J 12 j) 13 lR 13
+13 J 3 j 2 Jj 1 Jj 1
+12 J 3 j 2 Jj 1 Jj 1 J 9 jJ 2 j 1
+4 J 13 j 1 J 12 j
+17 J 3 j 2 Jj 1 Jj 1 rL
+J 13 j 1 J 12 j 14 l
+$enter $finale $win

@@ -1,0 +1,119 @@
+# enter omega keys section
+Jj 1
+
+# #79
+Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 UuJj 1
+$s_pure
+Zz 1
+
+# #77
+Uu 1 UuJj 1
+$s_pure
+Dd $s_purple
+Dd $s_pink
+Dd $s_cyan
+Dd $s_brown
+Zz 1
+
+# #76
+UuJj 1
+$s_cyan
+Dd $s_white
+Dd $s_purple
+Dd $s_brown
+Dd $s_stone
+Zz 1
+
+# #75
+UuJj 1
+$s_red
+Dd $s_white
+Dd $s_white
+Zz 1
+
+# #74
+UuJj 1
+$s_orange
+Dd $s_blue
+Dd $s_stone
+Dd $s_stone
+Dd $s_stone
+Zz 1
+
+# #73
+UuJj 1
+$s_stone
+Dd $s_cyan
+Dd $s_blue
+Zz 1
+
+# #72
+UuJj 1
+Dd $s_stone
+Zz 1
+
+# #71
+UuJj 1
+$s_blue
+Dd $s_red
+Dd $s_red
+Dd $s_red
+Zz 1
+
+# #70
+UuJj 1
+$s_white
+Dd $s_orange
+Dd $s_black
+Zz 1
+
+# #69
+UuJj 1
+$s_brown
+Dd $s_white
+Dd $s_white
+Dd $s_orange
+Dd $s_red
+Zz 1
+
+# #68
+UuJj 1
+$s_pink
+Dd $s_purple
+Dd $s_purple
+Dd $s_stone
+Zz 1
+
+# #67
+UuJj 1
+Dd $s_red
+Dd $s_red
+Zz 1
+
+# #66
+UuJj 1
+$s_master
+Dd $s_white
+Dd $s_pink
+Dd $s_black
+Dd $s_black
+Zz 1
+
+# #65
+UuJj 1
+$s_black
+Dd $s_white
+Dd $s_purple
+Dd $s_stone
+Dd $s_stone
+Zz 1
+
+# #64
+UuJj 1
+$s_purple
+Dd $s_white
+Dd $s_orange
+Zz 1
+
+# exit omega keys section
+Zz 1

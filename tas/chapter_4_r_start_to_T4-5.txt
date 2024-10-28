@@ -1,0 +1,43 @@
+# step 1: middle: four allx2 doors
+R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
+3 (J 9 j 1 J 6 jJ 2 j) 18 11 rL
+11 lR 26 rL 18 3 JjJ 1 j 5
+30 (J 9 j 1 J 6 jJ 2 j) 18 11 lR
+10 4 JjJ 1 j 2 15 rL
+40 lR 45 4 JjJ 1 j 3
+
+# step 2: top-left: stone 12 door
+3 (J 7 j 1 J 9 j 1) 8 rL 10
+(J 9 j 1 J 6 jJ 1 j) 4 lR 13
+14 (J 13 j 1 J 12 j 1) 12 r 4 R 11
+18 (J 9 j 1 J 6 jJ 1 j 1) 4 rL 13 O 1 olR
+J 10 jJ 2 jJ 1 j 5
+32 (J 9 j 1 J 3 j 20) 3 rL 30
+32 lR 20 r 3 L 72
+
+# step 3: middle & top-left: combo cyan door & black key
+J 5 j 5 J 12 j
+24 lR 12 J 6 j 26
+22 JjJ 2 jJ 1 j 1
+14 (J 13 j 1 J 12 j) 12 r 4 R 10
+48 (J 1 jJ 1 jJ 1 j 8) 7 rL 4
+
+# step 4: middle & top-left: purple-black door & purple signflip key
+89 4 JjJ 1 j 2 6 lR
+5 4 JjJ 1 j 3
+14 (J 13 j 1 J 12 j) 12 r 4 R 10
+91 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
+
+# step 5: middle & arrive T4-5 entrance
+131 lR 18 r 2 L 7 J 3 j 11 l 2 R 22 rL
+34 lR
+12 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
+3 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10
+13 lR 4 J 9 j 1 J 6 jJ 2 j
+14 (J 13 j 1 J 12 j) 12 r 4 R 10
+16 (J 9 j 1 J 6 jJ 1 j 1) 4 rL 13 O 1 olR
+J 10 jJ 2 jJ 1 j 5
+32 (J 9 j 1 J 6 jJ 1 j 1) 4 rL 14
+3 (J 13 j 1 J 12 j) 10 lR 16 16 r

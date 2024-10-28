@@ -1,0 +1,4 @@
+$skip_intro
+
+$main_hub_clear
+$finale

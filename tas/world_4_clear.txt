@@ -1,0 +1,24 @@
+R 16 r 9
+$enter $4-1 $win
+
+R 7 r
+$enter $4-2 $win
+
+R 7 r
+$enter $4-3 $win
+
+RJ 9 j 1 J 6 jJ 1 j 16 r
+$enter $4-4 $win
+
+L 9 J 9 j 1 J 6 jJ 1 j 1 8 l
+$enter $4-5 $win
+
+R 11 J 9 j 1 J 6 jJ 1 j 1 rL J 11 j 1 J 4 j 1 J 1 j 5 l
+$enter $4-8 $win
+
+R 35 J 9 j 1 J 6 jJ 1 j 1 5 r
+$enter $4-C $win
+
+Nn 1
+L 5 l
+$enter_world

@@ -1,0 +1,5 @@
+R 8
+(J 9 jJ 2 j 1) 4 rL 8
+lR J 9 j 1 J 6 jJ 1 j 1
+rL J 9 j 1 J 6 jJ 1 j 1
+5 J 1 lj

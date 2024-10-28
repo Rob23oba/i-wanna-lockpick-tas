@@ -1,0 +1,13 @@
+# step 1: open #23 & green-pink 30 door
+R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 18
+30 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12 14 rL
+20 l 2 L 43 lR
+
+# step 2: touch input point #22
+100 rL 69 O 1 olR
+
+# step 3: salvage green-pink 33 door
+48 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 18
+92 4 JjJ 1 j 2 11 l

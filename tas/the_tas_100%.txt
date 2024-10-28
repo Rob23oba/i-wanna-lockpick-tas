@@ -1,0 +1,39 @@
+$skip_intro
+
+$main_hub_complete
+$finale
+$skip_finale_ending
+
+$select_save_continue
+$reenter_game_to_restart
+Nn 1
+$enter_world
+
+$backside_complete
+$graduation
+Nn 1
+$great_beyond_complete
+
+$chapter_1_complete
+$chapter_2_complete
+$chapter_3_complete
+$chapter_4_complete
+
+L 15 J 3 j 2 Jj 1 Jj 1 5 l
+$enter_world
+$world_0
+
+$omegakeyrush_complete
+$kina_heart
+
+L 5 l 20
+$enter_world
+$world_12_complete
+
+$chapter_ex
+$epilogue_complete
+
+$world_omega_complete
+
+$chapter_ex_r_start_to_star_view_complete
+$star_view

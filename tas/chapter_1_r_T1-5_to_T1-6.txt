@@ -1,0 +1,5 @@
+R 11 42
+5 J 9 jJ 1 jJ 1 j 18
+8 J 3 jJ 3 j 1
+(J 13 j 1 J 13 j 1) r 13 L 15
+J 3 jJ 4 j 6 lR 5

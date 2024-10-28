@@ -1,0 +1,15 @@
+Jj 1
+
+# #22
+Rr 1 Rr 1 Dd 1 DdJj 1
+$s_black
+Zz 1
+
+# #24
+Dd 1 DdJj 1
+$s_brown
+Dd $s_black
+Dd $s_black
+Zz 1
+
+Zz 1

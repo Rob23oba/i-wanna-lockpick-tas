@@ -1,0 +1,41 @@
+R 1 J 9 jJ 2 j 1 5 r 7
+$enter $6-1 $win
+
+R 16 r
+$enter $6-2 $win
+
+R 7 r
+$enter $6-3 $win
+
+R 7 r
+$enter $6-4 $win
+
+R 34 r
+$enter $6-6 $win
+
+R 16 r 5
+$enter $6-B $win
+
+L 1 J 9 jJ 2 j 1 12 J 3 j 2 Jj 1 Jj 1 (J 13 j 1 J 12 j) 3 l 11 R 12 5 r
+$enter $6-7 $win
+
+R 24 r
+$enter $6-10 $win
+
+L 9 J 3 j 2 JjJ 1 jJ 1 j 14 (J 13 j 1 J 12 j) 6 l 8 R 12 5 r
+$enter $6-8 $win
+
+R 3 J 3 j 2 Jj 1 Jj 1 2 J 3 j 1 Jj 2 Jj 1 5 r
+$enter $6-C $win
+
+L 57 l
+$enter $6-5 $win
+
+L 4 J 11 j 1 J 4 j 1 J 1 j 5 l
+$enter $6-9 $win
+
+L 4 J 3 j 2 Jj 1 Jj 1 24 l
+$enter $6-A $win
+
+Nn 1
+$enter_world

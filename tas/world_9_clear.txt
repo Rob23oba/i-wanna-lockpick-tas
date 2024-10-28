@@ -1,0 +1,20 @@
+R 7 r 18
+$enter $9-1 $win
+
+R 11 2 JjJ 1 j 16 10 r
+$enter $9-5 $win
+
+R 10 r
+$enter $9-D $win
+
+L 19 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 J 11 j 1 J 4 j 1 J 1 j 11 r
+$enter $9-3 $win
+
+R 10 r
+$enter $9-B $win
+
+L 19 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 r
+$enter $9-2 $win
+
+Nn 1
+$enter_world

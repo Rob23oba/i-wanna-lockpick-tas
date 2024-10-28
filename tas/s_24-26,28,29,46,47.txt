@@ -1,0 +1,41 @@
+Jj 1
+
+# #29
+Rr 1 Rr 1 Rr 1 UuJj 1
+$s_brown
+Dd $s_white
+Zz 1
+
+# #28
+UuJj 1
+$s_white
+Zz 1
+
+# #26
+Uu 1 UuJj 1
+$s_brown
+Zz 1
+
+# #25
+UuJj 1
+Dd 1
+Dd $s_white
+Dd $s_white
+Zz 1
+
+# #24
+UuJj 1
+$s_black
+Zz 1
+
+# #46
+Rr 1 Rr 1 Dd 1 DdJj 1
+$s_brown
+Zz 1
+
+# #47
+DdJj 1
+$s_brown
+Zz 1
+
+Zz 1

@@ -1,0 +1,20 @@
+# open blank door (i.e. for salvaging allx4 door)
+
+L 55 J 9 jJ 2 j 1 116
+J 9 jJ 2 j 1 (J 9 jJ 2 j 1) 4 lR 8
+2 J 9 j 1 J 6 jJ 1 j 1
+
+10 rL 10
+
+8 Jj 1 Jj 1 Jj 23 lR 12
+
+
+# touch #66
+59 (J 6 jJ 1 j 18) 11 rL 14 55
+
+
+# open allx4 door
+
+J 9 jJ 2 j 1 (J 9 jJ 2 j 1) 4 lR 8
+2 J 9 j 1 J 6 jJ 1 j 1
+Xx 15 r
