@@ -13,6 +13,7 @@ import iwltas.*;
 public class Analyzer extends JPanel {
 	double[][] saveState;
 	List<Obstacle> obstacles;
+	List<SimpleInstanceRecord> otherStuff;
 	JFrame frame;
 
 	@SuppressWarnings("this-escape")
@@ -130,6 +131,19 @@ public class Analyzer extends JPanel {
 				o.bbwidth * scale, o.bbheight * scale);
 		}
 
+		for (SimpleInstanceRecord inst : otherStuff) {
+			if (inst.mask_index < 0 || inst.mask_index >= Masks.masks.length) {
+				System.err.println(inst.object_index + " " + inst.mask_index);
+				continue;
+			}
+			Masks.Mask mask = Masks.masks[inst.mask_index];
+			int xPos = ((int) Math.rint(inst.x) - mask.originX) * scale + diffX;
+			int yPos = ((int) Math.rint(inst.y) - mask.originY) * scale + diffY;
+			g.drawImage(mask.toImage(VisualizerPanel.getColor(inst.object_index)),
+				xPos, yPos, xPos + mask.width * scale, yPos + mask.height * scale,
+				0, 0, mask.width, mask.height, null);
+		}
+
 		Color playerColor = VisualizerPanel.getColor(19);
 		g.setColor(playerColor); // objPlayer
 		g.fillRect(playerX * scale + diffX, playerY * scale + diffY, 11 * scale, 21 * scale);
@@ -162,6 +176,7 @@ public class Analyzer extends JPanel {
 		this.saveState = saveState;
 		try {
 			this.obstacles = client.getObstacles();
+			this.otherStuff = client.getOtherInstances();
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}

@@ -242,6 +242,27 @@ public class TASClient implements Closeable {
 	}
 
 	/**
+	 * Returns the list of other simple instances (e.g. keys, goals) in the level.
+	 */
+	public List<SimpleInstanceRecord> getOtherInstances() throws IOException {
+		List<SimpleInstanceRecord> list = new ArrayList<>();
+		send("other_stuff");
+		while (true) {
+			String s = get();
+			if ("end".equals(s)) {
+				return list;
+			}
+			String[] split = s.split(" ");
+			SimpleInstanceRecord rec = new SimpleInstanceRecord();
+			rec.object_index = Integer.parseInt(split[0]);
+			rec.x = Float.parseFloat(split[1]);
+			rec.y = Float.parseFloat(split[2]);
+			rec.mask_index = Integer.parseInt(split[3]);
+			list.add(rec);
+		}
+	}
+
+	/**
 	 * Returns a two-dimensional double array representing a save state that can be loaded using {@link #loadSaveState}.
 	 */
 	public double[][] getSaveState() throws IOException {

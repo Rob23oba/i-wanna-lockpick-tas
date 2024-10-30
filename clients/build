@@ -1,2 +1,7 @@
 #!/usr/bin/bash
+rm -rf bin
 javac -d bin src/iwltas/*.java src/iwltas/cli/*.java src/iwltas/gui/*.java
+cp src/iwltas/gui/masks.bin bin/iwltas/gui
+cd bin
+jar -cf tas_tools.jar iwltas
+cd ..

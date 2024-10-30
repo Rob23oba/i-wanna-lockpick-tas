@@ -91,6 +91,9 @@ while 1
             blockingMode = 0
             room_speed = 50
             break
+        case "room_goto":
+            room_goto(asset_get_index(network_check_text(1)))
+            break
         case "savestate":
             with (objPlayer)
             {
@@ -119,7 +122,12 @@ while 1
             network_send_text("end")
             break
         case "load_savestate":
+            global.inCutscene = 0
             with (oLevelWin)
+                instance_destroy()
+            with (oLevelWinS)
+                instance_destroy()
+            with (oDebrisS)
                 instance_destroy()
             with (oKeyPart)
                 instance_destroy()
@@ -207,6 +215,21 @@ while 1
         case "obstacles":
             with (objBlock)
                 network_send_text(object_index, " ", x, " ", y, " ", image_xscale, " ", image_yscale, " ", bbox_left, " ", bbox_top, " ", ((bbox_right - bbox_left) + 1), " ", ((bbox_bottom - bbox_top) + 1))
+            network_send_text("end")
+            break
+        case "other_stuff":
+            with (oKeyBulk)
+                network_send_text(object_index, " ", x, " ", y, " ", sprite_index)
+            with (oOmegaKey)
+                network_send_text(object_index, " ", x, " ", y, " ", sprite_index)
+            with (oSalvageIn)
+                network_send_text(object_index, " ", x, " ", y, " ", sprite_index)
+            with (oSalvageOut)
+                network_send_text(object_index, " ", x, " ", y, " ", sprite_index)
+            with (oGoal)
+                network_send_text(object_index, " ", x, " ", y, " ", sprite_index)
+            with (oLevel)
+                network_send_text(object_index, " ", x, " ", y, " ", sprite_index)
             network_send_text("end")
             break
         case "end_frame":
