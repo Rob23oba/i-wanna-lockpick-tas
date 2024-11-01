@@ -12,6 +12,9 @@ public class Masks {
 		public final int originY;
 		byte[] data;
 
+		private BufferedImage imageCache;
+		private Color imageCacheColor;
+
 		public Mask(int width, int height, int ox, int oy) {
 			this.width = width;
 			this.height = height;
@@ -21,6 +24,9 @@ public class Masks {
 		}
 
 		public BufferedImage toImage(Color fg) {
+			if (fg.equals(imageCacheColor)) {
+				return imageCache;
+			}
 			IndexColorModel model = new IndexColorModel(1, 2,
 				new byte[] { 0, (byte) fg.getRed() },
 				new byte[] { 0, (byte) fg.getGreen() },
@@ -40,6 +46,8 @@ public class Masks {
 					}
 				}
 			}
+			imageCache = img;
+			imageCacheColor = fg;
 			return img;
 		}
 	}

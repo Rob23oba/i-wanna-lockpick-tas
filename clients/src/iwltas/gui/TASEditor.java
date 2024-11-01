@@ -124,10 +124,16 @@ public class TASEditor {
 		if (openFile == null) {
 			throw new IOException("No file opened");
 		}
-		File f = new File(openFile.getParentFile(), name + ".txt");
-		try (FileInputStream fin = new FileInputStream(f)) {
-			return new StringReader(new String(fin.readAllBytes()).stripTrailing());
+		File dir = openFile.getParentFile();
+		while (dir != null) {
+			File f = new File(dir, name + ".txt");
+			try (FileInputStream fin = new FileInputStream(f)) {
+				return new StringReader(new String(fin.readAllBytes()).stripTrailing());
+			} catch (FileNotFoundException ex) {
+				dir = dir.getParentFile();
+			}
 		}
+		throw new FileNotFoundException(name + " is nowhere to be seen");
 	};
 
 	public Analyzer analyzer;

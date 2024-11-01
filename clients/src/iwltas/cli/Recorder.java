@@ -49,7 +49,6 @@ public class Recorder extends WaitingTASFrameHandler {
 		int prev = 0;
 		if ((in.pressed | in.released) != 0) {
 			prev = client.previousInputMask();
-			return;
 		}
 		System.out.print(writer.frame(prev, in));
 		waitUntilNextFrame();

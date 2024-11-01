@@ -53,13 +53,27 @@ public class Analyzer extends JPanel {
 		int firstY = -Math.floorDiv(diffY, scale);
 		int lastX = Math.floorDiv(w - diffX, scale);
 		int lastY = Math.floorDiv(h - diffY, scale);
+		int minGrid = 1;
+		if (scale <= 1) {
+			minGrid = 8;
+		} else if (scale <= 2) {
+			minGrid = 4;
+		} else if (scale <= 4) {
+			minGrid = 2;
+		}
 		for (int x = firstX; x <= lastX; x++) {
+			if ((x & (minGrid - 1)) != 0) {
+				continue;
+			}
 			g.setColor(gridColor(x));
-			g.drawLine(x * 8 + diffX, 0, x * 8 + diffX, h);
+			g.drawLine(x * scale + diffX, 0, x * scale + diffX, h);
 		}
 		for (int y = firstY; y <= lastY; y++) {
+			if ((y & (minGrid - 1)) != 0) {
+				continue;
+			}
 			g.setColor(gridColor(y));
-			g.drawLine(0, y * 8 + diffY, w, y * 8 + diffY);
+			g.drawLine(0, y * scale + diffY, w, y * scale + diffY);
 		}
 	}
 
@@ -133,12 +147,15 @@ public class Analyzer extends JPanel {
 
 		for (SimpleInstanceRecord inst : otherStuff) {
 			if (inst.mask_index < 0 || inst.mask_index >= Masks.masks.length) {
-				System.err.println(inst.object_index + " " + inst.mask_index);
 				continue;
 			}
 			Masks.Mask mask = Masks.masks[inst.mask_index];
 			int xPos = ((int) Math.rint(inst.x) - mask.originX) * scale + diffX;
 			int yPos = ((int) Math.rint(inst.y) - mask.originY) * scale + diffY;
+			if (xPos + mask.width * scale <= 0 || xPos >= w
+				|| yPos + mask.height * scale <= 0 || yPos >= h) {
+				continue;
+			}
 			g.drawImage(mask.toImage(VisualizerPanel.getColor(inst.object_index)),
 				xPos, yPos, xPos + mask.width * scale, yPos + mask.height * scale,
 				0, 0, mask.width, mask.height, null);

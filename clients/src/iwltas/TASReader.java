@@ -2,6 +2,7 @@ package iwltas;
 
 import java.io.*;
 import java.util.*;
+import java.util.function.*;
 
 public class TASReader implements Closeable {
 	/**
@@ -23,6 +24,11 @@ public class TASReader implements Closeable {
 	 * The currently used reader.
 	 */
 	Reader in;
+
+	/**
+	 * If available, is used to report comments.
+	 */
+	public Consumer<String> commentConsumer;
 
 	public TASReader(Reader reader) {
 		this.in = reader;
@@ -150,8 +156,17 @@ public class TASReader implements Closeable {
 				prevInputs &= ~(1 << pos);
 				undecidedInputs &= ~(1 << pos);
 			} else if (ch == '#') {
-				while (ch >= 0 && ch != '\r' && ch != '\n') {
-					ch = in.read();
+				if (commentConsumer != null) {
+					StringBuilder b = new StringBuilder();
+					while (ch >= 0 && ch != '\r' && ch != '\n') {
+						b.append((char) ch);
+						ch = in.read();
+					}
+					commentConsumer.accept(b.substring(1));
+				} else {
+					while (ch >= 0 && ch != '\r' && ch != '\n') {
+						ch = in.read();
+					}
 				}
 			} else if (ch == '$') {
 				StringBuilder b = new StringBuilder();
