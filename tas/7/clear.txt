@@ -10,7 +10,7 @@ $enter $7-3 $win
 Nn 1
 
 R 5 J 13 j 1 J 12 j 1 4 r
-$enter $7-4$win
+$enter $7-4 $win
 
 R 8 3 JjJ 1 j 5 5 r
 $enter $7-6 $win

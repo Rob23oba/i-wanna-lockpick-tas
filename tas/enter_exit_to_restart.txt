@@ -1,0 +1,4 @@
+$enter
+25
+$exit_to_restart
+# Jj 50 Jj 50 Jj 50 Jj 50

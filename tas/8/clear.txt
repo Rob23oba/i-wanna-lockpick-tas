@@ -1,5 +1,5 @@
 R 13 r 12
-$enter $8-1$win 
+$enter $8-1 $win
 
 R 18 r
 $enter $8-2 $win

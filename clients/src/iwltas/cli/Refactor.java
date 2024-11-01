@@ -12,10 +12,18 @@ public class Refactor {
 		File file1 = null;
 		File file2 = null;
 		String action = null;
+		boolean renameOnly = false;
+		boolean changeOnly = false;
 		loop: for (int i = 0; i < args.length; i++) {
 			switch (args[i]) {
 			case "--help":
 				showHelp();
+				break;
+			case "--only-rename":
+				renameOnly = true;
+				break;
+			case "--only-change":
+				changeOnly = true;
 				break;
 			case "--create":
 			case "--inverted-apply":
@@ -92,7 +100,7 @@ public class Refactor {
 				System.exit(1);
 			}
 			try {
-				refactor(file1, refactor);
+				refactor(file1, refactor, renameOnly, changeOnly);
 			} catch (RuntimeException ex) {
 				if (ex.getClass() == RuntimeException.class) {
 					System.exit(1);
@@ -114,6 +122,8 @@ public class Refactor {
 		 --create:          Create a refactoring file
 		 --inverted-apply:  Apply a refactoring file backwards
 		 --apply:           Apply a refactoring file (default)
+		 --only-rename:     Only rename the files, don't change their content
+		 --only-change:     Only change the content of the files, don't rename them
 		""");
 		System.exit(1);
 	}
@@ -183,11 +193,20 @@ public class Refactor {
 		}
 	}
 
-	public static void refactor(File dir, RefactorFile refactor) throws IOException {
+	public static void refactor(File dir, RefactorFile refactor, boolean renameOnly, boolean changeOnly) throws IOException {
 		// Load all TASes into memory
+		Map<String, byte[]> originalTases = new HashMap<>();
 		Map<String, byte[]> allTases = new HashMap<>();
-		recurseLoadRefactoredTASes(dir, "", refactor.map(), allTases, (name, source) -> {
+		recurseLoadRefactoredTASes(dir, "", refactor.map(), originalTases, allTases, (name, source) -> {
 			// Safety procaution
+			if (changeOnly && source == null) {
+				// file names are not important for --only-change mode
+				return;
+			}
+			if (renameOnly && source != null) {
+				// file content is not important for --only-rename mode
+				return;
+			}
 			if (refactor.map().containsKey(name)) {
 				return;
 			}
@@ -208,16 +227,21 @@ public class Refactor {
 		});
 		// Now it *should* be safe to delete and recreate all necessary files
 		// However, this does not check for illegal file names
-		for (String s : allTases.keySet()) {
-			if (!refactor.inverse().containsKey(s)) {
-				new File(dir, s + ".txt").delete();
+		if (!changeOnly) {
+			for (String s : allTases.keySet()) {
+				if (!refactor.inverse().containsKey(s)) {
+					new File(dir, s + ".txt").delete();
+				}
 			}
 		}
-		for (Map.Entry<String, byte[]> entry : allTases.entrySet()) {
+		Map<String, byte[]> map = renameOnly ? originalTases : allTases;
+		for (Map.Entry<String, byte[]> entry : map.entrySet()) {
 			String name = entry.getKey();
-			String refactored = refactor.map().get(name);
-			if (refactored != null) {
-				name = refactored;
+			if (!changeOnly) {
+				String refactored = refactor.map().get(name);
+				if (refactored != null) {
+					name = refactored;
+				}
 			}
 			System.out.println("Refactoring " + entry.getKey() + " -> " + name + "...");
 			File f = new File(dir, name + ".txt");
@@ -229,56 +253,67 @@ public class Refactor {
 	}
 
 	// nameConsumer.accept(name, where)
-	public static void recurseLoadRefactoredTASes(File dir, String path, Map<String, String> refactor, Map<String, byte[]> into, BiConsumer<String, String> nameConsumer) throws IOException {
+	public static void recurseLoadRefactoredTASes(File dir, String path, Map<String, String> refactor, Map<String, byte[]> originalInto, Map<String, byte[]> into, BiConsumer<String, String> nameConsumer) throws IOException {
 		for (String s : dir.list()) {
 			File f = new File(dir, s);
 			if (f.isDirectory()) {
-				recurseLoadRefactoredTASes(f, path + s + "/", refactor, into, nameConsumer);
+				recurseLoadRefactoredTASes(f, path + s + "/", refactor, originalInto, into, nameConsumer);
 			} else if (s.endsWith(".txt")) {
 				String name = path + s.substring(0, s.length() - 4);
 				nameConsumer.accept(name, null);
-				byte[] b = loadRefactoredTAS(f, refactor, x -> nameConsumer.accept(x, name));
+
+				byte[] original;
+				try (FileInputStream fin = new FileInputStream(f)) {
+					original = fin.readAllBytes();
+				}
+				originalInto.put(name, original);
+
+				byte[] b = loadRefactoredTAS(original, refactor, x -> nameConsumer.accept(x, name));
 				into.put(name, b);
 			}
 		}
 	}
 
-	public static byte[] loadRefactoredTAS(File f, Map<String, String> refactor, Consumer<String> consumer) throws IOException {
+	public static byte[] loadRefactoredTAS(byte[] bs, Map<String, String> refactor, Consumer<String> consumer) {
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
-		ByteArrayOutputStream nameOut = new ByteArrayOutputStream();
-		try (BufferedInputStream in = new BufferedInputStream(new FileInputStream(f))) {
-			int b = in.read();
-			while (b >= 0) {
-				if (b == '#') {
-					// skip
-					do {
-						bout.write(b);
-						b = in.read();
-					} while (b >= 0 && b != '\r' && b != '\n');
-					continue;
-				}
-				if (b == '$') {
-					bout.write(b);
 
-					// read
-					while (!TASReader.isStopCharacter(b = in.read())) {
-						nameOut.write(b);
-					}
-					String name = nameOut.toString(StandardCharsets.UTF_8);
-					consumer.accept(name);
-					String refactored = refactor.get(name);
-					if (refactored == null) {
-						nameOut.writeTo(bout);
-					} else {
-						bout.writeBytes(refactored.getBytes(StandardCharsets.UTF_8));
-					}
-					nameOut.reset();
-					continue;
-				}
-				bout.write(b); // just copy anything else
-				b = in.read();
+		int i = 0;
+		int len = bs.length;
+		int identicalStart = 0;
+		while (i < len) {
+			int b = bs[i] & 0xFF;
+			if (b == '#') {
+				// skip
+				do {
+					i++;
+				} while (i < len && (b = bs[i] & 0xFF) != '\r' && b != '\n');
+				continue;
 			}
+			if (b == '$') {
+				int startIndex = i + 1;
+				do {
+					i++;
+				} while (i < len && !TASReader.isStopCharacter(bs[i]));
+
+				String name = new String(bs, startIndex, i - startIndex, StandardCharsets.UTF_8);
+				consumer.accept(name);
+				String refactored = refactor.get(name);
+				if (refactored != null && !name.equals(refactored)) {
+					// change!
+					bout.write(bs, identicalStart, startIndex - identicalStart);
+					bout.writeBytes(refactored.getBytes(StandardCharsets.UTF_8));
+					identicalStart = i;
+				}
+				continue;
+			}
+			// ignore
+			i++;
 		}
+		if (identicalStart == 0) {
+			// original file left unchanged
+			return bs;
+		}
+		bout.write(bs, identicalStart, len - identicalStart);
 		return bout.toByteArray();
 	}
 
