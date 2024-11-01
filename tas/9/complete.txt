@@ -1,38 +1,38 @@
 R 7 r 18
-$enter $9-1 $win
+$enter $9/1 $win
 
 R 39 r
-$enter $9-6 $win
+$enter $9/6 $win
 
 R 10 r
-$enter $9-E $win
+$enter $9/E $win
 
 L 19 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 r
-$enter $9-5 $win
+$enter $9/5 $win
 
 R 10 r
-$enter $9-D $win
+$enter $9/D $win
 
 L 19 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 r
-$enter $9-4 $win
+$enter $9/4 $win
 
 R 10 r
-$enter $9-C $win
+$enter $9/C $win
 
 L 19 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 r
-$enter $9-3 $win
+$enter $9/3 $win
 
 R 10 r
-$enter $9-B $win
+$enter $9/B $win
 
 L 19 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 r
-$enter $9-2 $win
+$enter $9/2 $win
 
 R 10 r
-$enter $9-A $win
+$enter $9/A $win
 
 R 10 r
-$enter $9-F $win
+$enter $9/F $win
 
 Nn 1
 $enter_world

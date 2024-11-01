@@ -2,12 +2,12 @@ Jj 1
 
 # #51
 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 DdJj 1
-$s_white
+$recolor/white
 Zz 1
 
 # #52
 DdJj 1
-Dd $s_white
+Dd $recolor/white
 Zz 1
 
 Zz 1

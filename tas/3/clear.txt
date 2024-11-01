@@ -1,25 +1,25 @@
 R 3 J 9 jJ 2 j 1 4 r 6
-$enter $3-1 $win
+$enter $3/1 $win
 
 R 8 JjJ 1 j 8 r
-$enter $3-2 $win
+$enter $3/2 $win
 
 R 8 JjJ 1 j 8 r
-$enter $3-3 $win
+$enter $3/3 $win
 
 R 8 JjJ 1 j 8 r
-$enter $3-4 $win
+$enter $3/4 $win
 
 (J 13 j 1 J 12 j 1 Jj) R 13 rL 14 2 l
-$enter $3-A $win
+$enter $3/A $win
 
 Nn 1
 
 R 19 r
-$enter $3-5 $win
+$enter $3/5 $win
 
 R 13 r
-$enter $3-6 $win
+$enter $3/6 $win
 
 Nn 1
 $enter_world

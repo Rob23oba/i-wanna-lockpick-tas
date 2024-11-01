@@ -1,5 +1,5 @@
 $skip_intro
 
-$main_hub_clear
-$main_hub_r_start_to_finale
+$main_hub/clear
+$main_hub/r_start_to_finale
 $enter $finale $win

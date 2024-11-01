@@ -1,8 +1,8 @@
-$omegakey_orange
-$omegakey_purple
-$omegakey_pink_complete
-$omegakey_cyan
-$omegakey_brown_complete
-$omegakey_black_complete
-$omegakey_blue
-$omegakey_red,green
+$omegakey/orange
+$omegakey/purple
+$omegakey/pink_complete
+$omegakey/cyan
+$omegakey/brown_complete
+$omegakey/black_complete
+$omegakey/blue
+$omegakey/red,green

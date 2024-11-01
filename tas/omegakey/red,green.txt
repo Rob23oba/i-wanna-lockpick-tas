@@ -1,19 +1,19 @@
 # red, green
 
-$chapter_4_s_22_1stone_from_T4-5c
+$T4/s_22_1stone_from_T4-5c
 $salvage_to_warp
 
-$warp_chapter_4_to_chapter_ex
+$warp/T4_to_EX
 $enter_panel_chapter_ex
-$s_22,24
+$recolor/22,24
 $exit_panel_to_warp
 
-$warp_chapter_ex_to_chapter_4
-$chapter_4_o_red $skip_item
+$warp/EX_to_T4
+$T4/o_red $skip_item
 
 Nn 1
-$chapter_4_r_start_to_T4-2c
-$enter $T4-2_o_green $skip_item
+$T4/r_start_to_2c
+$enter $T4/2_o_green $skip_item
 $exit_to_warp
 
-$warp_chapter_4_to_main_hub
+$warp/T4_to_main_hub

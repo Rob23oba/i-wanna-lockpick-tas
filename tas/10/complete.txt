@@ -1,43 +1,43 @@
 RJ 9 jJ 2 j 1 2 r 11
-$enter $10-1 $win
+$enter $10/1 $win
 
 R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 3 l
-$enter $10-2 $win
+$enter $10/2 $win
 
 R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 3 l
-$enter $10-3 $win
+$enter $10/3 $win
 
 Nn 1
 
 R 26 J 9 jJ 2 j 1 3 r
-$enter $10-4 $win
+$enter $10/4 $win
 
 R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 3 l
-$enter $10-5 $win
+$enter $10/5 $win
 
 R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 3 l
-$enter $10-6 $win
+$enter $10/6 $win
 
 R 37 JjJ 1 j 7 r
-$enter $10-7 $win
+$enter $10/7 $win
 
 R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 3 l
-$enter $10-8 $win
+$enter $10/8 $win
 
 R 5 3 JjJ 1 j 5 6 4 JjJ 1 j 3 3 r
-$enter $10-10 $win
+$enter $10/10 $win
 
 L 6 4 JjJ 1 j 3 1 J 9 j 1 J 6 jJ 1 j 1 3 l
-$enter $10-9 $win
+$enter $10/9 $win
 
 (J 13 j 1 J 12 j 1 Jj) L 13 lR 14 2 r
-$enter $10-A $win
+$enter $10/A $win
 
 R 10 r
-$enter $10-B $win
+$enter $10/B $win
 
 R 10 r
-$enter $10-C $win
+$enter $10/C $win
 
 Nn 1
 $enter_world

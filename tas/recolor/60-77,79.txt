@@ -3,116 +3,116 @@ Jj 1
 
 # #79
 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 UuJj 1
-$s_pure
+$recolor/pure
 Zz 1
 
 # #77
 Uu 1 UuJj 1
-$s_pure
-Dd $s_purple
-Dd $s_pink
-Dd $s_cyan
-Dd $s_brown
+$recolor/pure
+Dd $recolor/purple
+Dd $recolor/pink
+Dd $recolor/cyan
+Dd $recolor/brown
 Zz 1
 
 # #76
 UuJj 1
-$s_cyan
-Dd $s_white
-Dd $s_purple
-Dd $s_brown
-Dd $s_stone
+$recolor/cyan
+Dd $recolor/white
+Dd $recolor/purple
+Dd $recolor/brown
+Dd $recolor/stone
 Zz 1
 
 # #75
 UuJj 1
-$s_red
-Dd $s_white
-Dd $s_white
+$recolor/red
+Dd $recolor/white
+Dd $recolor/white
 Zz 1
 
 # #74
 UuJj 1
-$s_orange
-Dd $s_blue
-Dd $s_stone
-Dd $s_stone
-Dd $s_stone
+$recolor/orange
+Dd $recolor/blue
+Dd $recolor/stone
+Dd $recolor/stone
+Dd $recolor/stone
 Zz 1
 
 # #73
 UuJj 1
-$s_stone
-Dd $s_cyan
-Dd $s_blue
+$recolor/stone
+Dd $recolor/cyan
+Dd $recolor/blue
 Zz 1
 
 # #72
 UuJj 1
-Dd $s_stone
+Dd $recolor/stone
 Zz 1
 
 # #71
 UuJj 1
-$s_blue
-Dd $s_red
-Dd $s_red
-Dd $s_red
+$recolor/blue
+Dd $recolor/red
+Dd $recolor/red
+Dd $recolor/red
 Zz 1
 
 # #70
 UuJj 1
-$s_white
-Dd $s_orange
-Dd $s_black
+$recolor/white
+Dd $recolor/orange
+Dd $recolor/black
 Zz 1
 
 # #69
 UuJj 1
-$s_brown
-Dd $s_white
-Dd $s_white
-Dd $s_orange
-Dd $s_red
+$recolor/brown
+Dd $recolor/white
+Dd $recolor/white
+Dd $recolor/orange
+Dd $recolor/red
 Zz 1
 
 # #68
 UuJj 1
-$s_pink
-Dd $s_purple
-Dd $s_purple
-Dd $s_stone
+$recolor/pink
+Dd $recolor/purple
+Dd $recolor/purple
+Dd $recolor/stone
 Zz 1
 
 # #67
 UuJj 1
-Dd $s_red
-Dd $s_red
+Dd $recolor/red
+Dd $recolor/red
 Zz 1
 
 # #66
 UuJj 1
-$s_master
-Dd $s_white
-Dd $s_pink
-Dd $s_black
-Dd $s_black
+$recolor/master
+Dd $recolor/white
+Dd $recolor/pink
+Dd $recolor/black
+Dd $recolor/black
 Zz 1
 
 # #65
 UuJj 1
-$s_black
-Dd $s_white
-Dd $s_purple
-Dd $s_stone
-Dd $s_stone
+$recolor/black
+Dd $recolor/white
+Dd $recolor/purple
+Dd $recolor/stone
+Dd $recolor/stone
 Zz 1
 
 # #64
 UuJj 1
-$s_purple
-Dd $s_white
-Dd $s_orange
+$recolor/purple
+Dd $recolor/white
+Dd $recolor/orange
 Zz 1
 
 # exit omega keys section

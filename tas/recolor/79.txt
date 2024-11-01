@@ -2,7 +2,7 @@ Jj 1
 
 # #79
 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 UuJj 1
-$s_pure
+$recolor/pure
 Zz 1
 
 Zz 1

@@ -1,49 +1,49 @@
 R 13 r 12
-$enter $12-2 $win
+$enter $12/2 $win
 
 R 13 r
-$enter $12-4 $win
+$enter $12/4 $win
 
 R 9 rL 23 l
-$enter $12-6 $win
+$enter $12/6 $win
 
 L 13 l
-$enter $12-8 $win
+$enter $12/8 $win
 
 R 26 r
-$enter $12-B $win
+$enter $12/B $win
 
 Nn 1
 
 L 13 l
-$enter $12-1 $win
+$enter $12/1 $win
 
 L 13 l
-$enter $12-3 $win
+$enter $12/3 $win
 
 L 10 lR 23 r
-$enter $12-5 $win
+$enter $12/5 $win
 
 R 13 r
-$enter $12-7 $win
+$enter $12/7 $win
 
 L 27 l
-$enter $12-A $win
+$enter $12/A $win
 
 R 38 rL 29 l
-$enter $12-9 $win
+$enter $12/9 $win
 
 R 18 r
-$enter $12-10 $win
+$enter $12/10 $win
 
 R 18 r
-$enter $12-11 $win
+$enter $12/11 $win
 
 R 14 rL 29 l
-$enter $12-D $win
+$enter $12/D $win
 
 L 40 l
-$enter $12-C $win
+$enter $12/C $win
 
 Nn 1
 $enter_world

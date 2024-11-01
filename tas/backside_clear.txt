@@ -2,25 +2,25 @@ L 38 J 6 j 1 J 6 j 1 J 15 j 1 81 l
 $enter_world
 
 L 80 l
-$enter_world $world_7_clear
+$enter_world $7/clear
 
 R 80 r
-$enter_world $world_8_clear
+$enter_world $8/clear
 
 L 22 J 6 j 1 J 2 j 9
 J 9 j 1 J 6 jJ 1 j 38 l
-$enter_world $world_9_clear
+$enter_world $9/clear
 
 R 21 J 7 j 1 J 1 j 10
 J 9 j 1 J 6 jJ 1 j 38 r
-$enter_world $world_10_clear
+$enter_world $10/clear
 
 L 22 J 6 j 1 J 2 j 9
 J 9 j 1 J 6 j 1
 (J 13 j 1 J 12 j 1 Jj 1) l 13 R 15
 16 J 3 j 2 Jj 1 Jj 1
 1 J 3 j 1 Jj 2 Jj 1 3 r
-$enter_world $world_11_clear
+$enter_world $11/clear
 
 L 19 (J 13 j 1 J 12 j 1) 13 lR 14
 J 3 j 2 JjJ 1 jJ 1 j 1 13 r

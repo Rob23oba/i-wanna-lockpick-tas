@@ -1,18 +1,18 @@
 # black, EX-3 salvage
 
-$warp_chapter_2_to_chapter_ex
-$chapter_ex_r_start_to_EX-2
-$enter $EX-2 $win
+$warp/T2_to_EX
+$EX/r_start_to_2
+$enter $EX/2 $win
 
 Nn 1
 $enter_panel_chapter_ex
-$s_3
+$recolor/3
 $exit_panel_to_move
 
-$chapter_ex_r_panel_to_EX-3
-$enter $EX-3_s_46 $salvage
-$enter $EX-3_s_47 $salvage_to_warp
+$EX/r_panel_to_3
+$enter $EX/3_s_46 $salvage
+$enter $EX/3_s_47 $salvage_to_warp
 
-$warp_chapter_ex_to_chapter_1
-$chapter_1_o_black
+$warp/EX_to_T1
+$T1/o_black
 $skip_item

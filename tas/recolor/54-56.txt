@@ -2,20 +2,20 @@ Jj 1
 
 # #54
 Rr 1 Rr 1 Rr 1 Rr 1 Rr 1 Dd 1 Dd 1 Dd 1 DdJj 1
-$s_master
-Dd $s_stone
+$recolor/master
+Dd $recolor/stone
 Zz 1
 
 # #55
 DdJj 1
-$s_brown
-Dd $s_master
+$recolor/brown
+Dd $recolor/master
 Zz 1
 
 # #56
 DdJj 1
-$s_brown
-Dd $s_stone
+$recolor/brown
+Dd $recolor/stone
 Zz 1
 
 Zz 1

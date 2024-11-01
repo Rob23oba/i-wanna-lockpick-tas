@@ -1,28 +1,28 @@
 $skip_intro
 
-$main_hub_clear
+$main_hub/clear
 
 $backside_clear
 
-$great_beyond_clear
+$great_beyond/clear
 
-$chapter_1_clear
-$chapter_2_clear
-$chapter_3_clear
-$chapter_4_clear
+$T1/clear
+$T2/clear
+$T3/clear
+$T4/clear
 
 L 15 J 3 j 2 Jj 1 Jj 1 5 l
 $enter_world
-$world_0
+$0/complete
 
-$omegakeyrush_masterpiece
-$kina_heart
+$omegakey/rush_masterpiece
+$main_hub/kina_heart
 
 L 5 l 20
 $enter_world
-$world_12_clear
+$12/clear
 
-$chapter_ex
-$epilogue_masterpiece
+$EX/complete
+$epilogue/for_masterpiece
 
-$world_omega_masterpiece
+$omega/for_masterpiece

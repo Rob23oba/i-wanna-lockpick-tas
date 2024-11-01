@@ -1,8 +1,8 @@
 $skip_intro
 
-$main_hub_clear
+$main_hub/clear
 
 $backside_clear
 
-$great_beyond_r_start_to_graduation
+$great_beyond/r_start_to_graduation
 $enter $graduation $win

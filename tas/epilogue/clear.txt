@@ -1,21 +1,21 @@
 # obtain Omega Key (Pure)
-$epilogue_o_pure
+$epilogue/o_pure
 $skip_item
 
 # epilogue salvaging
 Nn 1
-$epilogue_s_60-77
+$epilogue/s_60-77
 
 # go to Chapter EX to modify color of salvaged doors
-$warp_epilogue_to_chapter_ex
+$warp/epilogue_to_EX
 $enter_panel_chapter_ex
-$s_60-77
+$recolor/60-77
 $exit_panel_to_warp
 
 # clear Epilogue (i.e. salvage #78)
-$warp_chapter_ex_to_epilogue
-$epilogue_s_78
+$warp/EX_to_epilogue
+$epilogue/s_78
 $salvage_to_warp
 
 # go to Chapter EX
-$warp_epilogue_to_world_omega
+$warp/epilogue_to_omega

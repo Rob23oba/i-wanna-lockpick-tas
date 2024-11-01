@@ -1,5 +1,5 @@
 # cyan
 
-$warp_chapter_3_to_chapter_1
-$chapter_1_o_cyan
+$warp/T3_to_T1
+$T1/o_cyan
 $skip_item

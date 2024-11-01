@@ -2,13 +2,13 @@ Jj 1
 
 # #50
 Rr 1 Rr 1 Rr 1 Rr 1 RrJj 1
-$s_blue
-Dd $s_red
+$recolor/blue
+Dd $recolor/red
 Zz 1
 
 # #48
 Uu 1 UuJj 1
-$s_red
+$recolor/red
 Zz 1
 
 Zz 1

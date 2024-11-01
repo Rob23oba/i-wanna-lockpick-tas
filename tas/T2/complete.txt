@@ -1,54 +1,54 @@
 R 29 r
-$enter $T2-1 $win
-$enter $T2-1_s_5_blankcyan $salvage
+$enter $T2/1 $win
+$enter $T2/1_s_5_blankcyan $salvage
 
-$chapter_2_r_T2-1_to_T2-2
-$enter $T2-2 $win
+$T2/r_1_to_2
+$enter $T2/2 $win
 
 Nn 1
 
 R 29 r
-$enter $T2-1_s_5_4pure $salvage
+$enter $T2/1_s_5_4pure $salvage
 
-$chapter_2_r_T2-1_to_T2-3
-$enter $T2-3 $win
-$enter $T2-3_s_6_3blue $salvage
+$T2/r_1_to_3
+$enter $T2/3 $win
+$enter $T2/3_s_6_3blue $salvage
 
-$chapter_2_r_T2-3_to_T2-4
-$enter $T2-4 $win
-
-Nn 1
-
-$chapter_2_r_start_to_T2-5
-$enter $T2-5 $win
-$enter $T2-5_s_7 $salvage
-$enter $T2-5_s_8_-6black $salvage
+$T2/r_3_to_4
+$enter $T2/4 $win
 
 Nn 1
 
-$chapter_2_r_start_to_T2-6
-$enter $T2-6 $win
+$T2/r_start_to_5
+$enter $T2/5 $win
+$enter $T2/5_s_7 $salvage
+$enter $T2/5_s_8_-6black $salvage
 
 Nn 1
 
-$chapter_2_r_start_to_T2-7
-$enter $T2-7 $win
-$enter $T2-7_s_10_comboblack $salvage
+$T2/r_start_to_6
+$enter $T2/6 $win
 
-$chapter_2_o_white_from_T2-7
+Nn 1
+
+$T2/r_start_to_7
+$enter $T2/7 $win
+$enter $T2/7_s_10_comboblack $salvage
+
+$T2/o_white_from_T2-7
 $skip_item
 
 Nn 1
 
 L 23 l 9 L 17 l
-$enter $T2-7_s_9 $salvage
-$enter $T2-7_s_10_combogreen $salvage
-$enter $T2-7_s_11 $salvage
+$enter $T2/7_s_9 $salvage
+$enter $T2/7_s_10_combogreen $salvage
+$enter $T2/7_s_11 $salvage
 
 Nn 1
 
 R 29 r
-$enter $T2-1_s_5_1orangepure $salvage
+$enter $T2/1_s_5_1orangepure $salvage
 
-$chapter_2_r_T2-1_to_chapter_3
+$T2/r_1_to_T3
 $enter_world

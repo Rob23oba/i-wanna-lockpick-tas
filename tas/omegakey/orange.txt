@@ -1,15 +1,15 @@
 # orange, #28
 
 $enter_panel_lab
-$s_3,24
-$perk_1
+$recolor/3,24
+$perk/1
 $exit_panel_to_warp
 
-$warp_lab_to_chapter_1
-$chapter_1_o_orange_s_28
+$warp/lab_to_T1
+$T1/o_orange_s_28
 $salvage
 
 L 64 l
 $enter
-$T1-3_s_2_-veblast
+$T1/3_s_2_-veblast
 $salvage_to_warp

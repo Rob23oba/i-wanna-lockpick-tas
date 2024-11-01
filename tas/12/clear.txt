@@ -1,31 +1,31 @@
 L 13 l 12
-$enter $12-1 $win
+$enter $12/1 $win
 
 Nn 1
 
 R 13 r
-$enter $12-2 $win
+$enter $12/2 $win
 
 R 13 r
-$enter $12-4 $win
+$enter $12/4 $win
 
 R 9 rL 23 l
-$enter $12-6 $win
+$enter $12/6 $win
 
 L 13 l
-$enter $12-8 $win
+$enter $12/8 $win
 
 R 26 r
-$enter $12-B $win
+$enter $12/B $win
 
 L 46 l 10
-$enter $12-10 $win
+$enter $12/10 $win
 
 L 19 l
-$enter $12-9 $win
+$enter $12/9 $win
 
 L 15 lR 29 r
-$enter $12-C $win
+$enter $12/C $win
 
 Nn 1
 $enter_world

@@ -4,37 +4,37 @@ $skip_pda_warp_rod
 Nn 1
 
 R 29 r
-$enter $T1-1 $win
-$enter $T1-1_s_1 $salvage
+$enter $T1/1 $win
+$enter $T1/1_s_1 $salvage
 
-$chapter_1_r_T1-1_to_T1-2
-$enter $T1-2 $win
+$T1/r_1_to_2
+$enter $T1/2 $win
 
 Nn 1
 
-$chapter_1_r_start_to_T1-3
-$enter $T1-3 $win
-$enter $T1-3_s_2_blank $salvage
+$T1/r_start_to_3
+$enter $T1/3 $win
+$enter $T1/3_s_2_blank $salvage
 
-$chapter_1_r_T1-3_to_T1-4
-$enter $T1-4 $win
+$T1/r_3_to_4
+$enter $T1/4 $win
 
 L 31 J 3 j 2 Jj 1 Jj 1 5 l
-$enter $T1-3_s_2_+veblast $salvage
+$enter $T1/3_s_2_+veblast $salvage
 
 L 40 lR 54
 (J 13 j 1 J 12 j) 16 rL 10 8 l
-$enter $T1-5 $win
-$enter $T1-5_s_3 $salvage
+$enter $T1/5 $win
+$enter $T1/5_s_3 $salvage
 
-$chapter_1_r_T1-5_to_T1-6
-$enter $T1-6 $win
+$T1/r_5_to_6
+$enter $T1/6 $win
 
 Nn 1
 
-$chapter_1_r_start_to_T1-7
-$enter $T1-7_s_4 $salvage
+$T1/r_start_to_7
+$enter $T1/7_s_4 $salvage
 
 
-$chapter_1_r_T1-7_to_chapter_2
+$T1/r_7_to_T2
 $enter_world

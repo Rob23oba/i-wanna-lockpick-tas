@@ -1,49 +1,49 @@
 (J 11 j 1 J 4 j 1 J 1 j) 8 L 10 3 l 4
-$enter $7-1 $win
+$enter $7/1 $win
 
 (J 11 j 1 J 4 j 1 J 1 j) L 8 lR 10 3 r
-$enter $7-2 $win
+$enter $7/2 $win
 
 (J 11 j 1 J 4 j 1 J 1 j) R 8 rL 10 3 l
-$enter $7-3 $win
+$enter $7/3 $win
 
 Nn 1
 
 R 5 J 13 j 1 J 12 j 1 4 r
-$enter $7-4 $win
+$enter $7/4 $win
 
 R 8 3 JjJ 1 j 5 5 r
-$enter $7-6 $win
+$enter $7/6 $win
 
 L 11 l 20
-$enter $7-A $win
+$enter $7/A $win
 
 R 13 r
-$enter $7-B $win
+$enter $7/B $win
 
 L 4 J 13 j 1 J 12 j 1 (J 9 j 1 J 6 jJ 1 j) lR 8 rL 9 5 l
-$enter $7-5 $win
+$enter $7/5 $win
 
 R 8 3 JjJ 1 j 5 5 r
-$enter $7-7 $win
+$enter $7/7 $win
 
 J 9 Lj 1 J 6 jJ 1 j 5 l
-$enter $7-C $win
+$enter $7/C $win
 
 R 8 3 JjJ 1 j 5 5 r
-$enter $7-D $win
+$enter $7/D $win
 
 L 10 lR 24 4 JjJ 1 j 3 6 r
-$enter $7-9 $win
+$enter $7/9 $win
 
 RJ 9 j 1 J 6 jJ 1 j 5 r
-$enter $7-10 $win
+$enter $7/10 $win
 
 L 10 lR 18 r 7 L 9 l
-$enter $7-8 $win
+$enter $7/8 $win
 
 R 14 r 21
-$enter $7-E $win
+$enter $7/E $win
 
 Nn 1
 $enter_world

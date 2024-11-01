@@ -1,20 +1,20 @@
 # brown, EX-1&EX-A clear, EX-2 salvage&clear, #29
 
-$warp_chapter_1_to_chapter_ex
-$chapter_ex_r_start_to_EX-1
-$enter $EX-1 $win
-$chapter_ex_r_EX-1_to_EX-A
-$enter $EX-A $win
-$chapter_ex_r_EX-A_to_EX-2
-$enter $EX-2_s_43 $salvage
-$enter $EX-2_s_44 $salvage
-$enter $EX-2_s_45 $salvage
+$warp/T1_to_EX
+$EX/r_start_to_1
+$enter $EX/1 $win
+$EX/r_1_to_A
+$enter $EX/A $win
+$EX/r_A_to_2
+$enter $EX/2_s_43 $salvage
+$enter $EX/2_s_44 $salvage
+$enter $EX/2_s_45 $salvage
 
 Nn 1
 $enter_panel_chapter_ex
-$s_7,8,43-45
+$recolor/7,8,43-45
 $exit_panel_to_warp
 
-$warp_chapter_ex_to_chapter_2
-$chapter_2_s_29 $salvage
-$chapter_2_o_brown $skip_item
+$warp/EX_to_T2
+$T2/s_29 $salvage
+$T2/o_brown $skip_item

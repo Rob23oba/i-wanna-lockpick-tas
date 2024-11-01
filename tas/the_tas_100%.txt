@@ -1,7 +1,7 @@
 $skip_intro
 
-$main_hub_complete
-$main_hub_r_start_to_finale
+$main_hub/complete
+$main_hub/r_start_to_finale
 $enter $finale $win
 $skip_finale_ending
 
@@ -12,31 +12,31 @@ $enter_world
 
 $backside_complete
 
-$great_beyond_r_start_to_graduation
+$great_beyond/r_start_to_graduation
 $enter $graduation $win
 Nn 1
-$great_beyond_complete
+$great_beyond/complete
 
-$chapter_1_complete
-$chapter_2_complete
-$chapter_3_complete
-$chapter_4_complete
+$T1/complete
+$T2/complete
+$T3/complete
+$T4/complete
 
 L 15 J 3 j 2 Jj 1 Jj 1 5 l
 $enter_world
-$world_0
+$0/complete
 
-$omegakeyrush_complete
-$kina_heart
+$omegakey/rush_complete
+$main_hub/kina_heart
 
 L 5 l 20
 $enter_world
-$world_12_complete
+$12/complete
 
-$chapter_ex
-$epilogue_complete
+$EX/complete
+$epilogue/complete
 
-$world_omega_complete
+$omega/complete
 
-$chapter_ex_r_start_to_star_view_complete
+$EX/r_start_to_star_view_complete
 $star_view

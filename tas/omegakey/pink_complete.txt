@@ -1,47 +1,47 @@
 # pink, T3-7, EX-1&EX-A salvage, #30
 
-$warp_chapter_2_to_chapter_3
-$chapter_3_r_start_to_T3-7
-$enter $T3-7 $win
-$enter $T3-7_s_32_No4 $salvage
-$enter $T3-7_s_33 $salvage_to_warp
+$warp/T2_to_T3
+$T3/r_start_to_7
+$enter $T3/7 $win
+$enter $T3/7_s_32_No4 $salvage
+$enter $T3/7_s_33 $salvage_to_warp
 
-$warp_chapter_3_to_lab
+$warp/T3_to_lab
 $enter_panel_lab
-$s_12,32
-$perk_3
+$recolor/12,32
+$perk/3
 $exit_panel_to_warp
 
-$warp_lab_to_chapter_3
-$chapter_3_r_start_to_T3-7
-$enter $T3-7_s_34 $salvage
-$enter $T3-7_s_32_No5 $salvage
+$warp/lab_to_T3
+$T3/r_start_to_7
+$enter $T3/7_s_34 $salvage
+$enter $T3/7_s_32_No5 $salvage
 
 Nn 1
 L 32 l
-$enter $T3-1_o_pink $skip_item
+$enter $T3/1_o_pink $skip_item
 $exit_to_warp
 
-$warp_chapter_3_to_focal_point
+$warp/T3_to_focal_point
 R 5 r 20
 $enter_world
 
-$chapter_ex_r_start_to_EX-1
-$enter $EX-1_s_35 $salvage
-$enter $EX-1_s_36 $salvage
-$enter $EX-1_s_37 $salvage
-$enter $EX-1_s_38 $salvage
-$enter $EX-1_s_39 $salvage
-$chapter_ex_r_EX-1_to_EX-A
-$enter $EX-A_s_40 $salvage
-$enter $EX-A_s_41 $salvage
-$enter $EX-A_s_42 $salvage
+$EX/r_start_to_1
+$enter $EX/1_s_35 $salvage
+$enter $EX/1_s_36 $salvage
+$enter $EX/1_s_37 $salvage
+$enter $EX/1_s_38 $salvage
+$enter $EX/1_s_39 $salvage
+$EX/r_1_to_A
+$enter $EX/A_s_40 $salvage
+$enter $EX/A_s_41 $salvage
+$enter $EX/A_s_42 $salvage
 
 Nn 1
 $enter_panel_chapter_ex
-$s_1,2,32-42
+$recolor/1,2,32-42
 $exit_panel_to_warp
 
-$warp_chapter_ex_to_chapter_3
-$chapter_3_s_30
+$warp/EX_to_T3
+$T3/s_30
 $salvage_to_warp
