@@ -2,5 +2,6 @@ $skip_intro
 
 $main_hub/clear
 $main_hub/r_start_to_somewhere
+$enter_world
 $somewhere/r_start_to_finale
 $enter $somewhere/finale $win
