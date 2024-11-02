@@ -3,7 +3,7 @@ Xx 48 r Xx 46 Xx 44 Xx 42 Xx 40 Xx 38 Xx 36 Xx 34 Xx 32
 36 34 31 29 26 24 22 19 17
 
 R 11
-J 6 j 1 J 11 jJ 1 j 1 6
+(J 6 j 1 J 11 j 1) 8 O 2 ro 8 R 1 6
 3 JjJ 1 j 5 5
 Xx 12 r Xx 10 Xx 10 Xx 10 Xx 10 Xx 10 Xx 10 Xx 10
 12 12 12 12 12 12 12 12

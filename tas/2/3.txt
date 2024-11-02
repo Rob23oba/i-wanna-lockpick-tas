@@ -1,24 +1,62 @@
-L 6 J 7 j lR 1 J 9 jJ 1 j 8
-J 1 jJ 2 Lr jJ 1 j 14
-JjJ 1 j 23 Xx 6 lR 12 Lr 22 lR 5
-J 8 Lr 5 j 1 J 12 jJ 1 j 1
-11 lR 5
-J 4 Lr 5 jJ 2 j 3
-10 lR 22 r 6 L 24 lR 23 Lr 33 lR 16
-J 4 Lr 5 jJ 2 j 3
-31 lR 33 Lr 44 lR 27
-J 4 Lr 5 jJ 2 j 3
-59 13 lR
-J 7 jJ 2 j 5
-J 13 j 1 J r 6 R 6 jJ 1 j 2 Lr
-J 7 j 9 J 17 j 9 lR
-J 7 j 8 J 17 j 9
-16 Xx 6 Lr 33 l 27 R 63 Lr 54 lR 37
-J 4 Lr 5 jJ 2 j 55
-J 5 l 1 R 7 j 1 J r 6 R 6 jJ 1 j 2 Lr
-J 7 j 9 J 17 j 9 lR
-J 7 j 8 J 17 j 9
-27 Xx 6 Lr 44 l 26 R 50
-#data 2 1241 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 0 0 0 0 0 540 407.41 0 4194304 385 1 0 384 0 0 385 1 0 385 1 0 385 1 0 384 0 0 384 0 0 384 0 0 384 0 0 384 0 0 384 0 0 384 0 0 384 0 0 385 1 0 385 1 0 384 0 0 384 0 0 384 0 0 385 1 0 385 1 0 385 1 0 384 0 0 49 49 48 48 48 48 48 48 48 48 48 49 49 48 49 48 48 48 48
-
-# J 13 j 1 J r 12 jJ 1 j 2 Lr
+L 6
+# jump up
+(J 9 j 1 J 6 jJ 1 j) 6 lR 19
+# pick up master key
+(J 1 j 1 Jj 1 Jj 1 Jj 9) 3 O 1 oLr 14
+# path 3
+(1 Jj 1 Jj 16) 24 Xx 5 O 1 olR 11 Lr
+# path 4
+22 lR 5
+# path 2
+(J 10 j 1) 1 r 8 L 2
+(J 4 j 1 J 5 jJ 1 j) 22 O 1 olR 11
+# path 4
+11 r 7 L 21 O 1 olR 15
+# path 1
+(J 8 j 1 J 1 j 1) 2 r 7 L 2
+(J 4 j 1 J 5 j 1) 11
+(J 4 j 1 J 5 jJ 1 j) 22 O 1 olR 11
+# path 3
+11 r 10 L 30 lR 33 r
+# path 4
+14 L 29 O 1 olR 26
+# path 3
+#(J 9 jJj 2 Jj 1) 1 r 9 L 63
+(J 4 j 1 J 5 jJ 1 j) 1 r 9 L 63
+# pick up master key
+11 l 2 R
+#(J 6 j 4 Jj 2) 12
+# the journey upwards
+1 (J 8 j 1 Jj 1 Jj 1) 11
+(J 4 j 1 J 5 j 1) 10 O 1 oLr
+(J 9 j 1 J 6 j 1) 17
+(J 1 j 1 J 2 j 5) 9
+(J 13 j 1 J 12 j 1) R 28
+17 Xx 5 O 1 oLr 22
+# pick up master key
+10 l 32 R 58 r 12 L 41 O 1 olR 35 1
+(J 4 j 1 J 5 j 1 JjJ 1 j) 2 r 9 L 55
+# the journey upwards
+(J 10 j 1) 1 lR 9 O 1 oLr
+(J 9 j 1 J 6 j 1) 17
+(J 1 j 1 J 2 j 5) 9
+(J 13 j 1 J 12 jJ 1 j) R 28
+27 Xx 5 O 1 oLr 33
+# pick up master key
+9 l 34 R 50
+(J 13 j 1 J 12 j) 1 r 8 L 38 O 1 olR 32 r 11 L 51
+# the journey upwards
+(J 10 j 1) 1 lR 9 O 1 oLr
+(J 9 j 1 J 6 j 1) 17
+(J 1 j 1 J 2 j 5) 9
+(J 13 j 2 J 11 j 2) R 28
+38 Xx 5 O 1 oLr 43
+# pick up master key
+11 l 31 R 51
+(J 4 j 1 J 5 j 1 JjJ 1 j) 1 r 9 L 23 O 1 olR 22 r 13 L 52
+(J 10 j 1) 1 lR 9 O 1 oLr
+(J 9 j 1 J 6 j 1) 17
+(J 1 j 1 J 2 j 5) 9
+(J 13 j 2 J 11 j 2) R 28
+49 Xx 12
+4 J 3 jr

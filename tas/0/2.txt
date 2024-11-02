@@ -2,8 +2,8 @@
 L 44 lR 20 J 2 jJ 2 j 15
 33 10 J 3 jJ 2 j 3
 J 9 j 5 rL 18 JjJ 7 j 7
-33 J 1 jJ 8 j 9
-(J 13 j 1 J 12 j 1 Jj) 5 lR 22
+33 Jj 5 Jj 2 Jj 1 Jj 10
+(J 13 j 1 J 12 j) 5 lR 21
 32 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
 
 # then to bottom-middle white 8-key
@@ -18,7 +18,7 @@ J 13 j 1 J 12 jJj 1
 7 (J 13 j 1 J 12 j 1) 13 lR 14
 J 13 j 1 J 12 j 1 Jj
 20 J 7 j 15
-(J 13 j 1 J 11 jJ 1 j 26) r 20 L 32
+(J 14 j 1 J 9 jJ 1 jJ 1 j 25) r 20 L 31
 42 Jj 6 Jj 14
 34 lR 33
 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
@@ -26,10 +26,10 @@ J 13 j 1 J 12 j 1 Jj
 # then to bottom-right purple 8-key
 7 (J 13 j 1 J 12 j 1) 13 lR 14
 86 (J 7 j 15) 8 r 14
-(J 20 j 1 J 15 j 28) 20 L 13 lR 9 rL 22
+(J 19 j 1 J 15 j 28) 20 L 12 lR 9 rL 22
 
 # then to Goal
 27 (J 13 j 1 J 12 j 1) 13 lR 14
 J 13 j 1 J 12 j 1 Jj
-19 (J 13 j 1 J 12 j 1) 13 rL 14
+19 (J 13 j 1 J 12 j 1) 7 rLO 1 lo 17 L 1
 24 J 1 lj

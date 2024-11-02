@@ -7,11 +7,11 @@ R J 3 j 1 Jj 2 Jj 1
 6 3 JjJ 1 j 5
 
 # open pink door
-23 J 3 j 2 JjJ 1 j 1
-J 9 jJ 2 j 1
-3 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
-2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
-3 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+24 J 4 j 1
+J 4 j 1 J 5 jJ 1 j 1
+2 (J 9 j 1 J 6 jJ 1 j) 8 lR 9
+3 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+3 (J 10 j 1 J 5 j 1 Jj 1) 8 lR 10
 11 J 4 j 10 rL 3
 
 # open purple door
@@ -20,16 +20,16 @@ J 9 jJ 2 j 1
 6 J 7 j
 
 # open orange door
-39 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10
+39 (J 11 j 1 J 4 jJ 2 j) 8 rL 10
 1 J 3 j 1 Jj 2 Jj 1
-(J 16 j 1 J 9 j 1) l 14 R 13
-J 9 jJ 2 j 1 (J 9 jJ 2 j 1 Jj) 2 rL 10
-24 J 9 jJ 2 j 1 Jj 30 lR
+(J 13 j 1 J 12 j 1) l 14 R 13
+J 9 jJj 2 (J 9 jJ 2 j) 2 rL 9
+24 J 6 j 2 J 2 jJ 2 j 30 lR
 
 # open white door & arrive goal
 14 J 15 j 1 J 12 j 1
-6 12 J 4 j 5
-1 J 3 j 2 Jj 1 Jj 1
-7 rL 30 l 9 R 5 r 12 L
-11 J 11 j 1 J 4 j 1 J 1 j
+6 13 Jj 2 Jj 5
+2 J 1 j 1 J 3 jJ 1 j
+7 rL 30 l 9 R 5 r 12 L 7
+4 J 11 j 1 J 4 j 1 J 1 j
 2 J 7 j 1 J 5 lj
