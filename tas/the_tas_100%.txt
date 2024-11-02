@@ -1,8 +1,9 @@
 $skip_intro
 
 $main_hub/complete
-$main_hub/r_start_to_finale
-$enter $finale $win
+$main_hub/r_start_to_somewhere
+$somewhere/r_start_to_finale
+$enter $somewhere/finale $win
 $skip_finale_ending
 
 $skip_title_select_save
@@ -10,10 +11,10 @@ $reenter_game_to_restart
 Nn 1
 $enter_world
 
-$backside_complete
+$backside/complete
 
 $great_beyond/r_start_to_graduation
-$enter $graduation $win
+$enter $great_beyond/graduation $win
 Nn 1
 $great_beyond/complete
 

@@ -2,7 +2,7 @@ $skip_intro
 
 $main_hub/clear
 
-$backside_clear
+$backside/clear
 
 $great_beyond/clear
 
