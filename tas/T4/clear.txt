@@ -83,6 +83,6 @@ Nn 1
 $T4/s_22_blankblack $salvage
 
 $T4/r_start_to_5
-$enter $T4/5_s_27_purple $salvage
+$enter $T4/5_s_27_combopurple $salvage
 
 $skip_warp_error

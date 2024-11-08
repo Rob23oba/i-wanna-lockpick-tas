@@ -22,8 +22,8 @@ $enter $T1/4 $win
 L 31 J 3 j 2 Jj 1 Jj 1 5 l
 $enter $T1/3_s_2_+veblast $salvage
 
-L 40 lR 54
-(J 13 j 1 J 12 j) 16 rL 10 8 l
+L 10 Jj 1 Jj 1 Jj 1 Jj 28 lR
+46 (J 13 j 1 J 12 j) 16 rL 10 8 l
 $enter $T1/5 $win
 $enter $T1/5_s_3 $salvage
 

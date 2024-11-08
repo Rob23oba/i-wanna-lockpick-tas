@@ -1,4 +1,4 @@
-R 9 Lr 20 l
+R 9 rL 20 l
 $enter $5/1 $win
 
 R 9 J 9 jJ 2 j 1 8 r

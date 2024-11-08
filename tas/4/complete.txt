@@ -10,7 +10,7 @@ $enter $4/3 $win
 RJ 9 j 1 J 6 jJ 1 j 16 r
 $enter $4/4 $win
 
-R 20 Lr 20 l
+R 20 rL 20 l
 $enter $4/A $win
 
 R 2 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10 28 J 11 j 1 J 4 j 1 J 1 j 8 l

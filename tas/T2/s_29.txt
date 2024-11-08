@@ -2,14 +2,14 @@
 R 67 rL
 
 # SID#29 to right of combo cyan door
-(J 13 j 1 J 12 j 1) 13 lR 14
-J 3 j 2 Jj 1 Jj 1
-6 J 9 jJ 2 j 1
-22 J 2 jJ 5 j 12
-71 J 3 j 2 Jj 1 Jj 1
+(J 13 j 1 J 12 j) 13 lR 13
+1 J 3 j 1 Jj 2 Jj 1
+5 J 9 jJ 2 j 1
+22 Jj 2 J 1 j 5 Jj 1 Jj 10
+71 J 1 j 1 J 3 jJ 1 j
 
 # pick 50 pink key
-44 r 1 L 9 J 3 j 12 lR
+44 r 1 L 12 Jj 1 Jj 1 Jj 5 lR
 
 # salvage #7
-71 J 3 j 1 Jj 2 Jj 1 6 r
+73 J 3 j 1 Jj 2 Jj 1 6 r

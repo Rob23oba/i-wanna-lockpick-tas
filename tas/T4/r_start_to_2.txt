@@ -1,55 +1,62 @@
 # step 1: pick white 2 key
 R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
 8 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
-19 rL 5 J 9 j 1 J 6 j 2
-(J 9 j 1 J 6 jJ 1 j) 6 lR 11 3 rL
-66 l 3 L 18 lR
-5 J 9 j 1 J 6 jJ 1 j 1
-(J 9 j 1 J 6 jJ 1 j 1) 6 rL 12
+19 rL 5
+J 9 j 1 J 6 j 2
+(J 9 j 1 J 6 jJ 1 j) 6 lR 11
+3 rL 66 l 3 L 18 lR 5
+J 8 j 2 J 7 j 1
+(J 9 j 1 J 6 jJ 1 j) 6 rL 11
 14 (J 13 j 1 J 12 j) 12 l 4 L 10
-44 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12
+44 (J 9 j 1 J 6 jJ 1 j 1) 6 lR 12
 5 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
 
 # step 2: open two allx3 doors, pick brown 1 key
-6 lR 105 rL 21 JjJ 2 j 3 11 lR
-10 (J 5 j 5 J 12 j) 12 rL 10
+6 lR 104 1 rL
+21 Jj 2 Jj 3
+11 lR 10
+(J 5 j 5 J 12 j) 12 rL 10
 14 (J 13 j 1 J 12 j) 12 l 4 L 10
-43 J 11 j 1 J 4 j 2
-(J 9 j 1 J 6 jJ 1 j 1) 4 lR 14
+43 J 8 j 2 J 7 j 1
+(J 9 j 1 J 6 jJ 1 j) 2 l 14 R 1
 29 J 3 j 2 Jj 1 Jj 1
-(J 9 jJ 2 j 1) 4 rL 8 lR
+(J 8 j 1 J 1 j 1) 4 rL 7 lR
 (J 9 j 1 J 6 j 1) 6 rL 11
-J 9 j 1 J 6 jJ 1 j 1 11 O 1 olR
+J 9 j 1 J 6 jJ 1 j 11 O 1 olR
 
 # step 3: open one allx3 door, open brown-white 1 door
-22 r 19 L 47 lR 171 3 JjJ 1 j 5 rL
+22 r 19 L 47 lR 171
+4 JjJ 1 j 4 rL
 4 JjJ 1 j 3
 35 J 9 j 1 J 6 jJ 1 j 1
 14 (J 13 j 1 J 12 j) 12 l 4 L 10
-43 J 11 j 1 J 4 j 2
-(J 9 j 1 J 6 jJ 1 j 1) 4 lR 14
-29 J 3 j 2 Jj 1 Jj 1
-(J 9 jJ 2 j 1) 4 rL 8 lR
-J 9 jJ 2 j 1 21 rL
+43 J 8 j 2 J 7 j 1
+(J 9 j 1 J 6 jJ 1 j) 4 lR 13
+28 J 3 j 2 Jj 1 Jj 1
+(J 8 j 1 J 1 j 1) 4 rL 7 lR
+J 4 j 1 J 5 jJ 1 j
+22 rL
 
 # step 4: open doors before T4-2 entrance
 21 J 1 j 1 J 3 jJ 1 jJ 1 j 1
 J 9 j 1 J 6 jJ 1 j
-34 1 J 3 jJ 3 j 65 lR 53 rL
+34
+1 J 3 jJ 3 j 65 lR 53 rL
 
 # step 5: pick brown rotor key
-18 J 8 j 1 J 7 j 2
-(J 8 j 1 J 7 jJ 2 j) 6 lR 12
-35 J 9 j 1 J 6 jJ 1 j 1
+18 J 7 j 1 J 9 j 1
+(J 9 j 1 J 6 jJ 1 j) 6 lR 11
+35 J 8 j 1 J 7 jJ 2 j
 6 4 JjJ 1 j 3
-44 r 20 L 47 lR
-21 JjJ 2 j 2
+44 r 20 L 46 1 lR
+21 Jj 2 Jj 1 Jj 1
 10 (J 1 jJ 1 jJ 1 j 8) 7 rL 4
 
 # step 6: arrive T4-2 entrance
-12 (J 5 j 4 J 12 j 1) 10 lR 12
-28 J 3 j 2 Jj 1 Jj 1
-(J 9 jJ 2 j 1) 4 rL 8 lR
+12 (J 5 j 4 J 12 j) 10 lR 11
+28 J 2 j 1 J 1 j 3
+(J 8 j 1 J 1 j 1) 4 rL 7 lR
 (J 9 j 1 J 6 j 1) 6 rL 11
-J 9 j 1 J 6 jJ 1 j 1
-33 1 J 3 jJ 3 j 63 lR 63 rL 50 l
+J 9 j 1 J 6 jJ 1 j
+33
+1 J 3 jJ 3 j 63 lR 63 rL 50 l

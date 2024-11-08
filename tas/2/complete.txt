@@ -31,13 +31,13 @@ $enter $2/10 $win
 
 Nn 1
 
-R 9 J 3 j 2 Jj 1 Jj 1 10 J 9 jJ 2 j 1 3 r
+R 9 J 1 j 1 J 3 jJ 1 j 10 J 9 jJ 2 j 1 3 r
 $enter $2/4 $win
 
 R 7 r
 $enter $2/B $win
 
-L 11 (J 13 j 1 J 12 j 1) 13 lR 14 2 r
+L 11 (J 13 j 1 J 12 j) 13 lR 13 3 r
 $enter $2/7 $win
 
 R 7 r

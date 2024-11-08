@@ -7,7 +7,7 @@ $enter $9/5 $win
 R 10 r
 $enter $9/D $win
 
-L 19 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 J 11 j 1 J 4 j 1 J 1 j 11 r
+L 19 (J 9 j 1 J 6 j 2) 8 lR 10 J 9 j 1 J 6 jJ 1 j 11 r
 $enter $9/3 $win
 
 R 10 r

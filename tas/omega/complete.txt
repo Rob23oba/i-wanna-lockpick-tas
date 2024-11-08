@@ -38,7 +38,7 @@ $recolor/95-99
 $exit_panel_to_warp
 $warp/EX_to_omega
 
-R 101 J 13 j 1 J 12 jJ 1 j 11 r
+R 102 J 13 j 1 J 12 j 11 r
 $enter $omega/11 $win
 
 (J 9 j 1 J 6 jJ 1 j) 8 L 9 35 l

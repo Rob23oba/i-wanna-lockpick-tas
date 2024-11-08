@@ -2,25 +2,29 @@
 R 63 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
 6 J 9 j 1 J 6 jJ 1 j 1
 18 lR 24 rL
-(J 13 j 1 J 12 j 1) 13 lR 14
-7 J 13 j 1 J 12 j 1
-117 J 3 jJ 3 j
-1 J 3 jJj 1 5
+(J 13 j 1 J 12 j) 13 lR 13
+8 J 13 j 1 J 12 j
+118 J 3 jJ 3 j
+1 J 4 jJj 1 Jj 1 Jj 1
 17 J 3 j 2 Jj 1 Jj 1
 10 J 9 jJ 2 j 1 6 rL
 
 # open SID#2
-103 J 9 j 1 J 6 j 2
-J 9 jJ 2 j 1
-29 J 3 j 2 Jj 1 Jj 1
-9 (J 9 j 1 J 6 j 2) 6 lR 12
-J 9 j 1 J 6 jJ 1 j 3
-J 9 jJ 2 j 1
-12 J 9 j 1 J 6 jJ 1 j 1 8 rL
+103
+J 1 j 1 J 3 j 1
+J 10 j 1
+J 4 j 1 J 5 jJ 1 j
+28 J 3 j 2 Jj 1 Jj 1
+9
+(J 9 j 1 J 6 jJ 1 j 1) 6 lR 12
+1 J 7 j 1 J 9 j 1
+J 4 j 1 J 5 jJ 1 j
+12 J 11 j 1 J 4 j 1 J 1 j 8 rL
 
 # pick omega key (cyan)
-71 lR 124 J 3 jJ 3 j
-1 J 3 jJj 1 5
+41 Jj 1 Jj 1 Jj 29 lR
+116 J 3 jJ 3 j
+1 J 4 jJj 1 Jj 2
 17 J 3 j 2 Jj 1 Jj 1
 10 J 9 jJ 2 j 1
 23 J 2 rj

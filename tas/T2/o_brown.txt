@@ -2,29 +2,32 @@
 R 47 rL 27 F 1 flR
 
 # -1 Master key to right of combo cyan door
-3 J 3 j 2 Jj 1 Jj 1 2 J 3 j 2 Jj 1
-J 13 j 1 J 12 j 1
-J 3 j 2 Jj 1 Jj 1
-6 J 9 jJ 2 j 1
-22 J 2 jJ 5 j 12
-71 J 3 j 2 Jj 1 Jj 1
+3 J 3 j 2 Jj 1 Jj 1
+2 J 3 j 2 Jj 1
+J 13 j 1 J 12 j
+1 J 3 j 1 Jj 2 Jj 1
+5 J 9 jJ 2 j 1
+22 Jj 3 J 2 j 1 Jj 2 Jj 11
+71 J 1 j 1 J 3 jJ 1 j
 
 # pick 50 pink key
-44 r 1 L 9 J 3 j 12 lR
+44 r 1 L 12 Jj 1 Jj 1 Jj 5 lR
 
 # copy and open #7
-71 J 3 j 1 Jj 2 Jj 1 6 Xx 48 rL 5
+73 J 3 j 1 Jj 2 Jj 1
+6 Xx 48 rL 5
 
 # open combo cyan door
-J 15 jJ 2 jJ 2 j 10
-21 J 9 jJ 2 j 1
-(J 13 j 1 J 12 jJ 1 j 1) l 13 L 15
-J 4 jJ 2 j 1 60
+J 2 j 12 J 7 j 8
+21 J 4 j 1 J 5 j 1 Jj 1
+(J 13 j 1 J 12 j) l 13 L 13
+1 J 3 j 1 Jj 2 Jj 1
+60
 
 # open #6s
 48 lR 36 rL
 61 (J 9 j 1 J 6 jJ 1 j 1) 6 lR 12
-19 J 9 j 1 J 6 jJ 1 j 1
+19 J 11 j 1 J 4 j 1 J 1 j
 15 J 9 jJ 2 j 1
 7 J 3 j 2 Jj 1 Jj 1
 17 J 3 j 2 Jj 1 Jj 1
@@ -64,14 +67,16 @@ J 4 jJ 2 j 1 60
 5 4 JjJ 1 j 3 6 rL 5 4 JjJ 1 j 3 6 lR
 5 4 JjJ 1 j 3 6 r 12 L
 5 4 JjJ 1 j 3 6 l 12 L
+12
 
 # go up to pick omega key (brown)
-12 J 14 jJ 3 jJ 1 j 10
-21 J 9 jJ 2 j 1
-(J 13 j 1 J 12 j 1) l 13 L 14 J 3 j 1 Jj 2 Jj 1
+J 12 j 6 Jj 1 Jj 1 Jj 8
+21 J 4 j 1 J 5 j 1 Jj 1
+(J 13 j 1 J 12 j) l 13 L 13
+1 J 2 j 2 J 1 j 1 Jj 1
 10 (J 13 j 1 J 12 j) 16 lR 10
 27 6 J 14 j 10
-(J 13 j 1 J 12 j 1) 8 rL 19 R
-J 9 jJ 2 j 1
+(J 13 j 1 J 12 j 1) 10 rL 17 R
+J 4 j 1 J 5 jJ 1 j
 29 J 3 j 2 Jj 1 Jj 1
 1 J 2 rj

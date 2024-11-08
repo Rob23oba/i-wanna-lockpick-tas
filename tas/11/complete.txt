@@ -32,7 +32,7 @@ $enter $11/10 $win
 
 Nn 1
 
-R 29 4 J 9 jJ 2 j 1 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 5 l
+R 29 4 J 10 j 1 (J 9 j 1 J 6 jJ 1 j) 8 rL 9 5 l
 $enter $11/3 $win
 
 LJ 9 j 1 J 6 jJ 1 j 13 l

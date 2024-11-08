@@ -3,44 +3,48 @@
 # start to #29
 Ss R 3 J 3 j 2 Jj 1 Jj 1 89
 rL 78 4 JjJ 1 j 3
-6 Xx J 3 j 2 Jj 1 Jj 1 29 lR
+7 Xx J 3 j 2 Jj 1 Jj 1 
+28 lR
 
 # #29 to ground
-6 J 3 j 2 Jj 1 Jj 1
-28 4 JjJ 1 j 3
-7 J 3 j 2 Jj 1 Jj 1
+6 J 2 j 1 J 1 jJ 3 j
+28 4 JjJ 1 j 2
+7 J 2 j 1 J 1 jJ 3 j
 8 J 13 j 1 J 12 j
-6 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+6 (J 11 j 1 J 4 j 1 J 1 j) 6 rL 12
 
 # ground to 4-door, 1-door, 6-door
-55 J 3 j 2 Jj 1 Jj 1
-35 J 6 j 1 J 6 j 1 J 12 j 1
-J 9 j 1 J 6 j 1 lRJ 9 j 1 J 6 jJ 1 j 1
+55 J 1 j 1 J 3 jJ 1 j
+34 J 6 j 1 J 6 j 1 J 12 j 1
+J 9 j 1 J 6 j 1 lR
+J 9 j 1 J 6 jJ 1 j 1
 9 J 6 j 1 J 5 j 1
-(J 11 j 26) r 11 L 26
-27 l 3 L 12 J 10 j 27 J 13 jJ 2 j 47 lR
+(J 11 j 26) r 11 L 25 1
+27 l 3 L
+13 J 11 j 25 J 4 j 1 J 5 jJ 1 j 45 lR
 
 # 6-door to #31
-5 J 9 j 1 J 6 jJ 1 j 1
-11 J 3 j 2 Jj 1 Jj 1
+5 J 9 j 1 J 6 jJ 1 j
+12 J 3 j 2 Jj 1 Jj 1
 74 J 3 j 2 Jj 1 Jj 1 88
 rL 78 4 JjJ 1 j 2
-7 J 3 j 2 Jj 1 Jj 1
-28 4 JjJ 1 j 3
-6 Xx J 3 j 2 Jj 1 Jj 1
-30 4 JjJ 1 j 2
-6 Xx J 3 j 2 Jj 1 Jj 1 29 Ss lR
+7 J 2 j 1 J 1 jJ 3 j
+28 4 JjJ 1 j 2
+7 Xx J 2 j 1 J 1 jJ 3 j
+29 4 JjJ 1 j 2
+7 Xx J 3 j 2 Jj 1 Jj 1
+28 Ss lR
 
 # #31 to Kina's door
 5 J 3 j 2 Jj 1 Jj 1
-28 3 JjJ 1 j 5
+28 3 JjJ 1 j 4
 7 J 3 j 2 Jj 1 Jj 1
-28 4 JjJ 1 j 3
-7 J 3 j 2 Jj 1 Jj 1
-28 4 JjJ 1 j 3
-7 J 3 j 2 Jj 1 Jj 1
+28 4 JjJ 1 j 2
+7 J 2 j 1 J 1 jJ 3 j
+28 4 JjJ 1 j 2
+7 J 2 j 1 J 1 jJ 3 j
 8 J 13 j 1 J 12 j
-6 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+6 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10
 55 Xx J 3 j 2 Jj 1 Jj 1 9 l
 
 # Theatrics & Dialogue

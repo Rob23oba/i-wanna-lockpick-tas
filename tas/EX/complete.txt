@@ -55,7 +55,7 @@ $enter_panel_chapter_ex
 $recolor/54-56
 $exit_panel_to_move
 
-R 99
+R 98
 J 9 jJ 2 j 1 10
 J 9 jJ 2 j 1 5 r
 $enter $EX/6 $win
@@ -73,7 +73,7 @@ $enter_panel_chapter_ex
 $recolor/57-59
 $exit_panel_to_move
 
-R 99
+R 98
 J 9 jJ 2 j 1 10
 J 9 jJ 2 j 1 10
 J 9 jJ 2 j 1 5 r

@@ -1,0 +1,16 @@
+R 3 J 3 j 2 Jj 1 Jj 1
+6 J 3 j 2 Jj 1 Jj 3
+30 J 8 j 2 J 7 jJ 1 j
+11 Xx 16 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
+27 1 lR
+
+21 JjJ 2 jJ 1 j 1
+1 rL
+
+4 JjJ 1 j 2
+39 lR 29 rL
+7 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+30 (J 11 j 1 J 4 j 1 J 1 j) 6 rL 12 17 lR
+16 1 21 JjJ 2 jJ 1 j 1
+6 Xx 41
+4 JjJ 1 j 2 r

@@ -1,89 +1,102 @@
 # start to -1 master key
 R 47 rL 27 F 1 flR
 
-# to right of combo cyan door
-3 J 3 j 2 Jj 1 Jj 1 2 J 3 j 2 Jj 1
-J 13 j 1 J 12 j 1
-J 3 j 2 Jj 1 Jj 1
-6 J 9 jJ 2 j 1
-22 J 2 jJ 5 j 12
-71 J 3 j 2 Jj 1 Jj 1
+# -1 Master key to right of combo cyan door
+3 J 3 j 2 Jj 1 Jj 1
+2 J 3 j 2 Jj 1
+J 13 j 1 J 12 j
+1 J 3 j 1 Jj 2 Jj 1
+5 J 9 jJ 2 j 1
+22 Jj 3 J 2 j 1 Jj 2 Jj 11
+71 J 1 j 1 J 3 jJ 1 j
 
 # go up, open #11
-1 J 13 j 1 J 12 jJ 1 j 1 O 1 orL
-J 10 j 16 J 3 j 10
-16 O 1 o (J 12 j 7 J 15 j) 9 lR 13 rL 12 3 lR 37
+2 (J 12 j 1 J 13 j 1) 26 O 1 orL
+J 10 j 16 J 4 j 3 Jj 6
+16 O 1 o
+(J 12 j 7 J 15 j) 9 lR 11 rL 14
+3 lR 37
 
 # go down, copy#7 and open #8
-129 J 3 j 2 Jj 1 Jj 1
-3 Xx J 3 j 1 Jj 1 Jj 1
-17 1 JjJ 1 j 5 6 rL
-5 4 JjJ 1 j 3
-2 J 6 jJ 1 j 18 2
+52 77 J 3 j 1 Jj 2 Jj 1
+2 J 6 jJ 1 j 18
+2 4 JjJ 1 j 2
+6 rL 5 4 JjJ 1 j 3
+2 Xx J 3 jJ 3 j 6
 
 # open 1st pure-orange door
-J 15 jJ 2 jJ 2 j 10
-20 J 9 jJ 2 j 1
-(J 13 j 1 J 12 j) l 13 R 13 63 rL
+J 1 j 16 J 10 j 1 Jj 1 Jj 11
+20 J 5 j 2 J 3 j 2
+(J 13 j 1 J 12 j) l 13 R 13
+62 rL
 
 # 1st pure door to above combo cyan door
 3 J 3 j 2 Jj 1 Jj 1
-7 J 3 j 2 Jj 1 Jj 1
-33 10 J 3 jJ 2 j 3
-2 J 3 j 2 Jj 1 Jj 1
-50 J 11 j 1 J 4 j 1 J 1 j
+7 J 1 j 1 J 3 jJ 1 j
+33 Jj 5 Jj 2 Jj 1 Jj 10
+2 J 1 j 1 J 3 jJ 1 j
+50 J 10 j 1 J 5 j 1 Jj 1
 
 # above combo cyan door to #5
-43 J 2 jJ 5 j 12
-42 J 14 jJ 3 jJ 1 j 10
-2 J 3 j 2 Jj 1 Jj 1 3 lR
+43 J 1 j 2 Jj 4 Jj 12
+42 J 2 j 15 J 8 j 2 Jj 1
+2 J 1 j 1 J 3 jJ 1 j
+3 lR 2
 
 # #5 to above combo cyan door
-4 JjJ 2 jJ 1 jJ 1 j 25
-1 J 3 j 2 Jj 1 Jj 1
-4 J 9 jJ 2 j 1
-22 10 J 3 jJ 3 j 4
-70 J 3 j 2 Jj 1 Jj 1
+J 1 jJj 1 Jj 1 Jj 27
+2 J 3 j 2 Jj 1 Jj 1
+4 J 4 j 1 J 5 jJ 1 j 1
+22 Jj 2 J 1 j 5 Jj 1 Jj 10
+71 J 1 j 1 J 3 jJ 1 j
 
 # go up, open #10
-1 J 13 j 1 J 12 jJ 1 j 2 rL
-J 10 j 16 J 3 j 10
-26 J 13 j 1 J 12 j 3 lR
+2 J 12 j 1 J 13 j 1 rL
+J 18 j 4 J 1 j 2 Jj 2 Jj 12
+26 J 13 j 1 J 12 j
+3 lR 55
 
 # open 2nd pure-orange door
-108 16 J 3 j 10 69 rL
+52 Jj 2 J 3 j 24
+68 rL
 
 # open 1st copy of #7
 8 J 3 j 2 Jj 1 Jj 1
 7 J 3 j 2 Jj 1 Jj 1
-34 lR 67 J 3 j 1 Jj 2 Jj 1 6 rL 5
+34 lR 67
+J 3 j 1 Jj 2 Jj 1 6 rL 5
 
 # open 3rd pure-orange door
-J 15 jJ 2 jJ 2 j 10
-21 J 9 jJ 2 j 1
-(J 13 j 1 J 12 j) l 13 R 13 74 rL
+J 8 j 2 J 4 j 4 Jj 11
+21 J 5 j 2 J 3 j 2
+(J 13 j 1 J 12 j) l 13 R 13
+73 rL
 
 # open #9
 14 J 3 j 2 Jj 1 Jj 1
-7 J 3 j 2 Jj 1 Jj 1
-33 10 J 3 jJ 2 j 3
-2 J 3 j 2 Jj 1 Jj 1
-10 (J 13 j 1 J 12 j 1) 19 lR 6 O 2 orL
-J 10 j 16 J 3 j 10
-47 J 13 j 1 J 12 j 3 lR
+7 J 1 j 1 J 3 jJ 1 j
+33 Jj 6 Jj 1 Jj 1 Jj 10
+2 J 1 j 1 J 3 jJ 1 j
+10 (J 16 j 1 J 9 j 1) 14 l 12 OR 1 orL
+J 4 j 12 J 10 j 3 Jj 10
+47 J 13 j 1 J 12 j
+3 lR 77
 
 #open 4th pure-orange door
-129 7 J 2 j 21 78 rL
+51 Jj 5 J 3 j 2 Jj 20
+78 rL
 
 # open 2nd copy of #7
 19 J 3 j 2 Jj 1 Jj 1
-7 J 3 j 2 Jj 1 Jj 1
-34 lR 67 J 3 j 2 JjJ 1 j 1 6 rL 5
+7 J 1 j 1 J 3 jJ 1 j
+34 lR 67
+J 3 j 1 Jj 2 Jj 1 6 rL 5
 
 # open 5th pure-orange door
-J 15 jJ 2 jJ 2 j 10
-21 J 9 jJ 2 j 1
-(J 13 j 1 J 12 j) l 13 R 13 85
+J 5 j 10 J 3 j 11
+21 J 5 j 2 J 3 j 2
+(J 13 j 1 J 12 j) l 13 R 13
+84
 
 # pick omega key (purple)
 8 (J 9 jJ 2 j 1) 4 rL 8

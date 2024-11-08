@@ -1,15 +1,15 @@
-(J 11 j 1 J 4 j 1 J 1 j) 8 L 10 3 l 4
+(J 9 j 1 J 6 jJ 1 j) 8 L 9 j 3 l 5
 $enter $7/1 $win
 
-(J 11 j 1 J 4 j 1 J 1 j) L 8 lR 10 3 r
+(J 9 j 1 J 6 jJ 1 j) L 8 lR 9 3 r
 $enter $7/2 $win
 
-(J 11 j 1 J 4 j 1 J 1 j) R 8 rL 10 3 l
+(J 9 j 1 J 6 jJ 1 j) R 8 rL 9 3 l
 $enter $7/3 $win
 
 Nn 1
 
-R 5 J 13 j 1 J 12 j 1 4 r
+R 5 J 13 j 1 J 12 j 5 r
 $enter $7/4 $win
 
 R 8 3 JjJ 1 j 5 5 r

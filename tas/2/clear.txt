@@ -22,7 +22,7 @@ $enter $2/6 $win
 
 Nn 1
 
-R 9 J 3 j 2 Jj 1 Jj 1 10 J 9 jJ 2 j 1 3 r
+R 9 J 1 j 1 J 3 jJ 1 j 10 J 9 jJ 2 j 1 3 r
 $enter $2/4 $win
 
 (J 13 j 1 J 12 j 1 Jj) L 13 lR 14 2 r
