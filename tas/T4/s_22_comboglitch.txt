@@ -1,8 +1,0 @@
-# step 1: touch input#31
-L 38 (J 9 j 1 J 6 jJ 1 j 1) 18 3 lR
-
-# step 2: salvage combo glitch door (#24)
-65 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
-8 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
-3 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10
-13 l
