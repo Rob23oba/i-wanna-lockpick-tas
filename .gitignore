@@ -3,3 +3,4 @@ server/build
 server/gm_text_server/*.obj
 server/gm_text_server/*.lib
 server/gm_text_server/*.exp
+tools/bin
