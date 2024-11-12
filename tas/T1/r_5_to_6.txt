@@ -3,5 +3,5 @@ R 11 42
 J 3 j 2 Jj 1
 J 10 j 1 lR
 J 4 j 1 J 5 jJ 1 j
-1 J 3 j 1 Jj 2 Jj 1 23
-18 r 10 R 22 r
+1 J 3 j 1 Jj 2 Jj 1
+19 J 1 j 1 Jj 1 Jj 1 Jj 31 12 r
