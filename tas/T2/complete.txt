@@ -33,7 +33,7 @@ Nn 1
 
 $T2/r_start_to_7
 $enter $T2/7 $win
-$enter $T2/7_s_10_comboblack $salvage
+$enter $T2/7_s_10_black $salvage
 
 $T2/o_white_from_T2-7
 $skip_item
@@ -42,7 +42,7 @@ Nn 1
 
 L 23 l 9 L 17 l
 $enter $T2/7_s_9 $salvage
-$enter $T2/7_s_10_combogreen $salvage
+$enter $T2/7_s_10_green $salvage
 $enter $T2/7_s_11 $salvage
 
 Nn 1

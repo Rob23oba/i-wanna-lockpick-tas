@@ -212,6 +212,8 @@ public class Refactor {
 			}
 			String left = refactor.inverse().get(name);
 			if (left == null) {
+				refactor.map().put(name, name);
+				refactor.inverse().put(name, name);
 				return;
 			}
 			System.err.println("Refactored target collides with unrefactored name");
@@ -242,6 +244,10 @@ public class Refactor {
 				if (refactored != null) {
 					name = refactored;
 				}
+			}
+			if (name.equals(entry.getKey()) && entry.getValue() == originalTases.get(name)) {
+				// kept as is
+				continue;
 			}
 			System.out.println("Refactoring " + entry.getKey() + " -> " + name + "...");
 			File f = new File(dir, name + ".txt");
