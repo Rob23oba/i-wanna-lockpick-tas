@@ -327,12 +327,25 @@ static int parse_args(int argc, char **argv, float *y, float *vspeed, int *wait_
 		} else if (strcmp(arg, "--stable") == 0) {
 			stable = 1;
 		} else if (strcmp(arg, "--range") == 0) {
-			if (i + 2 > argc) {
-				fprintf(stderr, "--range requires <min_y> and <max_y> parameters\n");
+			if (i + 1 > argc) {
+				fprintf(stderr, "--range requires <jump_height>p or <min_y> and <max_y> parameters\n");
 				return 1;
 			}
-			min_max_y[allow_recursion][0] = strtof(argv[i++], 0);
-			min_max_y[allow_recursion][1] = strtof(argv[i++], 0);
+			size_t l = strlen(argv[i]);
+			if (l > 0 && argv[i][l - 1] == 'p') {
+				float startPos = *y;
+				float rounded = rintf(startPos - 21.0f) + 21.0f;
+				float height = strtof(argv[i++], 0);
+				float midPoint = rounded - height;
+				min_max_y[allow_recursion][0] = midPoint - 0.5f;
+				min_max_y[allow_recursion][1] = midPoint + 0.5f;
+			} else if (i + 2 > argc) {
+				fprintf(stderr, "--range requires <jump_height>p or <min_y> and <max_y> parameters\n");
+				return 1;
+			} else {
+				min_max_y[allow_recursion][0] = strtof(argv[i++], 0);
+				min_max_y[allow_recursion][1] = strtof(argv[i++], 0);
+			}
 		} else if (strcmp(arg, "--reach") == 0) {
 			if (i + 1 > argc) {
 				fprintf(stderr, "--reach requires <y> parameter\n");
@@ -411,6 +424,7 @@ static void show_help(char *str) {
 		"  --stable: Only show stable jumps (i.e. jumps that stay in the range or below)\n"
 		"  --min-frames <frames>: Minimum amount of frames the jump needs to have\n"
 		"  --range <min_y> <max_y>: Range that the jump needs to end in\n"
+		"  --range <jump_height>p: Calculates the range based on the given jump height (shorthand)\n"
 		"  --reach <y>: Coordinate that the jump needs to reach\n"
 		"  --reach-max <y>: Coordinate that the jump needs to reach\n"
 		"  --in-air-velocity <vspeed>: Indicates that the jump begins in the air with the given velocity\n"
