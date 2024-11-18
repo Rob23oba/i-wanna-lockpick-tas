@@ -1,6 +1,6 @@
 R 15 rL 26 F 1 flR
 3 J 3 j 2 Jj 1 Jj 1 2 J 3 j 2 Jj 1
-(J 13 j 1 J 12 j) 25 O 1 or 1 L
+(J 13 j 1 J 12 j 1) 25 O 1 or 1 L
 J 9 j 1 J 6 jJ 1 j 1
 1 J 3 j 2 JjJ 1 jJ 1 j 3 Xx lR
 14 r 24 L 30 l

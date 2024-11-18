@@ -24,5 +24,5 @@ J 13 j 1 J 12 j
 2 (J 4 jJ 5 j 27) 6 lR 30
 
 # go to T2-4
-1 J 3 j 2 Jj 1 Jj 1
-129 r
+2 J 1 j 1 J 3 jJ 1 j
+128 r

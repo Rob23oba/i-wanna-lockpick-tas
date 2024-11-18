@@ -1,7 +1,7 @@
 R 11 42
-(J 7 j 1 J 4 jJ 1 jJ 1 j 20) 14 rL 20
-J 3 j 2 Jj 1
-J 10 j 1 lR
+(J 6 j 2 J 4 j 1 Jj 21) 15 rL 19
+J 4 j 1
+J 9 jJj 2 lR
 J 4 j 1 J 5 jJ 1 j
 1 J 3 j 1 Jj 2 Jj 1
 19 J 1 j 1 Jj 1 Jj 1 Jj 31 12 r

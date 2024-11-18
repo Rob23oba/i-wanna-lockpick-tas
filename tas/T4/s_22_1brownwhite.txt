@@ -11,7 +11,7 @@ J 9 j 1 J 6 j 2
 44 (J 9 j 1 J 6 jJ 1 j 1) 6 lR 12
 5 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
 
-# step 2: open two allx3 doors, pick brown 1 key
+# step 2: open two allx3 doors, those doors before brown-white 1 door
 6 lR 104 1 rL
 21 Jj 2 Jj 3
 11 lR 10
@@ -30,9 +30,8 @@ J 9 j 1 J 6 j 2
 30 (J 8 j 2 J 7 j 1) 6 lR 12
 (J 9 j 1 J 6 jJ 1 j) 6 rL 11
 14 (J 13 j 1 J 12 j) 12 l 4 L 10
-43 J 8 j 2 J 7 j 1
+43 J 7 j 1 J 9 j 1
 (J 9 j 1 J 6 jJ 1 j) 4 lR 13
-28 J 3 j 1 Jj 2 Jj 1
-(J 8 j 1 J 1 j 1) 4 rL 7 lR
-J 4 j 1 J 5 jJ 1 j
-22 r
+29 J 4 jJj 1
+(J 9 jJj 2) 4 rL 7 lR
+J 9 jJ 2 j 22 r

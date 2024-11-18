@@ -1,10 +1,10 @@
 # open SID#3
-R 29 J 13 j 1 J 12 j 1
-88 (J 8 j 1 J 3 jJ 1 jJ 1 j 20) 14 rL 20
-J 1 j 1 J 3 j 1
+R 29 J 13 j 1 J 12 j
+89 (J 7 j 2 J 3 j 1 Jj 2 Jj 19) 15 rL 19
+J 4 jJj 1
 J 9 jJj 2 lR
 J 4 j 1 J 5 jJ 1 j
-1 J 3 j 1 Jj 2 Jj 1 6 
+1 J 3 j 1 Jj 2 Jj 1 6
 
 # pick omega key (black)
 17 J 11 j 6 J 9 j 14 11

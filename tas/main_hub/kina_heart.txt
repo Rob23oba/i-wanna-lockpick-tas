@@ -1,17 +1,17 @@
-# obtain Kina's Heart, then enter Focal Point #
+# obtain Kina's Heart, then enter Focal Point
 
 # start to #29
-Ss R 3 J 3 j 2 Jj 1 Jj 1 89
-rL 78 4 JjJ 1 j 3
-7 Xx J 3 j 2 Jj 1 Jj 1 
+Ss R 3 J 2 j 1 J 1 jJ 3 j 88
+rL 78 3 Jj 1 Jj 2 Jj 2
+7 J 1 j 1 J 3 jJ 1 j Xx
 28 lR
 
 # #29 to ground
-6 J 2 j 1 J 1 jJ 3 j
-28 4 JjJ 1 j 2
+6 J 1 j 1 J 3 jJ 1 j
+28 3 JjJ 1 j 3
 7 J 2 j 1 J 1 jJ 3 j
 8 J 13 j 1 J 12 j
-6 (J 11 j 1 J 4 j 1 J 1 j) 6 rL 12
+6 (J 9 j 1 J 6 j 1 Jj 1) 6 rL 12
 
 # ground to 4-door, 1-door, 6-door
 55 J 1 j 1 J 3 jJ 1 j
@@ -26,32 +26,36 @@ J 9 j 1 J 6 jJ 1 j 1
 # 6-door to #31
 5 J 9 j 1 J 6 jJ 1 j
 12 J 3 j 2 Jj 1 Jj 1
-74 J 3 j 2 Jj 1 Jj 1 88
-rL 78 4 JjJ 1 j 2
-7 J 2 j 1 J 1 jJ 3 j
-28 4 JjJ 1 j 2
-7 Xx J 2 j 1 J 1 jJ 3 j
-29 4 JjJ 1 j 2
-7 Xx J 3 j 2 Jj 1 Jj 1
+74 J 2 j 1 J 1 jJ 3 j 87
+rL 78 3 Jj 1 Jj 1 Jj 2
+7 J 1 j 1 J 3 jJ 1 j
+28 4 JjJ 2 j 2
+7 J 1 j 1 J 3 jJ 1 j Xx
+29 3 Jj 1 Jj 1 Jj 2
+7 J 1 j 1 J 3 jJ 1 j Xx
 28 Ss lR
 
 # #31 to Kina's door
 5 J 3 j 2 Jj 1 Jj 1
-28 3 JjJ 1 j 4
+28 2 Jj 1 Jj 2 Jj 3
+7 J 1 j 1 J 3 jJ 1 j
+28 3 JjJ 1 j 3
 7 J 3 j 2 Jj 1 Jj 1
-28 4 JjJ 1 j 2
-7 J 2 j 1 J 1 jJ 3 j
-28 4 JjJ 1 j 2
-7 J 2 j 1 J 1 jJ 3 j
-8 J 13 j 1 J 12 j
+28 4 JjJ 1 jJ 2 j
+7 J 1 j 1 J 3 jJ 1 j
+9 J 13 j 1 J 12 j
 6 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10
-55 Xx J 3 j 2 Jj 1 Jj 1 9 l
+55 J 1 j 1 J 3 jJ 1 j Xx
+9 l
 
 # Theatrics & Dialogue
-274 Jj 1 Jj 1 Jj 1 Jj 1 Jj 1 Jj 1 Jj 1 Jj 1 Jj 1 Jj 1 14
+274
+Jj 1 Jj 1 Jj 1 Jj 1 Jj 1
+Jj 1 Jj 1 Jj 1 Jj 1 Jj 1
+14
 
 # Kina's Heart
-(J 14 j 1 J 13 j 1 J 1 j 1) L 29 l 2
+(J 14 j 1 J 13 j 1 J 1 j 1) L 29 F 1 fO 1 ol
 $skip_kina_heart
 
 # enter Focal Point

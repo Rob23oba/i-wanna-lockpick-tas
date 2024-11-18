@@ -35,14 +35,15 @@ J 1 jJj 1 Jj 1 Jj 27
 J 10 j 16 J 4 j 3 Jj 6
 17 J 6 jJ 1 jJ 1 j 16
 9 J 6 jJ 1 jJ 1 j 16
-8 F 1 f (J 12 j 7 J 15 j) 8 lR 12 rL 14 3 lR
+8 F 1 f (J 12 j 6 J 14 j) 8 lR 11 rL 13 3 lR
 2 4 JjJ 1 j 3 18 4 JjJ 1 j 2 53
 
 # go down, pick 50 pink key
-64 rL 12 Jj 1 Jj 1 Jj 5 lR
+64 rL
+13 Jj 1 Jj 1 Jj 4 lR
 
 # open #7
-73 J 3 j 1 Jj 2 Jj 1
+72 J 3 j 1 Jj 2 Jj 1
 6 rL 5
 
 # pick -4 pure key

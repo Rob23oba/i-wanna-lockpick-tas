@@ -9,7 +9,8 @@ R 67 rL
 71 J 1 j 1 J 3 jJ 1 j
 
 # pick 50 pink key
-44 r 1 L 12 Jj 1 Jj 1 Jj 5 lR
+44 r 1 L
+13 Jj 1 Jj 1 Jj 4 lR
 
 # salvage #7
-73 J 3 j 1 Jj 2 Jj 1 6 r
+72 J 3 j 1 Jj 2 Jj 1 6 r
