@@ -26,4 +26,4 @@ $EX/complete
 $epilogue/clear
 
 $EX/r_start_to_star_view_clear
-$star_view
+$enter_world $star_view

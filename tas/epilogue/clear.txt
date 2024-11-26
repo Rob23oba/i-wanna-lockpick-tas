@@ -18,4 +18,4 @@ $epilogue/s_78
 $salvage_to_warp
 
 # go to Chapter EX
-$warp/epilogue_to_omega
+$warp/epilogue_to_EX

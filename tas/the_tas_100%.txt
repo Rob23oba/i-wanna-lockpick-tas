@@ -1,12 +1,13 @@
 $skip_intro
 
 $main_hub/complete
+
 $main_hub/r_start_to_somewhere
 $enter_world
 $somewhere/r_start_to_finale
 $enter $somewhere/finale $win
-$skip_finale_ending
 
+$skip_finale_ending
 $skip_title_select_save
 $reenter_game_to_restart
 Nn 1
@@ -41,4 +42,4 @@ $epilogue/complete
 $omega/complete
 
 $EX/r_start_to_star_view_complete
-$star_view
+$enter_world $star_view
