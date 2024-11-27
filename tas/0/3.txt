@@ -17,4 +17,4 @@ R 46 J 3 j 2 Jj 1 Jj 1
 (J 15 j 1 J 10 jJj 1) 13 l 2 R 12
 
 #Jump to the warp
-J 5 j 5 r
+J 5 jJj 4 r

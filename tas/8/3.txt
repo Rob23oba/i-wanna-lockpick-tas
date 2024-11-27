@@ -3,37 +3,38 @@ R 24 rL
 
 # copy doors (1,3,1,3,1,3, 9,27, 9,9,9,9,9), pick 52-key
 J 1 lR 12 j 11 Xx rL
+5 (J 6 j 1 J 2 jJ 3 j) 4 lR 8 11 Xx rL 11 lR 22 Xx rL
 5 (J 9 jJ 2 j 1) 4 lR 8 11 Xx rL 11 lR 22 Xx rL
-5 (J 9 jJ 2 j 1) 4 lR 8 11 Xx rL 11 lR 22 Xx rL
-5 (J 9 jJ 2 j 1) 4 lR 8 11 Xx rL
-2 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 Xx rL
-2 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10 11 Xx rL
-11 lR 24 Xx r 32 Xx 30 Xx 28 Xx 26 Xx L
-36 lR 20 O 1 orL 1
+5 (J 6 j 2 J 2 jJ 2 j) 4 lR 8 11 Xx rL
+2 (J 13 j 1 J 3 jJ 1 j) 8 lR 10 11 Xx rL
+2 (J 8 j 2 J 7 jJ 1 j) 8 lR 10 11 Xx rL
+11 lR 24 r Xx 32 Xx 30 Xx 28 Xx 26 Xx L
+36 lR 19 O 1 orL
 
 # open doors (1,3,3,9,9,27), pick 20-key
 10 (J 9 jJ 2 j 1) 4 lR 8 11 rL
 5 (J 9 jJ 2 j 1) 4 lR 8 11 r 24 L
-2 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 r 19 L
+2 (J 7 j 1 J 9 jJ 1 j) 8 lR 10 11 r 19 L
 2 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10 11 rL
 47 lR 30 O 1 orL
 
 # open doors (1,9,1,9), pick 15-key
-20 (J 9 jJ 2 j 1) 4 lR 8 11 rL
-5 (J 9 jJ 2 j 1) 4 lR 8 (J 9 j 1 J 6 jJ 1 j 1) 18 11 rL
+20 (J 4 j 1 J 5 j 1 Jj 1)
+4 lR 8 11 rL
+5 (J 10 j 1) 4 lR 7 (J 10 j 1 J 5 jJ 1 j) 17 11 rL
 27 lR 17 rL
-5 (J 9 jJ 2 j 1) 4 lR 8 (J 9 j 1 J 6 jJ 1 j 1) 18 10 rL
+5 (J 10 j 1) 4 lR 7 (J 9 j 1 J 6 jJ 1 j) 17 11 rL
 36 lR 40 O 1 orL
 
 # open doors (3,9,3), pick 46-key
-31 (J 9 jJ 2 j 1) 4 lR 8 (J 9 jJ 2 j 1) 12 11 rL
-2 (J 9 j 1 J 6 jJ 1 j 1) 9 lR 9 11 rL
+31 (J 10 j 1) 4 lR 7 (J 4 j 1 J 5 jJ 1 j) 11 11 rL
+2 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 rL
 11 lR 24 rL
 27 lR 50 O 1 orL
 
 # open doors (1,9,27,9), reach goal
 42 (J 9 jJ 2 j 1) 4 lR 8 11 rL
-5 (J 9 jJ 2 j 1) 4 lR 8 (J 9 j 1 J 6 jJ 1 j 1) 18 10 rL
-2 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 rL
+5 (J 10 j 1) 4 lR 7 (J 9 j 1 J 6 jJ 1 j) 17 11 rL
+2 (J 8 j 2 J 7 jJ 1 j) 8 lR 10 11 rL
 11 lR 24 rL
-36 lR 71 J 8 j 1 J 5 rj
+37 lR 70 J 8 j 1 J 5 rj

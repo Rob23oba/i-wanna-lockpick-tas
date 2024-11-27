@@ -1,30 +1,29 @@
 # jump up
-1
-(J 13 j 1 J 12 j 1) 17 R 10
-(J 9 j 1 J 6 jJ 1 j) F 1 fr 15
+(J 16 j 1 J 9 j 1) 17 R 10
+(J 9 j 2 J 7 j 1 Jj 1 Jj 36) 2 r 14
 # pick up master key
-L 3 F 1 flR 3 r
+L 5 lR 5
 # fall
-14 L 4 l 2 R 21 Xx 6
+Lr 15 lR 22 Xx 6
 # jump up
 (J 9 j 1 J 6 jJ 1 j) 20
 # pick up master key and white key
-(J 13 j 1 J 12 j 1) 5 r 13 L 11 l
+(J 13 j 1 J 12 j) 5 r 11 L 10
+(Jj 1 Jj 1 Jj 1 Jj) 4 lR 6
 # fall
-R 3 F 1 fr 14 L 4 l 11 R
+Lr 14 l 10 R
 # open doors
-20 Xx 12
+21 Xx 12
 # jump up
-(J 9 j 1 J 6 jJ 1 j) 18
+(J 9 j 1 J 6 jJ 1 j 1) 18
 # pick up master key
-18
-(J 1 jJj 1 Jj 1 Jj 8) 1 Lr 14
-(J 9 j 1 J 6 jJ 1 j) 16 l 1 L 1
+15 (J 1 jJj 1 Jj 1 Jj 8) 6 Lr 11
+(J 9 j 1 J 6 jJ 1 j 1) 16 l 1 L 1
 # open 2 white door, pickup 2 white keys
 Xx 8
 lR 8
 J 1 jJj 17
 # get last master key
-7 (J 1 jJjr 1 Jj 1 Jj 8) 2 Lr 12
+7 (J 1 jJj 1 Jj 1 Jj 8) 1 r 1 L 12
 # fall
-22 l 5 R 9 Xx 13 J 1 j
+22 l 5 R 9 Xx 13 J 1 rj

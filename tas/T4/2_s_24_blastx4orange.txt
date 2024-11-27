@@ -1,0 +1,19 @@
+# step 1: open stone 1 door
+LJ 9 jJ 2 j 3 lR
+
+# step 2: doors until glitch blast door
+70 (J 9 j 1 J 6 j 2) 8 rL 10
+J 9 j 1 J 6 jJ 1 j 11 lR
+11 rL 24 lR
+2 J 10 j 2 J 5 j 1
+J 9 j 1 J 6 j 1
+(J 9 j 1 J 6 jJ 1 j) 6 rL 11 6 lR
+
+# step 3: open orange-blue -5 door,
+# touch input#24, salvage orange allx4 door
+37 4 JjJ 1 j 2 11 rL
+110 (J 9 jJ 2 j 1) 4 lR 8 3 rL 4 lR
+67 (J 9 j 1 J 6 j 2) 8 rL 10
+(J 9 j 1 J 6 j 1) 6 lR 11
+J 9 j 1 J 6 j 1
+(J 8 j 2 J 7 jJ 1 j) 6 rL 12 11 l

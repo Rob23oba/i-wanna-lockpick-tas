@@ -1,0 +1,4 @@
+R 22 r 10 L 45 lR
+62 J 9 j 1 J 6 jJ 1 j 1 22 rL
+60 J 9 j 1 J 6 jJ 1 j 1 22 lR
+70 4 JjJ 1 j 2 30 O 1 orL 53 l 17

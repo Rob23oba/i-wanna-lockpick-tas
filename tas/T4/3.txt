@@ -1,0 +1,17 @@
+# step 1: copy doors, take master 1 key
+SsR 16 Xx
+J 3 jJ 3 j 6 r 36
+Xx 46 Xx 44 Xx 42 Xx
+R 14 Ss 14 J 16 j 9
+
+# step 2: open doors until pick black 3 key
+Xx 16 (J 1 jJ 1 jJ 1 j 8) 5 O 1 orL 5
+7 (J 8 j 2 J 7 jJ 1 j) 8 lR 10
+Xx 23 Ss 4 Xx 12 Ss 4 Xx
+5 Ss (J 1 jJ 1 jJ 1 j 8) 6 rL 5
+49 lR Xx 44 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
+
+# step 3: open black 3i door copies, arrive goal
+32 13 J 17 j 10
+14 l 58 55 R
+13 13 J 17 j 10 56 J 1 rj

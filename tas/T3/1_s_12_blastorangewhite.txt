@@ -1,6 +1,7 @@
-R 32 rL 2 JjJ 1 j 1
-(J 9 jJ 2 j 1) 4 lR 8
-11 J 1 j 1 J 3 jJ 1 jJ 1 j 2 rL 22 l
-JjJ 1 j 6 R 16 rL 8 lR 31
-J 3 jJ 3 j 1
-J 14 j 1 J 13 rj
+R 32 rL 2
+Jj 2 (J 4 j 1 J 5 jJ 1 j) 4 lR 7
+11 J 4 jJj 1 Jj 1 Jj 3 rL
+22 l
+15 (Jj 1 Jj 1 Jj 20) 4 lR 8 rL 10
+1 lR 20 J 3 j 3
+(J 14 j 1 J 12 j) 7 O 2 or 17 R 1 r

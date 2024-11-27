@@ -1,8 +1,7 @@
 # touch #75
-L 55 J 9 jJ 2 j 1 90
-J 6 jJ 1 j 18 13
-
+L 55 J 9 jJ 2 j 1
+91 J 6 jJ 1 jJ 1 j 16 13
 
 # open -blastx2 door
-J 9 jJ 2 j 1 (J 9 jJ 2 j 1) 4 lR 8
-(J 7 j) Xx 2 rL 5 l
+J 8 j 1 J 1 j 1 (J 4 j 1 J 5 j 1) 4 lR 7
+(J 7 j) 2 rL 4 l 1 Xx

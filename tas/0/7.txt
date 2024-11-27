@@ -2,7 +2,7 @@ L 25 J 9 jJ 2 j 1
 
 # part 1: copy doors: x11, x19, x18, x19, x14
 
-# 2,3 ; 4,5
+# (2,3) ; (4,5)
 16
 (J 7 j 16) Xx 1 l 7 R Xx 15
 (J 7 j 16) Xx 4 r 4 L Xx 15
@@ -41,10 +41,9 @@ XxJ 8 Xxj 8 XxJ 4 Xxj 15
 XxJ 8 Xxj 8 XxJ 4 Xxj 15
 XxJ 8 Xxj 8 XxJ 4 Xxj (13 LO 1 lo) 14
 
-
 # part 2: open doors
 
-# 1x10, 1x1 & 2x2
+# 1x10 ; 1x1 & 2x2
 J 8 j 7 J 4 j 14
 J 8 j 7 J 4 j 14
 J 8 j 7 J 4 j 14
@@ -52,21 +51,21 @@ J 8 j 7 J 4 j 14
 J 8 j 7 J 4 j 14
 J 6 j 1 J 2 jJ 1 jJ 1 j 18
 
-# 2x16, 2x1 & 3x2
+# 2x16 ; 2x1 & 3x2
 J 9 j 16 J 8 j 18
 J 9 j 16 J 8 j 18
 J 9 j 16 J 8 j 18
 J 9 j 16 J 8 j (10 R 8 r) 18
 (6 R 2 r) J 6 j 1 J 2 jJ 1 jJ 1 j 18
 
-# 3x15, 3x1 & 4x2
+# 3x15 ; 3x1 & 4x2
 J 9 j 16 J 8 j 18
 J 9 j 16 J 8 j 18
 J 9 j 16 J 8 j 18
 J 11 j 6 Jj 1 Jj 1 Jj (12 R 8 r) 20
 (6 R 2 r) J 6 j 1 J 2 jJ 1 jJ 1 j 18
 
-# 4x16, 4x1 & 5x2
+# 4x16 ; 4x1 & 5x2
 J 9 j 16 J 8 j 18
 J 9 j 16 J 8 j 18
 J 9 j 16 J 8 j 18
@@ -76,7 +75,7 @@ J 9 j 16 J 8 j (10 R 8 r) 18
 # 5x12
 J 9 j 16 J 8 j 18
 J 9 j 16 J 8 j 18
-J 9 j 16 J 8 j (10 R 8) 18
+J 9 j 18 J 5 Rj 23
 
 # arrive goal
-87 J 10 rj
+80 J 4 j 1 J 4 rj

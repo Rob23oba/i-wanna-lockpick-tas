@@ -1,20 +1,14 @@
 # open blank door & allx2 door (i.e. for salvaging allx3 door)
-
 L 55 J 9 jJ 2 j 1 116
-J 9 jJ 2 j 1 (J 9 jJ 2 j 1) 4 lR 8
-2 J 9 j 1 J 6 jJ 1 j 1
-
-8 (J 2 j 7) Xx 2 rL 7 7
-
-8 Jj 1 Jj 1 Jj 23 lR 12
-
+1 J 10 j 1 (J 4 j 1 J 5 jJ 1 j) 4 lR 7
+2 J 9 j 1 J 6 jJ 1 j
+9 (J 2 j 7) Xx 2 rL 7 7 1
+(7 Jj 1 Jj 1 Jj 28) 31 lR 6 7
 
 # touch #71
-33 (J 6 jJ 1 j 18) 10 rL 15 28
-
+33 (J 6 jJ 1 jJ 1 j 16) 10 rL 14 29
 
 # open allx3 door
-
-J 9 jJ 2 j 1 (J 9 jJ 2 j 1) 4 lR 8
-2 J 9 j 1 J 6 jJ 1 j 1
-Xx 10 J 8 rj
+J 10 j 1 (J 4 j 1 J 5 jJ 1 j) 4 lR 7
+2 J 9 j 1 J 6 jJ 1 j
+11 J 8 Xx rj

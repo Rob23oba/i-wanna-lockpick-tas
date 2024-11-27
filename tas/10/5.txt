@@ -1,6 +1,6 @@
 # start to brown signflip key
-R 10 J 9 j 1 J 6 jJ 1 j 1
-J 11 j 1 J 4 j 1 J 1 j 10 F 1 frL
+R 10 J 7 j 1 J 9 j 1
+J 9 j 1 J 6 jJ 1 j 10 F 1 frL
 11 lR 29 rL
 59 J 11 j 1 J 4 j 1 J 1 j 16 lR
 17 rL 40 lR
@@ -10,8 +10,8 @@ J 11 j 1 J 4 j 1 J 1 j 10 F 1 frL
 13 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 lR
 J 3 jJ 1 jJ 1 j
 13 r 12 R 56 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
-13 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
-J 9 j 1 J 6 jJ 1 j 1 rL
+13 (J 7 j 1 J 9 j 1) 8 lR 10
+J 9 j 1 J 6 j 1 rL
 J 3 jJ 1 jJ 1 j
 
 # curse glitch -8 door to brown -8 key

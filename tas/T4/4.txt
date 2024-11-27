@@ -1,0 +1,32 @@
+# part 1: copy and open doors on LHS
+R 3 J 9 j 1 J 6 jJ 1 j 1
+
+#x=416, 306f
+12 (J 2 j 8) Xx 9 r 1 (J 2 j 8) Xx 10
+26 (J 2 j 8) Xx 10 (J 2 j 8) Xx 10
+22 (J 2 j 8) Xx 10 (J 2 j 8) 10
+18 (J 2 j 8) 10 5 (J 2 j 8) 10
+16 (J 2 j 8) 10 1 (J 2 j 8) 10
+17 (J 2 j 8) 10
+8 (J 5 jJ 2 jJ 1 j 15) R 1 rL 2 l 17 R 3
+
+# part 2: path at bottom-right
+86 r Xx 48 Xx 46 Xx 44 Xx 42 Xx
+40 46 43 41 38 36 R
+17 (J 9 j 1 J 6 jJ 1 j 1) 6 rL 12
+44 (J 9 j 1 J 6 jJ 1 j 1) 6 lR 12
+16 r Xx 48 Xx 46 Xx 44 Xx 42 Xx
+40 46 43 41 38 36 R
+27 (J 11 j 1 J 4 j 1 J 1 j) 6 rL 12
+
+# part 3: copy and open doors at top-right
+8 (J 2 j 1 J 1 j 8) Xx 3 Xx 9
+6 (J 2 j 8) Xx 1 l 9
+4 (J 2 j 5 J 2 j 8) Xx 7 Xx 3 R 7
+5 (J 2 j 8) 2 rL 8
+5 (J 2 j 8) 2 l 8
+(J 2 j 2 J 1 j 8) 2 L 11
+3 (J 2 j 8) 1 OlR 1 or 2 L 6
+
+# part 4: arrive goal
+5 J 1 lj

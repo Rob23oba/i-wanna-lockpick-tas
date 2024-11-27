@@ -1,0 +1,22 @@
+L 3 J 9 jJ 2 j 1
+11
+(J 2 j 8) Xx 10 5 Xx lR 6 r 25
+(J 2 j 8) Xx 2 L 8 3 Xx lR 6 r 23
+(J 2 j 8) Xx 2 L 8 3 Xx lR 6 r 19
+(J 2 j 8) Xx 2 L 8 3 Xx lR 6 r 15
+(J 2 j 8) Xx 2 L 8 3 lR 6 r (J 2 j 8 1) 11
+(J 2 j 8) Xx 2 L 8 3 l 4 R 6 r 3
+(J 2 j 8) Xx 2 L 8 3 l 7 R 6 r
+(J 2 j 8) Xx 2 L 8 3 l 5 R 6 r
+(J 2 j 8) 2 L 8 3 lR
+21 (J 5 j 5 J 12 j) 12 rL 10
+27 lR
+
+18 (J 6 j 1 J 11 j 1) 7 rL 12
+(J 4 j 1 J 5 jJ 1 j) 4 lR 7
+6 4 JjJ 1 j 3
+59 r Xx 48 Xx 46 Xx 44 50 48 46
+
+R 47 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+53 (J 9 j 2 J 6 j 1) 8 lR 10
+J 9 rj

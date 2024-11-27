@@ -1,11 +1,26 @@
-J 6 R 2 j 1 J 7 jJ 2 j 2
-J 6 j 1 J 11 jJ 1 j 1
-10 Xx 6 Lr 17 lR 30 Lr 17 lR 46 Lr 24
-J 8 j 1 J 2 lR 5 jJ 3 j 1
-20 Xx 11 Xx 9
-J 6 r 7 j 1 J 7 R 5 jJ 1 j 1
-7 Lr 8 lR 29 Xx 11 Xx 6 Lr 21
-J 13 j 1 J 6 lR 6 jJ 1 j 1
-11 Xx 11 Lr 22 lR 61 Lr 37
-J 13 j 1 J 6 lR 6 jJ 1 j 1
-27 Xx 7 Jj 2 r
+# jump up
+RJ 9 j 1 J 6 j 1
+J 13 j 1 J 3 jJ 1 j
+# pick up 3 white key
+11 Xx 6 Lr 17
+# pick up 2 orange key
+lR 30 Lr 17
+# pick up master keys
+lR 45 O 1 oLr 23
+# open doors
+(J 13 j 1 J 3 jJ 1 j) 8 lR 10
+22 Xx 11 Xx 9
+
+# jump up and pick up master key
+J 13 j 1 J 12 j
+(Jj 1 Jj 2 Jj 1 Jj 7) 4 rL 7 lR
+# fall and pick up master keys
+25 Xx 11 Xx 5 O 1 oLr 20
+# jump up and pick up 6 white key
+(J 13 j 1 J 12 j) 2 lR 24
+11 Xx 11 Lr 22 lR
+# pick up master key
+60 F 1 fLr 36
+# jump up and win
+(J 13 j 1 J 12 j) 2 lR 24
+27 Xx 7 J 1 rj

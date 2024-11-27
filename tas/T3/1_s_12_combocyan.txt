@@ -1,3 +1,4 @@
-R 13 3 JjJ 1 j 5 22 r 2
-(J 9 jJ 2 jJ 1 j 1) L 4 lR 8 rL 1 lR
-64 Jj 5 rL 13 l
+R 13 3 JjJ 1 j 5
+18 O 2 o 1 rL
+(J 13 jJ 1 j) 1 lR 1 r 12 R 1 rL 1 lR
+63 Jj 5 rL 13 l

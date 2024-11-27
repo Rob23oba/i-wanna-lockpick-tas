@@ -1,0 +1,9 @@
+# step 1: open black-stone 1 door
+LJ 9 jJ 2 j 3 lR
+
+# step 2: pick omega key (green)
+70 (J 9 j 1 J 6 j 2) 8 rL 10
+(J 9 j 1 J 6 j 1) 6 lR 11
+J 9 j 1 J 6 jJ 1 j
+1 J 8 j 1 J 7 jJ 2 j
+13 J 2 rj

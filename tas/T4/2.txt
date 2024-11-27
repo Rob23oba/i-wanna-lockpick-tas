@@ -1,0 +1,29 @@
+# step 1: open stone 1 door
+LJ 9 jJ 2 j 3 lR
+
+# step 2: doors until glitch blast door
+70 (J 9 j 1 J 6 j 2) 8 rL 10
+J 9 j 1 J 6 jJ 1 j 11 lR
+11 rL 24 lR
+2 J 10 j 2 J 5 j 1
+J 9 j 1 J 6 j 1
+(J 9 j 1 J 6 jJ 1 j) 6 rL 11 6 lR
+
+# step 3: doors until orange blastx4 door
+5 F 1 f 1 21 Jj 2 Jj 4
+1 rL 1 lR
+21 Jj 2 Jj 1 Jj 1
+11 rL 10 F 1 f
+(J 5 j 5 J 12 j) 12 lR 10 6 rL
+5 4 JjJ 1 j 3
+1 J 8 j 1 J 7 jJ 2 j 11 lR
+
+# step 4: doors until blue-glitch blank door
+10 1 21 Jj 3 Jj 1 Jj 3 17 rL
+16 4 JjJ 1 j 2
+12 4 JjJ 1 j 2 11 lR
+10 4 JjJ 1 j 3 48 rL
+
+# step 5: arrive goal
+10 (J 4 jJ 1 jJ 1 j) 14 lR 18
+17 J 1 rj

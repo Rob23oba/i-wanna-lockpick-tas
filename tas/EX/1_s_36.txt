@@ -1,0 +1,8 @@
+(J 4 j 1 J 5 jJ 1 j 2) 4 R 9
+6 (J 13 j 1 J 12 j) 14 rL 12
+15 (J 2 j 8) 1 OlR 1 o 8
+12 rL
+62 (J 1 j 1 Jj 1 Jj 1 Jj 9) 6 lR 7
+16 J 9 jJ 2 j 1
+4 (J 13 j 1 J 12 j) 16 rL 10
+18 J 5 j 3 J 1 lj

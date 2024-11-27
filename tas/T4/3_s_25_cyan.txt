@@ -1,0 +1,21 @@
+# step 1: copy doors, take master 1 key
+SsR 16 Xx
+Jj 2 J 3 j 3
+(J 1 j 18) 11 r 8
+Jj 1 Jj 1 Jj 1 Jj 2 Jj 5 11
+Xx 46 Xx 44 Xx 42 Xx
+R 14 Ss 14 J 16 j 9
+
+# step 2: open doors until pick white -1 key
+J 9 j 1 J 6 jJ 1 j
+Xx 16 Ss (J 1 jJ 1 jJ 1 j 8) 5 O 1 orL 5
+7 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+Xx 21 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
+22 lR Xx 44 Ss (J 1 jJ 1 jJ 1 j 8) 5 O 1 orL 5
+23 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
+Xx 42 (J 1 jJ 1 jJ 1 j 8) 7 rL 4
+
+# step 3: copy brown-white 1 door and obtain a brown key, salvage cyan door
+43 Jj 6 J 16 j 40
+14 l Xx 58 Xx 46 R
+62 J 1 j 1 J 3 jJ 1 j 30 r

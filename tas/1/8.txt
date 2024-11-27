@@ -1,8 +1,7 @@
-R 17 rL 31
-(J 1 jJ 2 jJ 1 j 9) 5 l 1 R 7
+R 17 rL
+31 (J 1 jJ 2 jJ 1 j 9) 5 l 1 R 7
 54 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
-12
-(J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 rL
-(J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+12 (J 7 j 1 J 9 j 1) 8 lR 10 rL
+(J 9 j 1 J 6 jJ 1 j) 8 lR 9
 13 (J 3 jJ 1 jJ 1 j 12) 6 rL 11
 11 lR 36 J 2 rj

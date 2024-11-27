@@ -1,17 +1,16 @@
 # white 2-key
-(J 6 jJ 1 jJ 1 j 16) OR 4 or 3 L 17 1
-J 3 j 2 Jj 1 Jj 1
+(J 9 j 7 J 11 j 12) OL 3 o 36
 
 # purple 2-key
-J 9 jJ 2 j 1 J 9 jJ 2 j 1
+J 4 j 1 J 5 jJ 1 j
 43 O 1 olR 36
 (J 9 jJ 2 j 1) 4 rL 8
 16 O 1 olR 16 32 rL
 24 O 1 olR 13
 
 # pink 2-key
-(J 8 j 1 J 7 j 2) 8 rL 10
-J 9 jJ 2 j 1 J 9 jJ 2 j 1
+(J 9 j 1 J 6 j 1 Jj 1) 8 rL 10
+J 10 j 1 J 4 j 1 J 5 jJ 1 j
 53 O 1 olR 47
 (J 9 jJ 2 j 1) 4 rL 8
 38 O 1 olR 31
@@ -21,7 +20,7 @@ J 9 jJ 2 j 1 J 9 jJ 2 j 1
 
 # cyan 2-key
 (J 8 j 1 J 7 j 2) 8 rL 10
-J 9 jJ 2 j 1 J 9 jJ 2 j 1 J 9 jJ 2 j 1
+J 10 j 1 J 9 jJj 2 J 4 j 1 J 5 jJ 1 j
 48 O 1 olR 42
 (J 9 jJ 2 j 1) 4 rL 8
 32 O 1 olR 64 rL
@@ -29,10 +28,10 @@ J 9 jJ 2 j 1 J 9 jJ 2 j 1 J 9 jJ 2 j 1
 55 O 1 olR 34
 
 # goal
-(J 8 j 1 J 7 j 2) 8 rL 10
+(J 9 j 1 J 6 j 1 Jj 1) 8 rL 10
 54 O 1 olR 47
-(J 9 jJ 2 j 1) 4 rL 8
-J 9 jJ 2 j 1 J 9 jJ 2 j 1 J 9 jJ 2 j 1
+(J 8 j 1 J 1 j 1) 4 rL 7
+J 4 j 1 J 5 j 1 J 10 j 1 J 4 j 1 J 5 jJ 1 j
 43 O 1 olR 64 r 2 L
 29 O 1 olR 38 r 5 L
 70 J 1 lj

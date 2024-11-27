@@ -3,15 +3,16 @@
 #1 2 3
 R 16
 J 9 j 1 J 6 jJ 1 j 1
-J 3 j 1 Jj 1 Jj 2
-6 10 J 4 jJ 2 j 5
-6 Jj 1 Jj 1 Jj 12 3 rL
+J 3 jJ 3 j
+5 Jj 5 J 1 j 2 Jj 13
+6 Jj 1 Jj 1 Jj 12 4 rL
 
 #2 3 2 1
 2 3 JjJ 1 j 5 3 15 lR
 2 3 JjJ 1 j 5 3 7 rL
-2 3 JjJ 1 j 5 J 3 j 1 Jj 1 Jj 1
-6 lR 4 rL 7 Jj 1 Jj 6 3 lR
+2 J 2 j 2 Jj 11
+6 lR 4 rL
+7 Jj 2 Jj 1 Jj 4 3 lR
 
 #2 1 1
 2 3 JjJ 1 j 5 3 12 rL
@@ -19,19 +20,21 @@ J 3 j 1 Jj 1 Jj 2
 
 #2 2 3 2
 2 3 JjJ 1 j 5 3
-J 3 j 1 Jj 1 Jj 1 6 rL 11 l 11 R
+J 3 jJ 3 j
+6 rL 10 l 12 R
 2 3 JjJ 1 j 5 3 rL
 2 3 JjJ 1 j 5 3 1 lR
 
 #3 2 1 1
 2 3 JjJ 1 j 5 3 rL
-2 3 JjJ 1 j 5 J 3 j 1 Jj 1 Jj 1
+2 Jj 6 J 1 j 8
 6 Jj 1 Jj 1 Jj 12 4 19 lR
 
 #3 2 3 3 goal
-2 3 JjJ 1 j 5 Xx J 3 j 1 Jj 1 Jj 1
+2 Jj 1 J 4 j 10 Xx
 6 Jj 1 Jj 1 Jj 12 4 rL
 2 3 JjJ 1 j 5 3 lR
-2 3 JjJ 1 j 5 J 3 j 1 Jj 1 Jj 1
+2 3 JjJ 1 j 5
+Jj 1 J 4 jJ 1 j
 6 rL 4 lR
 56 J 1 rj

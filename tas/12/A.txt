@@ -6,12 +6,12 @@ R 10
 # jump
 (J 21 j 1 J 6 jJ 1 jJ 1 j 25)
 # second 2 times
-20 rL 1 lR 1 rL 3 lR 1
+20 rL 1 lR 1 rL 2 l 2
 # first 6 times
 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1
-rL 1 lR 3
+rL 1 lR 2 r 2
 # second 3 times
-rL 1 lR 1 rL 1 lR 1 rL 1 lR 10
+R 1 rL 1 lR 1 rL 1 lR 10
 
 # jump
 (J 18 j 1 J 8 jJ 1 j 27)

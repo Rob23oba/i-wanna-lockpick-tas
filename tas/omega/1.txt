@@ -1,24 +1,25 @@
 #sol: [2 7 12 3 4 12]
 
-L 24 J 9 jJ 2 j 1 72
+L 24 J 4 j 1 J 5 j 1 Jj 1 72
 
 # No.2
-(J 9 jJ 2 j 1) 4 lR 8
-(J 9 j 1 J 6 jJ 1 j 1) 4 r 6 R 8
-J 9 jJ 2 j 1 5 rL
+(J 8 j 1 J 1 j 1) 4 lR 7
+(J 9 j 1 J 6 j 1) 4 r 6 R 7
+J 9 jJ 2 j 5 rL
 
 # No.7,12
-12 l 10 L 12 JjJ 3 jJ 1 j 2
-6 J 5 j 5 J 12 j Xx 8 l
+12 l 10 L 12 Jj 3 Jj 3
+6 J 5 j 5 J 12 j 8 Xx l
 48 R
 
 # No.3,4 (via 7-platform)
-29 JjJ 2 jJ 1 j 1
-6 F 1 f J 5 j 5 J 12 j 1 8 rL
+29 Jj 2 Jj 2
+7 J 5 j 5 J 12 j 8 rL
 8 lR 19 rL
 
 # No.12 (via 7-platform)
-2 F 1 f 18 J 5 j 6 J 12 j 1 8 lR
+2 F 1 f 18 F 1 f
+J 5 j 5 J 12 j 8 lR
 
 # goal
 68 J 9 j 1 J 6 jJ 1 j 1

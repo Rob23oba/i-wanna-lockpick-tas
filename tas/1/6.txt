@@ -1,5 +1,5 @@
 R 1
 J 15 j 2 J 2 j 1 Jj 2
 33 rL 33 lR 54 O 1 orL 36
-(J 9 jJ 2 j 1) 4 lR 8 J 9 jJ 2 j 1
+(J 10 j 1) 4 lR 7 J 4 j 1 J 5 jJ 1 j
 28 O 1 orL 41 lR 79 Jj 3 r
