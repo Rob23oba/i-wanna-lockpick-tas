@@ -16,11 +16,10 @@ J 1 lR 12 j 11 Xx rL
 5 (J 9 jJ 2 j 1) 4 lR 8 11 r 24 L
 2 (J 7 j 1 J 9 jJ 1 j) 8 lR 10 11 r 19 L
 2 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10 11 rL
-47 lR 30 O 1 orL
+5 Jj 1 Jj 1 Jj 1 Jj 6 34 lR 28 O 1 orL
 
 # open doors (1,9,1,9), pick 15-key
-20 (J 4 j 1 J 5 j 1 Jj 1)
-4 lR 8 11 rL
+20 (J 5 j 2 J 3 jJ 2 j) 4 lR 8 11 rL
 5 (J 10 j 1) 4 lR 7 (J 10 j 1 J 5 jJ 1 j) 17 11 rL
 27 lR 17 rL
 5 (J 10 j 1) 4 lR 7 (J 9 j 1 J 6 jJ 1 j) 17 11 rL
@@ -28,7 +27,7 @@ J 1 lR 12 j 11 Xx rL
 
 # open doors (3,9,3), pick 46-key
 31 (J 10 j 1) 4 lR 7 (J 4 j 1 J 5 jJ 1 j) 11 11 rL
-2 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10 11 rL
+2 (J 7 j 1 J 9 jJ 1 j) 8 lR 10 11 rL
 11 lR 24 rL
 27 lR 50 O 1 orL
 

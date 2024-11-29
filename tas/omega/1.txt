@@ -19,8 +19,9 @@ J 9 jJ 2 j 5 rL
 
 # No.12 (via 7-platform)
 2 F 1 f 18 F 1 f
-J 5 j 5 J 12 j 8 lR
+J 5 j 5 J 12 j 2 Jj 6 lR
 
 # goal
-68 J 9 j 1 J 6 jJ 1 j 1
+2 Jj 1 Jj 1 Jj 1 Jj 6
+56 J 9 j 1 J 6 jJ 1 j 1
 72 J 1 rj

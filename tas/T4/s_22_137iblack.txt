@@ -12,14 +12,14 @@ R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
 14 (J 13 j 1 J 12 j) 13 O 1 or 11 R 1
 18 (J 8 j 2 J 7 j 1) 4 rL 13 O 1 olR
 J 10 j 1 Jj 1 Jj 1 Jj 5
-32 (J 6 j 1 J 5 j 19) 2 rL 30
+32 (J 6 j 1 J 5 j 20) 2 rL 30
 33 lR 54 rL
 
 # step 3: middle & top-left: #26 & two allx3 doors & white rotor key
 99 4 JjJ 1 j 2 6 lR
 24 r 2 L 7 J 3 j 11 l 2 R 22 rL
-34 lR 12
-(J 8 j 1 J 7 jJ 2 j) 8 rL 10
+34 lR
+12 (J 8 j 1 J 7 jJ 2 j) 8 rL 10
 8 (J 13 j 1 J 3 jJ 1 j) 8 lR 10
 3 J 9 j 1 J 6 jJ 1 j 11 rL
 10 (J 5 j 5 J 12 j 2 Jj) 12 lR 10
@@ -28,8 +28,8 @@ J 10 j 1 Jj 1 Jj 1 Jj 5
 
 # step 4: middle & salvage black 137i door
 136 lR 14 rL 15 J 3 j 11 l 2 R 22 rL
-69 lR 48
-(J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+69 lR
+48 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
 8 (J 13 j 1 J 3 jJ 1 j) 8 lR 10
 3 (J 10 j 1 J 5 j 1) 7 rL 10
 (J 9 j 1 J 6 jJ 1 j) 8 lR 10

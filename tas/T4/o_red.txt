@@ -27,7 +27,7 @@ J 9 j 1 J 6 jJ 1 j 11 O 1 olR
 # step 3: open bottom-right blast blue door
 4 (J 1 j 1 Jj 1 Jj 1 Jj 41) 24 r 16 L 5
 35 lR 115 rL 46 F 1 flR
-55 4 JjJ 1 j 2
+55 1 Jj 1 Jj 1 Jj 4
 60 rL 58 3 JjJ 1 j 5
 
 # step 4: open bottom-left every green-pink doors
