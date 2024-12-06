@@ -4,7 +4,7 @@ $enter_world $1/clear
 R 3 J 2 j 1 J 1 jJ 3 j 62 r
 $enter_world $2/clear
 
-LJ 6 j 1 J 6 j 1 J 12 j 1
+LJ 7 j 1 J 7 j 1 J 5 j 1 J 2 j 1
 J 9 j 1 J 6 jJ 1 j
 1 J 3 j 2 Jj 1 Jj 1 22 l
 $enter_world $3/clear
@@ -14,16 +14,16 @@ J 11 j 1 J 11 j 1
 2 J 13 j 1 J 12 j 1 Jj 1 25 r
 $enter_world $4/clear
 
-LJ 6 j 1 J 6 j 1 J 12 j 1
+LJ 7 j 1 J 7 j 1 J 5 j 1 J 2 j 1
 J 9 j 1 J 6 j 1 lR
 J 9 j 1 J 6 jJ 1 j 1 15 r
 $enter_world $5/clear
 
-LJ 6 j 1 J 6 j 1 J 12 j 1
+LJ 7 j 1 J 7 j 1 J 5 j 1 J 2 j 1
 J 9 j 1 J 6 j 1 lR
 J 9 j 1 J 6 jJ 1 j 1
-9 J 6 j 1 J 5 j 1
-(J 10 j 1 J 12 j 1) r 11 L 13
-J 1 j 1 J 3 j 1
+9 J 6 j 1 J 6 j 1 rJ 1 j 1
+(J 9 j 1 J 6 j 1) 8 L 9
+J 4 j 1
 (J 12 j 2 J 13 j) 14 lR 13 8 r
 $enter_world $6/clear

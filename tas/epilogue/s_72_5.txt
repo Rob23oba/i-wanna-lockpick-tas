@@ -2,10 +2,10 @@
 L 55 J 9 jJ 2 j 1 116
 J 9 j 2 Jj 1 (J 4 j 1 J 5 jJ 1 j) 4 lR 7
 2 J 9 j 1 J 6 j 1 rL
-J 7 j 1 J 9 j 1 lR
+J 8 j 2 J 7 j 1 lR
 (J 4 j 1 J 5 jJ 1 j) 6 O 2 or 2 R 1
-Xx 6 Xx 6 Xx 6 Xx rL 16 1
-(34 Jj 1 Jj 25) 5 l 20 L 27 lR 8 7
+Xx 6 Xx 6 Xx 6 Xx rL 11
+(J 2 j 31 Jj 1 Jj 1 Jj 21 7) 15 l 20 L 22 lR 6 7
 
 # touch #72
 28 (J 6 jJ 1 jJ 1 j 16) 9 rL 15 23

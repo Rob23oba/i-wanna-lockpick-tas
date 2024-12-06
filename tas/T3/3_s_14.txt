@@ -1,17 +1,18 @@
 # open every white, cyan, black door, except the last black door
 (J 3 jJ 1 jJ 1 j 12) 3 L 14
-7 Jj 1 Jj 1 Jj 1 Jj 6
-43 l 3 L 32 OlR 1 or 4 R 1
-7 J 2 j 1 J 2 jJ 2 j 1
-14 J 7 j 1 J 6 rLj 20
+5 J 1 j 1 Jj 1 Jj 1 Jj 31
+18 l 3 L 24 OlR 1 or 4 R 2
+6 J 2 j 1 J 2 jJ 2 j 1
+14 J 6 j 2 J 6 rLj 20
 
 # touch SID#14
 27 (J 6 j 1 J 2 j 2) 4 lR 7
 (J 9 j 1 J 6 jJ 1 j) 6 rL 11
-3 (J 13 j 1 J 13 j) 10 lR 17 3 rL
+3 (J 13 j 1 J 13 j) 10 lR 17
+J 2 j 3 rL 6
 
 # salvage the last black door
-4 lR 20 J 2 j 13 rL 14 lR 6
+1 lR 15 J 1 j 13 rL 14 lR 6
 7 J 3 jJ 3 j
 16 J 9 j 1
 J 9 j 1 J 4 rj

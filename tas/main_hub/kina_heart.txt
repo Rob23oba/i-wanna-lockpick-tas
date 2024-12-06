@@ -15,11 +15,11 @@ rL 78 3 Jj 1 Jj 2 Jj 2
 
 # ground to 4-door, 1-door, 6-door
 55 J 1 j 1 J 3 jJ 1 j
-34 J 6 j 1 J 6 j 1 J 12 j 1
+34 J 7 j 1 J 7 j 1 J 5 j 1 J 2 j 1
 J 9 j 1 J 6 j 1 lR
 J 9 j 1 J 6 jJ 1 j 1
-9 J 6 j 1 J 5 j 1
-(J 11 j 26) r 11 L 25 1
+9 J 6 j 1 J 6 j 1 rLJ 1 j 1
+(J 6 j 27) l 6 L 27
 27 l 3 L
 13 J 11 j 25 J 4 j 1 J 5 jJ 1 j 45 lR
 
@@ -55,7 +55,7 @@ Jj 1 Jj 1 Jj 1 Jj 1 Jj 1
 14
 
 # Kina's Heart
-(J 14 j 1 J 13 j 1 J 1 j 1) L 29 F 1 fO 1 ol
+(J 15 j 1 J 12 j 1 J 1 j) L 29 O 1 ol
 $skip_kina_heart
 
 # enter Focal Point

@@ -24,5 +24,5 @@ $warp/EX_to_omega
 
 R 88 r
 $enter_exit
-R 35 4 JjJ 1 j 2 42 J 9 jJ 2 j 1 29 J 3 j 4 J 2 rj
+R 35 4 JjJ 1 j 2 42 J 9 jJ 2 j 1 29 J 3 j 4 2 r
 $enter $omega/masterpiece $win
