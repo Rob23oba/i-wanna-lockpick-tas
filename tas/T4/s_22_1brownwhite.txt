@@ -12,17 +12,19 @@ J 9 j 1 J 6 j 2
 5 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
 
 # step 2: open two allx3 doors, those doors before brown-white 1 door
-6 lR 104 1 rL
-21 Jj 2 Jj 3
+6 lR 59 J 2 j 7 19
+15 1 rL 21 Jj 2 Jj 2 Jj 1
 11 lR 10
 (J 5 j 5 J 12 j) 12 rL 10
-14 (J 13 j 1 J 12 j) 12 l 4 L 10
-43 J 8 j 2 J 7 j 1
-(J 9 j 1 J 6 jJ 1 j) 2 l 14 R 1
+2 Jj 12 (J 13 j 1 J 12 j) 12 l 4 L 10
+43 J 10 j 1 J 5 j 2
+(J 10 j 1 J 5 jJ 1 j) 2 l 14 R 1
 17 rL
 
 # step 3: touch input point #22
-17 lR 115 rL 18 l 2 R 73 rL 69 O 1 olR
+11 J 2 j 7 1 lR 25
+38 J 2 j 7 19
+16 rL 18 l 2 R 73 rL 69 O 1 olR
 
 # step 4: salvage brown-white 1 door
 48 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10

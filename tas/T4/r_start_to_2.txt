@@ -12,22 +12,23 @@ J 8 j 2 J 7 j 1
 5 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
 
 # step 2: open two allx3 doors, pick brown 1 key
-6 lR 104 1 rL
-21 Jj 2 Jj 3
+6 lR 59 J 2 j 7 19
+15 1 rL 21 Jj 2 Jj 2 Jj 1
 11 lR 10
 (J 5 j 5 J 12 j) 12 rL 10
-14 (J 13 j 1 J 12 j) 12 l 4 L 10
+2 Jj 12 (J 13 j 1 J 12 j) 12 l 4 L 10
 43 J 8 j 2 J 7 j 1
 (J 9 j 1 J 6 jJ 1 j) 2 l 14 R 1
-29 J 3 j 2 Jj 1 Jj 1
+29 J 1 j 3 J 2 j 1
 (J 8 j 1 J 1 j 1) 4 rL 7 lR
 (J 9 j 1 J 6 j 1) 6 rL 11
 J 9 j 1 J 6 jJ 1 j 11 O 1 olR
 
 # step 3: open one allx3 door, open brown-white 1 door
 4 (J 1 j 1 Jj 1 Jj 1 Jj 41) 24 r 16 L 5
-35 lR 171
-4 JjJ 1 j 4 rL
+29 J 2 j 7 1 lR 25
+38 J 2 j 7 19
+72 3 JjJ 1 j 5 rL
 4 JjJ 1 j 3
 35 J 7 j 1 J 9 jJ 1 j
 14 (J 13 j 1 J 12 j) 12 l 4 L 10
@@ -42,7 +43,8 @@ J 4 j 1 J 5 jJ 1 j
 21 J 1 j 1 J 3 jJ 1 jJ 1 j 1
 J 9 j 1 J 6 jJ 1 j
 34
-1 J 3 jJ 3 j 65 lR 53 rL
+1 J 3 jJ 3 j 12 14
+39 lR 53 rL
 
 # step 5: pick brown rotor key
 18 J 7 j 1 J 9 j 1
@@ -61,4 +63,5 @@ J 9 j 1 J 6 jJ 1 j
 (J 9 j 1 J 6 j 1) 6 rL 11
 J 9 j 1 J 6 jJ 1 j
 33
-1 J 3 jJ 3 j 63 lR 63 rL 50 l
+J 2 j 1 J 1 j 1 Jj 2 Jj 12 13
+37 lR 63 rL 50 l

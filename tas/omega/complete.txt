@@ -13,32 +13,7 @@ $enter $omega/4 $win
 R 5 r
 $enter $omega/5 $win
 
-R 6 r
-$enter $omega/6 $win
-
-R 5 r
-$enter $omega/7 $win
-
-R 8 4 JjJ 1 j 3 8 r
-$enter $omega/8 $win
-
-R 7 r
-$enter $omega/9 $win
-
-R 7 r
-$enter $omega/10 $win
-
-# Masterpiece salvage and change color, then come back
-R 9 J 9 jJ 2 j 1 29 J 3 j 4 2 r
-$omega/masterpiece_s_95-99
-
-$warp/omega_to_EX
-$enter_panel_chapter_ex
-$recolor/95-99
-$exit_panel_to_warp
-$warp/EX_to_omega
-
-R 102 J 13 j 1 J 12 j 11 r
+R 1 J 13 j 1 J 12 j 11 r
 $enter $omega/11 $win
 
 (J 9 j 1 J 6 jJ 1 j) 8 L 9 35 l
@@ -65,7 +40,32 @@ $enter $omega/18 $win
 R 7 r
 $enter $omega/19 $win
 
+# Masterpiece salvage and change color, then come back
 R 66 J 3 j 4 2 r
+$omega/masterpiece_s_95-99
+
+$warp/omega_to_EX
+$enter_panel_chapter_ex
+$recolor/95-99
+$exit_panel_to_warp
+$warp/EX_to_omega
+
+R 106 r
+$enter $omega/6 $win
+
+R 5 r
+$enter $omega/7 $win
+
+R 8 4 JjJ 1 j 3 8 r
+$enter $omega/8 $win
+
+R 7 r
+$enter $omega/9 $win
+
+R 7 r
+$enter $omega/10 $win
+
+R 9 J 9 jJ 2 j 1 29 J 3 j 4 2 r
 $enter $omega/masterpiece $win_to_warp
 
 $warp/omega_to_EX

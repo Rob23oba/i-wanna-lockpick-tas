@@ -1,12 +1,20 @@
-# black, EX-3 salvage
+# black, #31, EX-2 clear, EX-3 salvage
 
-$warp/T2_to_EX
+$warp/T2_to_T4
+$T4/s_31
+$salvage
+$T4/r_start_to_5c
+$enter
+$T4/5_s_27_137iblack
+$salvage_to_warp
+
+$warp/T4_to_EX
 $EX/r_start_to_2
 $enter $EX/2 $win
 
 Nn 1
 $enter_panel_chapter_ex
-$recolor/3
+$recolor/3,24-26,28,29
 $exit_panel_to_move
 
 $EX/r_panel_to_3

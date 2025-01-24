@@ -3,6 +3,6 @@ $omegakey/purple
 $omegakey/pink_clear
 $omegakey/cyan
 $omegakey/brown_clear
-$omegakey/black_complete
+$omegakey/black
 $omegakey/blue
-$omegakey/red,green
+$omegakey/red,green_complete

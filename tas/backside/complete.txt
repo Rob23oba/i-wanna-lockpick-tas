@@ -1,7 +1,8 @@
 L 38
 J 7 j 1 J 7 j 1
 J 4 j 1 J 5 jJ 1 j
-80 l
+23 J 2 j 7
+7 O 2 ol 1 L 36 l
 $enter_world
 
 L 80 l

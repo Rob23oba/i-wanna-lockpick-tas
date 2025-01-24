@@ -1,21 +1,8 @@
 # blue
 
-$warp/T1_to_EX
-$enter_panel_chapter_ex
-$recolor/24-26,28,29,46,47
-$exit_panel_to_move
-
-$EX/r_panel_to_3
-$enter $EX/3 $win
-$EX/r_3_to_4
-$enter $EX/4_s_50 $salvage
-$enter $EX/4_s_48_4black $salvage_to_warp
-
-$warp/EX_to_T4
+$warp/T1_to_T4
 $T4/s_22_137iblack $salvage
 
-$T4/r_start_to_1c
-$enter $T4/1_s_23_red $salvage
-$T4/r_1c_to_5c
+$T4/r_start_to_5c
 $enter $T4/5_o_blue $skip_item
 $exit

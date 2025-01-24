@@ -7,9 +7,7 @@ Zz 1
 
 # #11
 LlJj 1
-$recolor/orange
-Dd $recolor/orange
-Dd $recolor/orange
+$recolor/white
 Zz 1
 
 # #10
@@ -21,7 +19,9 @@ Zz 1
 
 # #9
 UuJj 1
-$recolor/white
+$recolor/orange
+Dd $recolor/orange
+Dd $recolor/orange
 Zz 1
 
 # #8

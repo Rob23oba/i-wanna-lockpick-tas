@@ -1,6 +1,6 @@
-# brown, EX-1 clear, EX-2 salvage&clear, #29
+# brown, EX-1 clear, EX-2 salvage, #29
 
-$warp/T1_to_EX
+$warp/T3_to_EX
 $EX/r_start_to_1
 $enter $EX/1 $win
 $EX/r_1_to_2

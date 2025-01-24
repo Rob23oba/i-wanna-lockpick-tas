@@ -1,0 +1,17 @@
+# step 1: copy doors, take master 1 key
+SsR 16 Xx
+Jj 2 J 3 j 3
+(J 1 j 18) 11 r 8
+Jj 1 Jj 1 Jj 1 Jj 2 Jj 5 11
+Xx 46 Xx 44 Xx 42 Xx
+R 14 Ss 14 J 16 j 9
+
+# step 2: open red door
+J 9 j 1 J 6 jJ 1 j
+Xx 23 Ss 4 Xx rL
+
+# step 3: touch input#25, salvage green door
+37 l 10 R 17 rL
+5 (J 7 j 1 J 9 j 1) 6 lR 12
+J 9 j 1 J 6 jJ 1 j
+39 Ss 4 Xx r

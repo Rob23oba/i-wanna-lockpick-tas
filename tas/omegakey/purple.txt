@@ -1,28 +1,16 @@
-# purple, #31
+# purple
 
-$warp/T1_to_T2
-$T2/r_start_to_3c
-$enter
-$T2/3_s_6_8masterpink
-$salvage
-$T2/r_3c_to_5c
-$enter
-$T2/5_s_8_allpink
-$salvage_to_warp
-
-$warp/T2_to_T4
-$T4/s_31
-$salvage
-$T4/r_start_to_5c
-$enter
-$T4/5_s_27_137iblack
-$salvage_to_warp
-
-$warp/T4_to_lab
+$warp/T1_to_lab
 $enter_panel_lab
 $recolor/5,7-11,21
 $exit_panel_to_warp
 
 $warp/lab_to_T2
+$T2/r_start_to_3c
+$enter
+$T2/3_s_6_8masterpink
+$salvage
+
+Nn 1
 $T2/o_purple
 $skip_item

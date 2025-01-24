@@ -1,3 +1,2 @@
-R 29
-(J 1 jJ 1 jJ 1 j 27) 12 rL 18
+R 29 (J 1 jJ 1 jJ 1 j 27) 12 rL 18
 1 lR 10 r

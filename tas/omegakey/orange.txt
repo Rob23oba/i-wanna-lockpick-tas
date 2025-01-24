@@ -9,7 +9,7 @@ $warp/lab_to_T1
 $T1/o_orange_s_28
 $salvage
 
-L 64 l
+$T1/r_start_to_3c
 $enter
 $T1/3_s_2_-veblast
 $salvage_to_warp

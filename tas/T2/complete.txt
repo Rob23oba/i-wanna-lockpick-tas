@@ -35,12 +35,15 @@ $T2/r_start_to_7
 $enter $T2/7 $win
 $enter $T2/7_s_10_black $salvage
 
-$T2/o_white_from_T2-7
+$T2/o_white_from_7
 $skip_item
 
 Nn 1
 
-L 23 l 9 L 17 l
+$T2/r_start_to_5c
+$enter $T2/5_s_8_allpink $salvage
+
+$T2/r_5c_to_7c
 $enter $T2/7_s_9 $salvage
 $enter $T2/7_s_10_green $salvage
 $enter $T2/7_s_11 $salvage

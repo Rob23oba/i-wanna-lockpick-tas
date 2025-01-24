@@ -20,9 +20,9 @@ $enter $T3/4 $win
 
 $T3/r_start_to_1
 $enter $T3/5_s_19 $salvage
-$enter $T3/5_s_17 $salvage
-$enter $T3/5_s_18 $salvage
 $enter $T3/5_s_20 $salvage
+$enter $T3/5_s_18 $salvage
+$enter $T3/5_s_17 $salvage
 $enter $T3/5_s_21 $salvage
 
 Nn 1

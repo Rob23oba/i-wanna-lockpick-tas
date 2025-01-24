@@ -15,8 +15,8 @@ Zz 1
 # #45
 Rr 1 Rr 1 Rr 1 Rr 1 Uu 1 UuJj 1
 $recolor/purple
-Dd $recolor/pink
-Dd $recolor/white
+Dd 1
+Dd $recolor/orange
 Zz 1
 
 # #44

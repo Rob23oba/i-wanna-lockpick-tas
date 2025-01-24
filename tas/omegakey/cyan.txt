@@ -1,5 +1,0 @@
-# cyan
-
-$warp/T3_to_T1
-$T1/o_cyan
-$skip_item

@@ -1,7 +1,8 @@
-# pink, T3-7, EX-1 salvage, #30
+# pink, T3-7, EX-1&EX-A salvage, cyan, #30
 
 $warp/T2_to_T3
 $T3/r_start_to_7
+$enter $T3/7 $win
 $enter $T3/7_s_32_No4 $salvage
 $enter $T3/7_s_33 $salvage_to_warp
 
@@ -31,12 +32,20 @@ $enter $EX/1_s_36 $salvage
 $enter $EX/1_s_37 $salvage
 $enter $EX/1_s_38 $salvage
 $enter $EX/1_s_39 $salvage
+$EX/r_1_to_A
+$enter $EX/A_s_40 $salvage
+$enter $EX/A_s_41 $salvage
+$enter $EX/A_s_42 $salvage
 
 Nn 1
 $enter_panel_chapter_ex
-$recolor/1,2,32-39
+$recolor/1,2,32-42
 $exit_panel_to_warp
 
-$warp/EX_to_T3
+$warp/EX_to_T1
+$T1/o_cyan
+$skip_item
+
+$warp/T1_to_T3
 $T3/s_30
 $salvage_to_warp
