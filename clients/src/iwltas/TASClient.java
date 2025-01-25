@@ -63,9 +63,17 @@ public class TASClient implements Closeable {
 	 * @return the response.
 	 */
 	public String get() throws IOException {
-		String str = in.readLine();
-		//System.out.println("[Server] " + str);
-		return str;
+		while (true) {
+			String str = in.readLine();
+			if (str == null) {
+				throw new EOFException("No line received");
+			}
+			if (str.startsWith("$")) {
+				System.out.println(str);
+				continue;
+			}
+			return str;
+		}
 	}
 
 	/**
