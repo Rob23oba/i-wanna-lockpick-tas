@@ -1,23 +1,22 @@
 # start to brown signflip key
 R 10 J 7 j 1 J 9 j 1
 J 9 j 1 J 6 jJ 1 j 10 F 1 frL
-11 lR 29 rL
-59 J 11 j 1 J 4 j 1 J 1 j 16 lR
+64 J 11 j 1 J 4 j 1 J 1 j 16 lR
 17 rL 40 lR
 18 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 21 lR
 
 # brown signflip key to curse glitch -8 door
-13 (J 7 j 1 J 9 j 1) 8 rL 10 lR
-(J 2 j 1 Jj 1 Jj 1 Jj 35) 18 r 11 R 11
-46 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
-13 (J 9 j 2 J 6 j 1) 8 lR 10
+13 (J 8 j 2 J 7 j 1) 8 rL 10
+J 2 j 1 Jj 1 Jj 1 Jj 11
+2 lR 28 r 4 R 32
+J 10 j 1 J 5 j 2
 J 9 j 1 J 6 j 1 rL
-J 2 j 1 Jj 1 Jj 1 Jj 35
+(J 2 j 1 Jj 1 Jj 1 Jj 35) 11 l 19 R 10
 
 # curse glitch -8 door to brown -8 key
-22 J 7 j 1 J 9 j 1
-J 9 j 1 J 6 jJ 1 j 11 lR
-28 r 3 R 33 J 9 j 1 J 6 jJ 1 j 1 21 rL
+14 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
+13 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+21 O 1 orL
 
 # brown -8 key to goal
 64 J 7 j 1 J 9 j 1

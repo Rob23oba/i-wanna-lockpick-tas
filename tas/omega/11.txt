@@ -13,18 +13,18 @@ J 3 j 1 JjJ 2 j 3 lR
 2 (J 9 jJ 2 j 1) 4 rL 8 8 lR
 
 # No.1
-2 Jj 1 Jj 1 Jj 1 Jj 6 29
+2 J 2 j 7 23 5
 J 10 j 1
 (J 10 j 1 J 5 j 1) 4 r 6 R 7
 J 10 j 1 rL
 (J 4 j 1 J 5 jJ 1 j) 4 lR 7 5 rL
 
 # No.7,9,5
-11 l 18 L 12 J 1 j 1 Jj 2 Jj 2 lR
+J 2 j 7 6 l 13 L 11 Jj 3 Jj 3 lR
 (J 5 j 5 J 12 j) 12 rL 10 8 lR
-4 (J 9 j 1 J 6 jJ 1 j 1) 10 rL 8 3 lR
+4 (J 10 j 1 J 7 j 1 Jj 1 Jj 40) 8 rL 14 lR 5 r 20 L 6 lR 7
 
 # goal
-3 r 20 L 10 lR
-29 J 7 j 1 J 9 jJ 1 j
-72 J 1 rj
+21 J 9 j 1 J 6 jJ 1 j 1
+1 Jj 1 Jj 1 Jj 1 Jj 6 24
+37 J 1 rj

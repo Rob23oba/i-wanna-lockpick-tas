@@ -23,8 +23,8 @@ J 10 j 1 J 4 j 1 J 5 jJ 1 j
 J 10 j 1 J 9 jJj 2 J 4 j 1 J 5 jJ 1 j
 48 O 1 olR 42
 (J 9 jJ 2 j 1) 4 rL 8
-32 O 1 olR 64 rL
-33 O 1 olR 33 rL
+32 O 1 olR
+64 rL 33 O 1 olR 33 rL
 55 O 1 olR 34
 
 # goal
@@ -32,6 +32,6 @@ J 10 j 1 J 9 jJj 2 J 4 j 1 J 5 jJ 1 j
 54 O 1 olR 47
 (J 8 j 1 J 1 j 1) 4 rL 7
 J 4 j 1 J 5 j 1 J 10 j 1 J 4 j 1 J 5 jJ 1 j
-43 O 1 olR 64 r 2 L
-29 O 1 olR 38 r 5 L
+43 O 1 olR 38 J 2 j 7 20 rL
+27 O 1 olR 38 r 5 L
 70 J 1 lj

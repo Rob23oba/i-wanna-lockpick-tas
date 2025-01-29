@@ -1,0 +1,88 @@
+# pick 2 key(top)
+R 13 Xx
+(Jj 1 Jj 3 Jj 1 Jj 8 7) 13 Xx 5 O 1 or 1 Xx
+2 R 1 Xx 6 Xx 6
+
+# pick 6 key(top)
+Xx J 1 j 2 J 11 j
+(2 Jj 4) 6 Xx 1 Xx (J 2 j 8) 10
+Xx J 6 j 2 J 2 jJ 2 j
+
+# pick 8 key
+1 Xx (Jj 1 Jj 1 Jj 2 Jj 7) 11 Xx
+7 Xx 3 Xx
+(3 J 1 j 1 Jj 1 Jj 14 5) 4 O 2 or 14 Xx 5 Xx
+2 R 1 Xx 4 Xx
+rL 12 Xx 4 lR 1
+
+# pick 5 key(right)
+(J 9 jJj 2) 4 rL 7 (J 9 j 1 J 6 jJ 1 j) 8 lR 9
+11 2 Jj 2 Jj 1 Jj 5
+5 (Jj 1 Jj 3 Jj 1 Jj 8 7) 12 O 1 or Xx 7 Xx
+2 L 1 Xx 2 O 1 ol 1 Xx
+12 Xx
+3 R 1 Xx 4 Xx rL 15
+2 Jj 1 Jj 1 Jj 1 Jj 3
+
+# pick 4 key(lower)
+4 (Jj 1 Jj 3 Jj 1 Jj 8 7) 1 lR 12 Xx 5 r 2 Xx
+2 R 1 Xx 6 Xx 6 Xx 6 Xx 5 O 1 orL
+
+# pick 4 key(upper)
+5 Xx (J 2 j 8) 2 l 8
+Xx (J 6 j 2 J 2 jJ 2 j) 1 OR 5 or 5 R 1
+Xx 5 O 1 orL
+
+# pick 1 key, 5 key(middle), 6 key(bottom)
+38 Xx 6 Xx 3 Xx
+10 1 Jj 1 Jj 1 Jj 5
+6 3 Jj 1 Jj 2 Jj 2
+Xx 1 Xx (J 2 j 8) 2 l 8 L
+Xx (J 6 j 2 J 2 j 3 Jj 1 Jj 18) 12 lR 20
+1 r 5 L 1 Xx 6 Xx 6 Xx 6 Xx 5 O 1 olR
+
+# pick 9 key
+20 J 6 j 2 J 2 jJ 2 j
+6 1 Jj 1 Jj 2 Jj 4
+2 J 1 j 1 J 3 jJ 1 j
+(1 Jj 5) 6
+J 10 j 1 (J 4 j 1 J 5 jJ 1 j) 8 O 1 or 1 R 1
+Xx 6 Xx 6 Xx 6 Xx
+1 Xx (J 2 j 8) 2 r 8
+Xx (J 6 j 2 J 2 jJ 2 j) 1 OL 5 ol 5 L 1
+Xx 5 O 1 olR
+
+# open 1 door
+6 rL 33
+1 Jj 1 Jj 1 Jj 4
+1 (J 4 j 1 J 5 j 1) 4 lR 7 (J 9 jJ 2 j) 4 rL 7
+11 Jj 1 Jj 1 Jj 2 Jj 6
+Xx (J 2 j 8) 2 l 8
+Xx (J 6 j 2 J 2 jJ 2 j) 1 OR 3 or 7 R 1
+Xx 6 Xx 6 Xx 6 Xx 6 Xx 6 Xx 6 Xx
+2 r 1 LJjJ 1 j
+
+# pick 3 key
+28 J 2 j 7
+13 J 2 j 7
+6 l 8 L 13
+(Jj 1 Jj 3 Jj 1 Jj 8 7) 13 5 O 1 ol 1
+1 OL 1 o 2 5 lR
+
+# pick 2 key(bottom)
+5 J 9 jJ 2 j 1
+16 J 8 j 1 J 7 jJ 2 j
+5 (Jj 1 Jj 3 Jj 1 Jj 8 7) 13 7
+Jj 17 5 4 7
+7 rL 17
+17 O 3 ol 1
+10 9 R 7 rL
+
+# arrive goal
+5 J 9 jJ 2 j 1
+6 4 JjJ 1 j 3
+19 (J 2 j 8) 6 l 4
+(J 6 j 2 J 2 j 2) 1 OL 2 ol 8 L 1
+(Jj 1 Jj 3 Jj 1 Jj 8 7) 13 5 O 2 ol
+2 L 2
+23 J 3 lj

@@ -19,7 +19,7 @@ $enter $EX/4 $win
 
 # EX-5
 
-L 10 lR 82 J 9 jJ 2 j 1 6 r
+L 10 lR 40 O 2 or 11 R 29 J 9 jJ 2 j 1 5 r
 $enter $EX/5_s_51 $salvage
 $enter $EX/5_s_52_-5pure $salvage
 

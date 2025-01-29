@@ -1,0 +1,34 @@
+# step 1: pick -25 pure key, and cyan key
+L 33 lR 5 4 JjJ 1 j 3 59 rL 5
+
+# step 2: pick pure keys: 1,8,16
+J 4 j 1 J 5 jJ 1 j 1 11 O 1 olR 10
+2 Jj 1 Jj 6
+J 4 j 1 J 5 jJ 1 j 11 O 1 orL 10
+2 Jj 1 Jj 6
+J 4 j 1 J 5 jJ 1 j 11 O 1 olR 5
+J 2 j 12 Jj 2 Jj 1 Jj 16 1 rL 7 7
+
+# step 3: open -3 purple door (behind -25 pure key)
+50 4 JjJ 1 j 2 14 lR
+
+# step 4: open master door, arrive platform below -25 pure key
+13 4 Jj 1 Jj 3
+71 J 2 j 7 1 rL
+102 J 4 jJj 1 (J 9 j 1 J 6 j 1) 6 lR 11
+
+# step 5: pick -42, -63 pure keys
+(J 10 j 1) 4 rL 7 lR
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9 5 lR 2
+(J 11 j 1 J 4 jJ 2 j) 8 rL 10
+
+# step 6: pick brown key
+4 (J 1 j 1 Jj 1 Jj 1 Jj 41) 1 lR 11 r 30 L 3 1 lR
+67 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10 17 lR 17 rL
+
+# step 7: arrive goal
+69 J 4 j 1 (J 9 j 1 J 6 j 1) 6 lR 11
+(J 4 j 1 J 5 j 1) 4 rL 7 lR
+(J 10 j 1) 11 rL
+(J 4 j 1 J 5 jJ 1 j) 4 lR 7
+Xx 18 J 1 rj

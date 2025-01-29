@@ -4,9 +4,9 @@ L 6
 # pick up master key
 1 (J 3 jJ 1 jJ 1 j 12) 7 Lr 10
 # path 3
-(Jj 1 Jj 1 Jj 2 Jj 14) 24 Xx 5 O 1 olR 11 Lr
+(Jj 1 Jj 1 Jj 2 Jj 14) 24 Xx 5 O 1 olR 11 r
 # path 4
-22 lR 5
+14 L 7 lR 5
 # path 2
 (J 10 j 1) 1 r 8 L 2
 (J 4 j 1 J 5 jJ 1 j) 22 O 1 olR 11
@@ -27,10 +27,10 @@ L 6
 11 l 2 R
 # the journey upwards (1)
 1 (J 8 j 1 Jj 1 Jj 1) 11
-(J 4 j 1 J 5 j 1) 10 O 1 oLr
+(J 4 j 1 J 5 j 1) 11 Lr
 (J 9 j 1 J 6 jJ 1 j) 17
 1 (J 3 j 1 Jj 2 Jj 1) 7
-(J 13 j 1 J 12 j) lR 28
+(J 13 j 1 J 12 j 2) lR 28
 17 Xx 5 O 1 oLr
 # pick up master key (path 4)
 16 Jj 1 Jj 1 Jj 1 Jj 6
@@ -38,7 +38,7 @@ L 6
 7 r 12 L 41 O 1 olR 36
 (J 4 j 1 J 5 jJ 1 j 1) 2 r 9 L 55
 # the journey upwards (2)
-(J 10 j 1) 1 lR 9 O 1 oLr
+(J 10 j 1) 1 lR 10 Lr
 (J 9 j 1 J 6 jJ 1 j) 17
 1 (J 2 j 2 J 1 j 1 Jj 1) 7
 (J 13 j 1 J 12 j 1 Jj 1) lR 28
@@ -49,7 +49,7 @@ L 6
 (J 10 j 1) 1 r 8 L 2
 (J 4 j 1 J 5 jJ 1 j) 32 O 1 olR 32 r 11 L 51
 # the journey upwards (3)
-(J 10 j 1) 1 lR 9 O 1 oLr
+(J 10 j 1) 1 lR 10 Lr
 (J 9 j 1 J 6 jJ 1 j) 17
 1 (J 2 j 2 J 1 j 1 Jj 1) 7
 (J 13 j 1 J 12 j 1 Jj 1) lR 28
@@ -59,9 +59,9 @@ L 6
 12 l 26 R 51
 (J 4 j 1 J 5 jJ 1 j 1) 1 r 9 L 23 O 1 olR 22 r 13 L 51
 # the journey upwards (4)(win)
-(J 10 j 1) 2 lR 8 O 1 oLr
+(J 10 j 1) 2 lR 9 Lr
 (J 9 j 1 J 6 jJ 1 j) 17
 1 (J 2 j 2 J 1 j 1 Jj 1) 7
-(J 13 j 1 J 12 j) lR 28
+(J 13 j 1 J 12 j 2) lR 28
 49 Xx 12
-4 J 3 jr
+4 Jj 3 r

@@ -12,7 +12,8 @@ J 9 j 1 J 6 j 1
 # step 3: open orange-blue -5 door,
 # touch input#24, salvage orange allx4 door
 37 4 JjJ 1 j 2 11 rL
-110 (J 9 jJ 2 j 1) 4 lR 8 3 rL 4 lR
+5 Jj 1 Jj 1 Jj 1 Jj 6
+95 (J 9 jJ 2 j 1) 4 lR 8 3 rL 4 lR
 67 (J 9 j 1 J 6 j 2) 8 rL 10
 (J 9 j 1 J 6 j 1) 6 lR 11
 J 9 j 1 J 6 j 1

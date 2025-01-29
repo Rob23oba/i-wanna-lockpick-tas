@@ -3,7 +3,8 @@ L 4
 12 J 2 jJ 1 jJ 1 j 11
 3 J 3 j 2 Jj 1 Jj 1
 
-55 rL 46 Xx 28 lR 28
+49 J 2 j 7
+1 rL 40 Xx 28 lR 28
 
 4 4 JjJ 1 j 2
 6 4 JjJ 1 j 3

@@ -5,4 +5,5 @@ R 15 (J 9 j 1 J 6 jJ 1 j 1) 5 rL 13
 12 (J 9 jJ 1 jJ 1 j 18) 7 lR 22
 11 Jj 10 Jj 19
 12 (J 9 jJ 1 jJ 1 j 18) 11 rL 18
-12 lR 34 J 1 rj
+6 Jj 1 Jj 1 Jj 1 Jj 6
+1 O 1 ol 13 R 14 J 1 rj

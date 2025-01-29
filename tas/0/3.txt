@@ -2,19 +2,24 @@
 R 46 J 3 j 2 Jj 1 Jj 1
 
 #Climb up
-27 (J 9 jJ 2 j 1) 4 Lr 8
+27 (J 4 j 1 J 5 j 1 Jj 1) 4 Lr 8
 11 (J 9 jJ 2 j 1) 4 lR 8
 11 (J 9 jJ 2 j 1) 4 Lr 8
-11 (J 9 jJ 2 j 1) 4 lR 8
+11 (J 4 j 1 J 5 j 1 Jj 1) 4 lR 8
 
 #Pick the key and get up
-28 rL 24 J 13 j 1 J 12 j
+22 J 2 j 7 19 Lr
+J 12 j 1 J 14 j
 
 #Climb down
-28 lR 28 rL 28 lR 28 rL 62
+22 J 2 j 7
+1 lR 17 Jj 1 Jj 1 Jj 1 Jj 6
+1 Lr 18 J 2 j 7
+1 lR 17 J 2 j 7
+1 Lr 56
 
 #Open the door
-(J 15 j 1 J 10 jJj 1) 13 l 2 R 12
+(J 15 j 1 J 10 j) 15 lR 11
 
 #Jump to the warp
-J 5 jJj 4 r
+Jj 1 J 5 jJj 4 r

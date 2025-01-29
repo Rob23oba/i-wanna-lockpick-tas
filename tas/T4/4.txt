@@ -11,10 +11,11 @@ R 3 J 9 j 1 J 6 jJ 1 j 1
 8 (J 5 jJ 2 jJ 1 j 15) R 1 rL 2 l 17 R 3
 
 # part 2: path at bottom-right
-86 r Xx 48 Xx 46 Xx 44 Xx 42 Xx
+21 Jj 1 Jj 1 Jj 1 Jj 6
+55 r Xx 48 Xx 46 Xx 44 Xx 42 Xx
 40 46 43 41 38 36 R
-17 (J 9 j 1 J 6 jJ 1 j 1) 6 rL 12
-44 (J 9 j 1 J 6 jJ 1 j 1) 6 lR 12
+17 (J 11 j 1 J 4 j 1 J 1 j) 6 rL 12
+44 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12
 16 r Xx 48 Xx 46 Xx 44 Xx 42 Xx
 40 46 43 41 38 36 R
 27 (J 11 j 1 J 4 j 1 J 1 j) 6 rL 12

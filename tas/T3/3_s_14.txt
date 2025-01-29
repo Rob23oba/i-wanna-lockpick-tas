@@ -1,7 +1,8 @@
 # open every white, cyan, black door, except the last black door
 (J 3 jJ 1 jJ 1 j 12) 3 L 14
 5 J 1 j 1 Jj 1 Jj 1 Jj 31
-18 l 3 L 24 OlR 1 or 4 R 2
+4 (Jj 1 Jj 3 Jj 21) 18 l 7
+1 L 7 OlR 1 or 3 R 2
 6 J 2 j 1 J 2 jJ 2 j 1
 14 J 6 j 2 J 6 rLj 20
 

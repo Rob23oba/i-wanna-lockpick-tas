@@ -1,0 +1,20 @@
+# 4>, 1, 2
+(J 9 j 1 J 6 j 1) R 7 rL 10 lR
+J 7 j 1 J 9 jJ 1 j 6 rL
+6 l 25 R 6 rL
+(J 9 j 1 J 6 j 1) 7 lR 10 rL
+(J 7 j 1 J 9 jJ 1 j) 8 lR 10 17
+
+# 18>, 54>, 6>, 12, 36
+4 JjJ 1 j 2 43 rL
+2 J 9 j 1 J 6 jJ 1 j 1
+12 Jj 1 Jj 1 Jj 1 Jj 6
+1 l 20 R 10 rL
+2 (J 9 j 1 J 6 jJ 1 jJ 1 j 22) 7 lR 11 rL 1 lR 21
+17 (J 9 j 1 J 6 jJ 1 j 1) 2 rL 1 l 5 R 10 17
+
+# arrive goal
+18 Jj 3 Jj 1 Jj 4
+29 J 1 j 1 J 3 jJ 1 j
+2 (J 4 j 1 J 5 jJ 1 j) 4 rL 7
+6 J 3 lj

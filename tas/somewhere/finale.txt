@@ -37,8 +37,8 @@ L 6 10 J 3 jJ 2 j 3
 
 # part 2: pick green signflip key at left
 61 J 9 jJ 2 j 1 19 F 1 f lR
-76 rL 36 Xx 29 lR
-61 Jj 1 Jj 1 Jj 30 rL
+76 rL 36 Xx 23 J 2 j 7
+1 lR 56 Jj 1 Jj 1 Jj 30 rL
 20 lR 7
 (J 9 j 1 J 6 j 2) 8 rL 10
 J 9 j 1 J 6 jJ 1 j
@@ -46,23 +46,23 @@ J 9 j 1 J 6 jJ 1 j
 4 J 9 jJ 2 j 1
 5 J 9 jJ 2 j 1
 6 (J 9 jJ 2 j 1) 4 lR 8
-40 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10
-32 (J 10 j 1) 4 lR 7
+40 (J 13 j 1 J 3 jJ 1 j) 8 rL 10
+32 (J 8 j 1 J 1 j 1) 4 lR 7
 J 9 j 1 J 6 jJ 1 j
-8 (J 7 j 1 J 9 jJ 1 j)8 rL 10
+8 (J 11 j 1 J 4 jJ 2 j) 8 rL 10
 88 (J 6 jJ 1 jJ 1 j 16) 10 lR 14
 
-87 rL 48 l 2 R 41 rL 62 lR
-61 Jj 1 Jj 1 Jj 30 rL
+87 rL 48 l 2 R 35 J 2 j 7 1 rL 51 J 2 j 7
+1 lR 56 Jj 1 Jj 1 Jj 30 rL
 24 Xx 11 Xx 40
 3 lRJj 1 Jj 1 Jj 2
 (J 4 j 1 J 5 jJ 1 j) 4 rL 7
-50 (J 3 jJ 1 jJ 1 j 12) 12 lR 5 1 rL 13 lR
+50 (J 2 j 1 Jj 1 Jj 1 Jj 11) 12 lR 4 1 rL 13 lR
 J 9 j 1 J 6 jJ 1 j
 49 J 3 j 2 Jj 1 Jj 1 29 rL
 27 lR 74
 
-(J 11 j 1 J 4 j 2) 8 rL 10
+(J 10 j 1 J 5 j 2) 8 rL 10
 J 9 j 1 J 6 jJ 1 j
 4 J 9 jJ 2 j 1
 4 J 9 jJ 2 j 1
@@ -79,8 +79,8 @@ J 9 j 1 J 6 jJ 1 j
 45 J 11 j 1 J 4 j 1 J 1 j 1 22 rL
 
 # part 3: pick cyan signflip key at bottom
-66 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
-8 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+66 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
+8 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10
 9 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12
 24 J 11 j 1 J 4 j 1 J 1 j
 188 rL
@@ -92,7 +92,7 @@ J 9 j 1 J 6 jJ 1 j
 
 78 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12
 6 Xx 26 F 1 frL
-129 (J 11 j 1 J 4 j 2) 6 lR 12
+129 (J 10 j 2 J 5 j 1) 6 lR 12
 J 9 j 1 J 6 jJ 1 j 18 rL
 63 4 JjJ 1 j 2
 25 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12 6 rL
@@ -118,12 +118,12 @@ J 10 j 1 J 5 jJ 1 j 66 rL
 47 J 9 jJ 2 j 1 5 F 1 frL
 
 68 4 JjJ 1 j 2
-25 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+25 (J 8 j 2 J 7 jJ 1 j) 8 lR 10
 8 (J 11 j 1 J 4 j 1 J 1 j) 8 rL 10
 9 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12
-24 J 11 j 1 J 4 j 1 J 1 j
-188 rL 48 l 2 R 41 rL 62 lR
-61 Jj 1 Jj 1 Jj 30 rL
+24 J 8 j 2 J 7 jJ 1 j
+188 rL 48 l 2 R 35 J 2 j 7 1 rL 51 J 2 j 7
+1 lR 56 Jj 1 Jj 1 Jj 30 rL
 66 J 9 jJ 2 j 1
 75 lR
 4 J 9 j 1 J 6 jJ 1 j 1
@@ -156,11 +156,11 @@ J 9 j 1 J 6 jJ 1 j
 38 lR 55 F 1 frL
 64 4 JjJ 1 j 2
 9 (J 11 j 1 J 4 j 1 J 1 j) 6 lR 12
-24 J 11 j 1 J 4 j 1 J 1 j
-188 rL 48 l 2 R 41 rL 62 lR
+24 J 13 j 1 J 3 jJ 1 j
 
 # part 5: arrive goal
-61 Jj 1 Jj 1 Jj 19 rL
+188 rL 48 l 2 R 35 J 2 j 7 1 rL 51 J 2 j 7
+1 lR 56 Jj 1 Jj 1 Jj 19 rL
 19 lR 17 rL
 76 J 9 jJ 2 j 1
 102 O 1 olR
@@ -186,10 +186,10 @@ J 11 j 1 J 4 j 1 J 1 j 1 33 rL
 
 77 (J 9 j 1 J 6 jJ 1 j 1) 6 lR 12
 8 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
-8 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10
-24 J 11 j 1 J 4 j 1 J 1 j
-188 rL 48 l 2 R 41 rL 62 lR
-61 Jj 1 Jj 1 Jj 19 rL
+8 (J 8 j 2 J 7 jJ 1 j) 8 lR 10
+24 J 8 j 2 J 7 jJ 1 j
+188 rL 48 l 2 R 35 J 2 j 7 1 rL 51 J 2 j 7
+1 lR 56 Jj 1 Jj 1 Jj 19 rL
 121 3 JjJ 1 j 5
 8 J 9 j 1 J 6 jJ 1 j 1
 19 (J 11 j 1 J 4 j 1 J 1 j) 8 lR 10

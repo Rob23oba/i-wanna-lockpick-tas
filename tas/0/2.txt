@@ -19,8 +19,9 @@ J 13 j 1 J 12 jJj 1
 J 13 j 1 J 12 j
 20 J 7 j 15
 (J 13 j 1 J 10 jJ 1 jJ 1 j 25) r 20 L 31
-42 Jj 6 Jj 14
-34 lR 33
+20 23 J 3 j 1 Jj 1 Jj 14
+28 Jj 1 Jj 1 Jj 1 Jj 6
+1 OlR 2 or 12 R 14
 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
 
 # then to bottom-right purple 8-key

@@ -1,4 +1,5 @@
 R 2 (J 1 jJ 1 jJ 1 j 8) 4 rL 7
 5 Jj 1 Jj 1 Jj 1 Jj 6
 29 (J 2 jJ 1 jJ 1 j 11) 9 l 1 R 5
-15 rL 33 l
+4 (Jj 1 Jj 1 Jj 17) 15 rL 4
+20 l

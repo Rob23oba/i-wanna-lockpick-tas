@@ -1,0 +1,22 @@
+# step 1: pick -42 pure key, and cyan key
+L 14 J 3 j 2 Jj 1 Jj 2 5 lR
+12 r 13 R 60 rL 5
+
+# step 2: pick pure keys: 2,8,32
+(J 9 jJ 2 j 1) 4 lR 8 16 O 1 orL 10
+(J 9 jJ 2 j 1) 4 lR 8 11 O 1 orL 10
+3 Jj 1 Jj 5
+(J 4 j 1 J 5 jJ 1 j) 4 lR 7 16 O 1 orL 11
+(J 2 j 12 Jj 2 Jj 1 Jj 16) 10 lR 23 1 rL 7 7
+
+# step 3: open -3 purple door (behind -42 pure key)
+49 J 10 j 1 J 5 jJ 1 j 1 14 lR
+
+# step 4: open master door, arrive platform below -25 pure key
+8 Jj 1 Jj 1 Jj 1 Jj 6 7 r 5 R
+76 J 2 j 7 1 rL
+102 J 4 jJj 1 (J 10 j 1 J 5 j 1) 6 lR 11
+
+# step 5: salvage combo green door
+(J 10 j 1) 4 rL 7 lR
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9 Xx 27 l

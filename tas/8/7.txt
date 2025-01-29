@@ -14,9 +14,9 @@ L 3 J 9 jJ 2 j 1
 
 18 (J 6 j 1 J 11 j 1) 7 rL 12
 (J 4 j 1 J 5 jJ 1 j) 4 lR 7
-6 4 JjJ 1 j 3
-59 r Xx 48 Xx 46 Xx 44 50 48 46
+6 1 J 4 j 2 Jj 13
+45 r Xx 48 Xx 46 Xx 44 50 48 46
 
 R 47 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
-53 (J 9 j 2 J 6 j 1) 8 lR 10
+53 (J 9 j 1 J 6 j 2) 8 lR 10
 J 9 rj

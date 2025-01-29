@@ -5,4 +5,5 @@ lrudjznspcxbwaefo
 8 lR 38 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
 4 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
 18 (J 3 jJ 1 jJ 1 j 12) 7 rL 10
-17 lR 44 J 1 rj
+11 Jj 1 Jj 1 Jj 1 Jj 6
+1 lR 39 J 1 rj

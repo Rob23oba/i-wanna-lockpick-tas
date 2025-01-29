@@ -8,6 +8,8 @@ J 9 j 1 J 6 jJ 1 j
 
 # do the rest
 16 10 J 3 jJ 2 j 3
-17 3 J 6 j 9
+17 J 3 j 3 Jj 5 Jj 1 Jj 6
 6 Xx 8 F 1 flR
-25 r 9 L 51 l
+8 Jj 1 Jj 1 Jj 1 Jj 6
+12 r 9 L 3
+1 J 2 j 7 31 l

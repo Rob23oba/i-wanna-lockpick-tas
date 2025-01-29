@@ -8,20 +8,21 @@ L 24 J 4 j 1 J 5 j 1 Jj 1 72
 J 9 jJ 2 j 5 rL
 
 # No.7,12
-12 l 10 L 12 Jj 3 Jj 3
+J 2 j 7 6 l 10 L 7 Jj 2 Jj 4
 6 J 5 j 5 J 12 j 8 Xx l
 48 R
 
 # No.3,4 (via 7-platform)
-29 Jj 2 Jj 2
-7 J 5 j 5 J 12 j 8 rL
-8 lR 19 rL
+2 J 2 j 7 16 Jj 1 Jj 4
+5 OrL 1 olR 2 J 5 j 4 J 12 j 8 rL
+2 J 2 j 7 1 lR 13 rL
 
 # No.12 (via 7-platform)
 2 F 1 f 18 F 1 f
-J 5 j 5 J 12 j 2 Jj 6 lR
+J 5 j 5 J 12 j 8 lR
 
 # goal
-2 Jj 1 Jj 1 Jj 1 Jj 6
-56 J 9 j 1 J 6 jJ 1 j 1
-72 J 1 rj
+2 J 2 j 7 23
+32 J 9 j 1 J 6 jJ 1 j 1
+1 Jj 1 Jj 1 Jj 1 Jj 6 24
+37 J 1 rj

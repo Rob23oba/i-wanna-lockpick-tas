@@ -1,13 +1,13 @@
 # arrive bottom of pink door
 R J 3 j 1 Jj 2 Jj 1
-24 J 3 j 2 Jj 1 Jj 1
-(Jj 1 Jj 3 Jj 21 8) 13 rL 13 lR 7
+25 J 4 jJj 1
+(Jj 1 Jj 3 Jj 2 Jj 19) 13 rL 12 1 lR 7
 (Jj 1 Jj 2 Jj 1 Jj 30) 11 rL 23 11
 11 J 1 j 1 J 3 jJ 1 j
-1 Jj 6 4 JjJ 1 j 2
+6 2 Jj 1 Jj 1 Jj 4
 
 # open pink door
-24 J 4 j 1
+24 J 4 jJj 1
 J 4 j 1 J 5 jJ 1 j
 3 (J 9 j 1 J 6 jJ 1 j) 8 lR 9
 3 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
@@ -31,6 +31,7 @@ J 4 j 1 J 5 j 1
 14 J 15 j 1 J 12 j
 6 14 Jj 5 Jj 1
 2 J 1 j 1 J 3 jJ 1 j
-7 rL 30 l 9 R 5 r 12 L 7
+1 J 2 j 7
+1 rL 24 l 9 R 5 r 12 L 7
 4 J 11 j 1 J 4 jJ 2 j
 2 J 7 j 1 J 5 lj

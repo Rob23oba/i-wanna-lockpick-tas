@@ -22,7 +22,9 @@ J 9 j 1 J 6 j 1
 10 1 21 Jj 3 Jj 1 Jj 3 17 rL
 16 4 JjJ 1 j 2
 12 4 JjJ 1 j 2 11 lR
-10 4 JjJ 1 j 3 48 rL
+10 4 JjJ 1 j 3
+7 Jj 1 Jj 1 Jj 1 Jj 6
+31 rL
 
 # step 5: arrive goal
 10 (J 4 jJ 1 jJ 1 j) 14 lR 18

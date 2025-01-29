@@ -8,7 +8,7 @@ R 3 J 3 j 2 Jj 1 Jj 1
 7 Xx 11 rL 16
 
 4 JjJ 1 j 2
-39 lR 45 F 1 f rL
+39 O 1 ol 13 R 30 F 1 frL
 23 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
 38 4 JjJ 1 j 3
 29 rL 40 l

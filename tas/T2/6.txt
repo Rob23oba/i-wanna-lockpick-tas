@@ -1,0 +1,22 @@
+R 26 J 9 j 1 J 6 jJ 1 j 1
+# copy doors
+6 Xx rL
+5 4 JjJ 1 j 3 6 Xx lR 5 4 JjJ 1 j 3 6 8 Xx rL
+5 4 JjJ 1 j 3 6 Xx lR 5 4 JjJ 1 j 3 6 4 Xx rL
+5 4 JjJ 1 j 3 6 Xx lR 5 4 JjJ 1 j 3 6 Xx rL
+5 4 JjJ 1 j 3 6 Xx lR 5 4 JjJ 1 j 3 6 Xx rL
+5 4 JjJ 1 j 3 6 Xx lR 5 4 JjJ 1 j 3 6 Xx rL
+5 4 JjJ 1 j 3 6 Xx lR 5 4 JjJ 1 j 3 6 Xx r
+# open copies
+24 26 L
+5 4 JjJ 1 j 3 6 22 lR
+5 4 JjJ 1 j 3 6 17 rL
+5 4 JjJ 1 j 3 6 lR 5 4 JjJ 1 j 3 6 rL
+5 4 JjJ 1 j 3 6 lR 5 4 JjJ 1 j 3 6 rL
+5 4 JjJ 1 j 3 6 12 12 lR
+5 3 JjJ 1 j 4 6 12 rL
+# arrive goal
+6 lR 35 16 r 13 R 6
+12 J 2 j 8
+J 6 j 1 J 2 jJ 3 j
+6 4 Jj 4 r

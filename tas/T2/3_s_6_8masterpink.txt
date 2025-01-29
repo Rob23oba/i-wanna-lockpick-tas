@@ -1,0 +1,5 @@
+R 5 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+5 F 1 flR 81
+J 9 j 1 J 6 j 2 rL
+(J 9 j 1 J 6 j 1) 8 lR 9 rL
+(J 9 j 1 J 6 jJ 1 j) 8 lR 9 16 r
