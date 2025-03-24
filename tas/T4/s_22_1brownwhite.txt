@@ -12,8 +12,8 @@ J 9 j 1 J 6 j 2
 5 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
 
 # step 2: open two allx3 doors, those doors before brown-white 1 door
-6 lR 59 J 2 j 7 19
-15 1 rL 21 Jj 2 Jj 2 Jj 1
+Jj 1 Jj 1 Jj 1 Jj 6 1 lR 54 J 2 j 7 19
+15 1 rL 21 Jj 2 Jj 3
 11 lR 10
 (J 5 j 5 J 12 j) 12 rL 10
 2 Jj 12 (J 13 j 1 J 12 j) 12 l 4 L 10

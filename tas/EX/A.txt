@@ -1,0 +1,4 @@
+(J 9 jJj 1 Jj 1 Jj 18) L 4 OlR 1 or 2 R 22
+10 (Jj 1 Jj 1 Jj 2 Jj 6) 10 1 rL 40 lR
+86 (J 1 j 1 J 6 j 15) 15 r 8
+J 11 j 1 J 1 13 j

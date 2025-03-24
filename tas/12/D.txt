@@ -1,0 +1,95 @@
+# curse a glitch
+L 16 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+8 (J 10 j 1) 11 lR (J 4 j 1 J 5 jJ 1 j) 2 rL 9
+1 O 1 olR 25
+# open left purple blank door, curse a purple & copy
+25 (J 7 j 1 J 9 j 1) 18
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9
+6 lR (J 2 j 7) 9 1 rL 25
+10 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+2 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+11 Xx lR
+# pick -4 key & open left black blank door, curse a black
+36 (J 10 j 2 J 5 j 1) 18
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9
+11 (J 1 j 1 Jj 1 Jj 1 Jj 9) 10 lR 3
+9 (J 2 j 7) 9 1 rL 25
+10 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+8 (J 9 jJ 2 j 1) 12
+1 O 1 olR 17
+# pick -3 key; pick purple 5 key
+23 (J 10 j 2 J 5 j 1) 18
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9
+28 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+6 (J 1 j 1 Jj 1 Jj 1 Jj 9) 5 rL 8
+(Jj 1 Jj 1 Jj 1 Jj 6) 9 1 lR 17
+21 (J 2 j 7) 9 1 rL 15 lR 10
+25 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
+# touch purple, open all door
+45 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+16 lR 20 (J 1 j 1 Jj 1 Jj 1 Jj 9) 7 rL 6
+17 O 2 ol 6 R
+33 (J 8 j 2 J 7 j 1) 18
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9
+27 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+16 (J 9 j 1 J 6 jJ 1 j) 8 rL 10
+16 lR 11 (J 2 j 7) 9 1 rL 15
+11 (Jj 1 Jj 1 Jj 1 Jj 6) 9 1 lR 17
+21 (J 2 j 7) 9 1 rL 25
+# touch purple, pick -5 key
+14 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+16 lR
+36 (J 8 j 2 J 7 j 1) 18
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9
+27 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+16 (J 11 j 1 J 4 jJ 2 j) 8 rL 10
+7 (J 1 j 1 Jj 1 Jj 1 Jj 9) 6 lR 7
+2 (J 2 j 7) 9 1 rL 15
+11 (Jj 1 Jj 1 Jj 1 Jj 6) 9 1 lR 17
+21 (J 2 j 7) 9 1 rL 15 lR 10
+# open right 1st purple blank door, pick -6 key
+36 rL
+34 (J 10 j 1 J 5 j 2) 8 lR 10
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9
+12 (J 1 j 1 Jj 1 Jj 1 Jj 9) 7 lR 6
+8 (J 2 j 7) 9 1 rL 25
+# touch black, pick 2 key
+14 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+4 (J 9 jJ 2 j 1) 12
+5 lR (J 2 j 7) 9 12
+25 (J 10 j 2 J 5 j 1) 18
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9
+27 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+16 (J 11 j 1 J 4 jJ 2 j) 8 rL 10
+5 (J 1 j 1 Jj 1 Jj 1 Jj 9) 3 lR 10
+(J 2 j 7) 9 rL 16
+11 (Jj 1 Jj 1 Jj 1 Jj 6) 9 1 lR 17
+21 (J 2 j 7) 9 1 rL 15 lR 10
+# open right 1st green blank door, pick -7 key
+44 (J 11 j 1 J 4 jJ 2 j) 8 rL 10
+6 lR 6 rL
+64 (J 7 j 1 J 9 j 1) 8 lR 10
+(J 9 j 1 J 6 jJ 1 j) 8 rL 9
+27 (J 12 j 1 J 7 j 1 Jj 25) 8 lR 16 rL 8 lR 14
+22 (J 2 j 7) 9 1 rL 15 lR 10
+# open right 2nd green blank door
+44 (J 8 j 2 J 7 jJ 1 j) 8 rL 10
+31 (J 6 j 1 J 11 jJ 1 j) 8 lR 11
+22 rL 22 lR 52 rL
+# touch glitch, pick -8 key
+86 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+4 (J 10 j 1) 11 lR (J 4 j 1 J 5 jJ 1 j) 2 rL 9
+5 lR (J 2 j 7) 9 19
+76 (J 11 j 1 J 4 jJ 2 j) 8 rL 10
+30 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+30 (J 11 j 1 J 4 jJ 2 j) 8 rL 10
+26 F 1 flR 27 rL 52 lR 52 rL
+# curse & open brown, arrive goal
+82 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+8 (J 10 j 1) 11 lR (J 4 j 1 J 5 jJ 1 j) 11
+5 rL (J 2 j 7) 9 1 lR 18
+76 (J 11 j 1 J 4 jJ 2 j) 8 rL 10
+30 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+30 (J 11 j 1 J 4 jJ 2 j) 8 rL 10
+41 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+42 J 1 rj

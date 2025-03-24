@@ -4,7 +4,7 @@ R 26 J 9 j 1 J 6 jJ 1 j 1
 5 O 1 olR 30 rL
 21 4 JjJ 1 j 3
 9 (J 7 j 1 J 9 j 1) 8 lR 10 J 9 j 1 J 6 jJ 1 j
-17 Xx 48 55 11 rL
+17 r Xx 48 55 R 11 rL
 47 lR 21 rL 20 lR 18 rL
 7 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
 8 (J 11 j 1 J 7 j 1 Jj 1 Jj 23) 22 rL 22

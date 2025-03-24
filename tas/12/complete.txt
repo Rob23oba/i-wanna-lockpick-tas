@@ -43,7 +43,6 @@ R 14 rL 29 l
 $enter $12/D $win
 
 L 40 l
-$enter $12/C $win
+$enter $12/C $win_to_warp
 
-Nn 1
-$enter_world
+$warp/12_to_EX

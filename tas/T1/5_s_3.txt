@@ -3,10 +3,10 @@ RJ 9 j 1 J 6 j 1 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
 26 Jj 1 Jj 1 Jj 13 lR 3
 2 J 4 j 1 J 4 j 1 J 5 jJ 1 j
 10 J 9 jJ 2 j 1
-22 rL 22 lR 22 rL 22 lR 22 rL
+22 rL 22 lR 17 F 1 f rL 18 lR 22 rL
 5 (J 10 j 1) 4 lR 7 (J 9 j 1 J 6 jJ 1 j) 8 rL 9
 10 F 1 flR 10
-53 O 1 orL 11 J 1 j 1 J 3 jJ 1 j
+54 O 1 orL 11 J 1 j 1 J 3 jJ 1 j
 6 (J 10 j 1) 4 lR 7 (J 14 j 2 J 10 jJ 1 j) 10 rL 17
 5 O 1 olR 5
 Jj 4 J 1 j 1 Jj 23

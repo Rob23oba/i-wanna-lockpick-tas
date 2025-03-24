@@ -1,7 +1,6 @@
 $omegakey/orange
 $omegakey/purple
-$omegakey/pink_complete
-$omegakey/cyan
+$omegakey/pink,cyan_complete
 $omegakey/brown_complete
 $omegakey/black
 $omegakey/blue

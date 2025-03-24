@@ -14,14 +14,14 @@ J 4 j 1 J 5 jJ 1 j
 3 (J 10 j 1 J 5 j 1 Jj 1) 8 lR 10
 11 (J 4 j 13) 14 rL 3
 
-# open purple door
+# pick purple key
 1 13 l 6 R 5 r 9 L 4 l 6 R 3 12
 5 J 3 j 2 Jj 1 Jj 1
-6 J 7 j
+6 J 1 j 1 Jj 1 Jj 1 Jj 9
 
 # open orange door
-39 (J 13 j 1 J 3 jJ 1 j) 8 rL 10
-1 J 3 j 1 Jj 2 Jj 1
+23 (J 8 j 1 J 7 jJ 2 j) 8 rL 10
+2 J 1 j 1 J 3 j 1
 (J 13 j 1 J 12 j 1) l 14 R 13
 J 4 j 1 J 5 j 1
 (J 4 j 1 J 5 jJ 1 j) 2 rL 9

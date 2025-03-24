@@ -1,0 +1,28 @@
+# master 4 key, inf: white (+3)
+R 45 (J 1 jJ 1 jJ 1 j 8) 5 O 1 orL 5
+5 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+16 r Xx 48 L
+17 lR 40 rL
+18 (J 8 j 2 J 7 jJ 1 j) 8 lR 10
+23 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
+15 (J 13 j 1 J 12 j) 26
+10 F 1 f lR 1 rL 1 lR 1 rL 1 lR 1
+# black -4 key, inf: black (+5), master exact 0
+17 r 20 R 7 25 Xx 8 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
+32 (J 13 j 1 J 3 j 1) 8 lR 10 r
+(J 13 j 1 J 12 j) 13 L 13
+10 F 1 flR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1 rL 1 lR 1
+(J 7 j 1 J 4 j 1 Jj 1 Jj 34) 48
+# row 1, inf: master (+2)
+55 rL
+55 (J 13 j 1 J 12 j) 26
+10 F 1 flR 1 rL 1 lR 1
+# row 2, inf: brown (+2)
+17 r 20 R 7 47 Xx 6 Xx 10 F 1 frL
+61 (J 13 j 1 J 3 j 1) 8 lR 10 r
+(J 13 j 1 J 12 j) 13 L 13
+10 F 1 lR 1 frL 8 lR
+# inf: brown (+1), goal
+(J 8 j 1 J 1 j 1) 1 rL 10
+(J 13 j 2 J 11 jJ 1 j) 13 lR 14
+67 (J 1 j 1 J 3 jJ 1 j) 6 16 Jj 4 r

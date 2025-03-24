@@ -16,7 +16,7 @@ J 13 j 1 J 12 j
 
 # copy and open #7
 72 J 3 j 1 Jj 2 Jj 1
-6 Xx 48 rL 5
+6 r Xx 48 L 5
 
 # pick -50 pink key
 J 2 j 12 J 7 j 8

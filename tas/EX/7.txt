@@ -1,0 +1,36 @@
+(J 1 j 1 Jj 1 Jj 1 Jj 9) R 13
+57 rL 10 J 9 jJ 2 j 1
+#middle: [57][58][59], [58][57], 58
+21 (J 8 j 1 J 9 j 1 Jj 1 Jj 23) 10 l Xx 3 Xx R 18 Xx rL 12
+(J 8 j 1 J 3 j 1 Jj 1 Jj 20) 5 l 9 Xx 9 Xx 11
+4 (J 8 j 1 J 3 j 1 Jj 1 Jj 20) 16 R 18
+# purple 6 key & #58
+70 (J 1 jJ 1 jJ 1 j 8) 4 O 1 orL 6
+34 J 9 jJ 2 j 1
+18 (J 8 j 1 J 3 j 1 Jj 1 Jj 20) 16 lR 18
+# purple lockless door & #57
+73 (J 4 j 3 J 7 j 1 Jj 21) 9 rL 27
+39 J 9 jJ 2 j 1
+27 lR
+# cyan -8 key & #57
+83 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+31 (J 6 jJ 1 jJ 1 j 16) 7 lR 17
+28 rL 61 J 9 jJ 2 j 1
+27 lR
+# pink lockless door & #59,#58,#57
+83 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+30 (J 7 j 3 J 8 jJ 1 j) 8 lR 11
+27 rL 27 lR 52 rL 61 J 9 jJ 2 j 1
+14 (J 8 j 1 J 9 j 1 Jj 1 Jj 23) 8 lR 5 Xx rL 18 l Xx 3 Xx R 9
+# pure lockless door & #59
+79 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+30 (J 8 j 2 J 7 jJ 1 j) 8 lR 10
+30 (J 8 j 2 J 7 jJ 1 j) 6 r 11 L 1
+22 lR 22 rL 52 lR 52 rL 61 J 9 jJ 2 j 1
+14 (J 8 j 1 J 3 j 1 Jj 1 Jj 20) 8 lR 26
+# goal
+71 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
+30 (J 8 j 2 J 7 jJ 1 j) 8 lR 10
+30 (J 8 j 2 J 7 jJ 1 j) 8 rL 10
+30 (J 8 j 2 J 7 jJ 1 j) 8 lR 10
+14 r

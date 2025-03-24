@@ -1,0 +1,8 @@
+R 98 (J 1 jJ 1 jJ 1 j 8) 6 rL 5
+22 lR 23 rL 6 lR 23 rL
+2 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+16 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
+12 (J 7 j 1 J 9 j 1) 8 lR 10 rL
+J 9 j 1 J 6 jJ 1 j
+4 (J 6 j 1 J 6 jJ 1 jJ 1 j 20) 18 lR 17
+52 r

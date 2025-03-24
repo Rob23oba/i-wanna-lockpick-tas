@@ -1,0 +1,53 @@
+# step 1
+R 27 (J 9 j 1 J 6 j 2) 18
+(J 9 j 1 J 6 jJ 1 j) 17
+12 O 1 orL
+4 (J 7 j 1 J 9 j 1) 8 lR 10
+(J 4 j 1 J 5 jJ 1 j) 11 6 rL
+(J 2 j 9 Jj 1 Jj 3 Jj 17 11) 43 11 1 lR 21 4 rL
+# step 2: star RGB and so on
+36 (J 2 j 1 Jj 2 Jj 2 Jj 11) 18
+6 (J 1 j 1 Jj 1 Jj 1 Jj 9) 4 O 1 olR 8
+34 (J 11 j 1 J 4 jJ 2 j) 18
+6 (J 5 j 3 J 12 j 1) 2 O 1 orL 6 lR 12
+(J 8 j 2 J 7 j 1) 18
+(J 4 j 1 J 5 jJ 1 j) 11 21 O 1 orL
+16 (J 2 j 9 Jj 1 Jj 3 Jj 17 11) 43 11 22
+# step 3: unstar GB and so on
+18 (J 3 j 1 Jj 1 Jj 1 Jj 13) 2 lR 17
+13 (J 10 j 2 J 5 j 1) 18
+(J 9 j 1 J 6 j 1) 17
+(J 9 j 1 J 6 j 1) 17
+(J 4 j 1 J 5 jJ 1 j 1) 12
+33 9 O 1 orL (J 3 j 2 Jj 3) 8
+26 (Jj 1 Jj 3 Jj 9 12) 25 1 lR 10
+8 rL 17 lR 21 4 rL
+4 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+37 rL
+28 (J 7 j 1 J 9 j 1) 8 lR 10
+(J 4 j 1 J 5 jJ 1 j) 11
+34 rL 33 lR 15 (J 4 j 1 J 5 jJ 1 j 1) 4 rL 8
+28 (J 2 j 9 Jj 1 Jj 3 Jj 17 11) 43 11 22
+# step 4: unstar R and so on
+27 (J 1 j 1 Jj 1 Jj 1 Jj 9) 5 O 1 olR 7
+29 (J 11 j 1 J 4 jJ 2 j) 18
+33 rL 23 (J 8 j 1 J 7 jJ 2 j) 8 lR 10
+43 (J 1 jJ 1 jJ 1 j 8) 3 O 1 orL 7
+35 (Jj 2 Jj 1 Jj 2 Jj 7 16) 12 16 11
+# step 5: star R and so on
+38 (J 1 j 1 Jj 1 Jj 1 Jj 9) 6 lR 7
+66 rL
+# step 6: star B and so on
+44 (J 1 j 1 Jj 1 Jj 1 Jj 9) 5 lR 8
+12 (J 11 j 1 J 4 jJ 2 j) 18
+43 rL 64
+# step 7: unstar RB and so on
+9 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+11 (J 1 j 1 Jj 1 Jj 1 Jj 9) 7 lR 6
+82 rL 39 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+48 (J 1 jJ 1 jJ 1 j 8) 4 rL 7
+48 lR 66 rL
+# step 8: arrive goal
+48 (J 11 j 1 J 4 jJ 2 j) 18
+36 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+14 r

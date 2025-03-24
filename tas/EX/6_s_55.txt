@@ -1,0 +1,4 @@
+(J 2 j 2 J 1 j 2 Jj 24) R 5 r 1 R 16 9 1 rL 10
+8 17 Xx lR
+1 (J 1 j 1 Jj 1 Jj 1 Jj 9) 6 rL 7
+1 J 7 Xx lj

@@ -4,17 +4,17 @@ $enter $8/1 $win
 R 18 r
 $enter $8/2 $win
 
-R 5 14 J 1 j 1 Jj 3 12 4 JjJ 1 j 2 2 J 1 j 1 J 3 jJ 1 j 3 r
-$enter $8/4 $win
+R 1 J 9 j 1 J 6 j 2 (J 12 j 1 J 13 j 1) 5 rL 22 3 l
+$enter $8/5 $win
 
-L 1 J 9 j 1 J 6 j 2 (J 12 j 1 J 13 j 1) 5 lR 22 3 r
-$enter $8/7 $win
-
-L 6 J 3 j 2 Jj 1 Jj 1 2 J 3 j 1 Jj 2 Jj 1 3 l
+R 5 J 3 j 2 Jj 1 Jj 3 2 J 1 j 1 J 3 jJ 1 j 1 Jj 2 r
 $enter $8/6 $win
 
-L 7 JjJ 1 jJ 1 j 20 l
-$enter $8/5 $win
+R 7 JjJ 1 jJ 1 j 20 r
+$enter $8/7 $win
+
+L 19 lR 23 r
+$enter $8/4 $win
 
 Nn 1
 $enter_world

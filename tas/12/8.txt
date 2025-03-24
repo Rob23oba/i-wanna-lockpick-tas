@@ -1,0 +1,26 @@
+L 15 (J 3 jJ 1 jJ 1 j 12) 11 lR 6
+12 (J 8 j 2 J 7 jJ 1 j) 8 rL 10
+9 (J 3 jJ 1 jJ 1 j 12) 13 lR 4
+14 (10 J 3 jJ 2 j 3) 18
+14 (J 3 jJ 1 jJ 1 j 12) 4 rL 13
+11 lR 48 (J 8 j 1 J 7 jJ 2 j) 18
+2 rL 2 (J 5 j 5 J 12 j 1) 11 lR 12
+(J 4 j 1 J 5 jJ 1 j) 11
+12 rL 5 (J 2 j 7) 9 12 lR 11 Jj 2 Jj 2 Jj 1
+17 rL 16 (J 5 j 5 J 12 j 1) 23
+(J 4 j 1 J 5 jJ 1 j) 11
+29 (J 9 jJ 2 j 1) 4 lR 8
+17 rL 17 lR 43 (15 J 10 jJ 3 j 2) 30
+29 (J 2 j 7) 9 1 rL 11
+1 lR 1 (J 4 j 1 J 5 jJ 1 j) 4 rL 7
+33 (14 J 8 j 4 Jj 3) 29
+22 (J 2 j 7) 9 1 lR 11
+11 rL 10 (J 9 jJ 2 j 1) 4 lR 8
+27 (15 J 10 jJ 3 j 2) 30
+28 (J 2 j 7) 9 1 rL 11
+16 O 1 olR 15 (J 10 j 1) 4 rL 7 lR
+(J 4 j 1 J 5 jJ 1 j) 4 rL 7
+33 O 1 olR 33 rL 49 (14 J 8 j 4 Jj 3) 29
+27 (J 9 jJ 2 j 1) 4 lR 8
+27 O 1 orL 27 lR 44 28 Jj 3 Jj 2 33 O 1 orL
+33 lR 48 r

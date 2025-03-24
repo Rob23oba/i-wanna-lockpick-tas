@@ -9,14 +9,14 @@ J 13 j 1 J 12 j
 # go inside the hole
 47 Jj 1 Jj 1 Jj 5
 67 (J 1 jJ 1 jJ 1 j 8) 5 rL 6
-12 Xx 48 55
-39 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
-19 (J 11 j 1 J 4 jJ 2 j) 8 rL 9 O 1 o
-8 lR 8 4 JjJ 1 j 2 8 rL
+51 (J 11 j 1 J 4 jJ 2 j) 8 lR 10
+19 J 11 j 1 J 4 jJ 2 j
+8 Xx rL 8 4 JjJ 1 j 2
+8 lR 8 4 JjJ 1 j 2 8 r 2 55 L
 8 4 JjJ 1 j 2
 12 J 2 j 1 J 2 j 4
 (J 9 j 1 J 6 j 1) 8 lR 9
-(J 9 jJ 2 j) 4 rL 7
+(J 4 j 1 J 5 jJ 1 j) 4 rL 7
 
 # open #5 (1-door)
 41 J 3 j 14 J 6 j 7
@@ -27,7 +27,7 @@ J 13 j 1 J 12 j
 J 1 jJj 1 Jj 1 Jj 27
 2 J 3 j 2 Jj 1 Jj 1
 4 J 4 j 1 J 5 jJ 1 j 1
-22 Jj 2 J 1 j 5 Jj 1 Jj 10
+22 Jj 5 J 1 j 1 Jj 1 Jj 11
 71 J 1 j 1 J 3 jJ 1 j
 
 # go up, open #9,10,11
@@ -36,7 +36,7 @@ J 10 j 16 J 4 j 3 Jj 6
 17 J 6 jJ 1 jJ 1 j 16
 9 J 6 jJ 1 jJ 1 j 16
 8 F 1 f (J 12 j 6 J 14 j) 8 lR 11 rL 13 3 lR
-2 4 JjJ 1 j 3 18 4 JjJ 1 j 2 53
+2 3 Jj 1 Jj 5 17 4 JjJ 1 j 2 53
 
 # go down, pick 50 pink key
 64 rL
@@ -47,7 +47,7 @@ J 10 j 16 J 4 j 3 Jj 6
 6 rL 5
 
 # pick -4 pure key
-J 15 jJ 2 jJ 2 j 10
+J 6 j 9 J 3 j 3 Jj 8
 21 J 4 j 1 J 5 j 1 Jj 1
 7 J 1 j 1 J 3 jJ 1 j
 15 lR JjJ 1 jJ 1 j 2 11

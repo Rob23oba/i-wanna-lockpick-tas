@@ -25,7 +25,6 @@ L 19 l
 $enter $12/9 $win
 
 L 15 lR 29 r
-$enter $12/C $win
+$enter $12/C $win_to_warp
 
-Nn 1
-$enter_world
+$warp/12_to_EX

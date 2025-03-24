@@ -8,7 +8,7 @@ J 9 j 1 J 6 jJ 1 j
 # copy combo cyan door to x3
 l Xx 48 Xx R 5
 J 5 j 5 J 12 j
-17 Xx 44 50 11 r
+17 r Xx 44 50 R 11 r
 # copy 3 pink-white door to x12, then open copies
 Xx 40 Xx 38 Xx 36 Xx 34 Xx 32 
 Xx 30 Xx 28 Xx 26 Xx 24 Xx 22 Xx

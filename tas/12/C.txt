@@ -1,0 +1,14 @@
+L 3 (J 9 j 1 J 6 jJ 1 j 1) 8 lR 10
+12 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+3 (J 1 j 1 Jj 1 Jj 1 Jj 9) 5 rL 8
+16 (J 2 j 7) 9 1 lR 15
+5 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+4 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+4 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+39 (J 9 jJ 2 j 1) 4 rL 8
+12 (J 6 j 2 J 2 jJ 2 j) 12
+1 (J 4 j 1 J 5 jJ 1 j) 4 lR 7
+4 (J 2 j 7) 9 8
+12 (J 4 j 1 J 5 jJ 1 j 1) 4 rL 8
+1 (J 13 j 1 J 12 j) 12 lR 14
+7 J 1 rj

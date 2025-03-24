@@ -1,0 +1,5 @@
+R 32
+(J 10 j 1) 5 rL 6
+(J 4 j 1 J 5 jJ 1 j) 5 lR 6 rL
+1 Jj 5 O 2 ol 3 L 2
+24 J 3 lj

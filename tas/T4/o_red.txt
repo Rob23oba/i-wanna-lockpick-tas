@@ -6,12 +6,12 @@ R 2 (J 9 j 1 J 6 jJ 1 j 1) 8 rL 10
 5 J 9 j 1 J 6 jJ 1 j 1
 50 l 3 L 18 lR
 5 J 7 j 1 J 9 j 1
-(J 9 j 1 J 6 jJ 1 j) 4 rL 13
+(J 10 j 1 J 5 jJ 1 j) 4 rL 13
 14 (J 13 j 1 J 12 j) 12 l 4 L 10
 11 O 1 olR
 
 # step 2: open two allx3 doors, #25, 1000 door
-50 1 rL 21 JjJ 2 jJ 2 j 1
+5 J 2 j 7 34 1 rL 21 JjJ 2 jJ 2 j 1
 11 lR 10
 J 5 j 5 J 12 j 8 rL
 (J 14 j 23 Jj 1 Jj 1 Jj 1) 6 lR 8 rL 26

@@ -32,6 +32,10 @@ $0/complete
 $omegakey/rush_complete
 $main_hub/kina_heart
 
+R 14 J 3 j 2 Jj 1 Jj 1 5 r
+$enter_world $omega/s_79 $salvage
+$enter_world
+
 L 5 l 20
 $enter_world
 $12/complete
