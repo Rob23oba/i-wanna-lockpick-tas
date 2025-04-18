@@ -1,8 +1,7 @@
 # part 1: open top-left path, obtain master keys
-L 2 (J 3 jJ 1 jJ 1 j 12) 13 lR 4
-8 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
+L 7 (J 6 j 1 J 1 j 1 Jj 1 Jj 17) 3 lR 24
 # round 1
-39 (J 3 jJ 1 jJ 1 j 12) 7 rL 10
+44 (J 3 jJ 1 jJ 1 j 12) 7 rL 10
 11 (J 3 j 2 Jj 1 Jj 2) 8
 6 (J 1 j 1 Jj 1 Jj 1 Jj 9) 13
 34 (J 9 jJ 2 j 1) 12
@@ -29,6 +28,7 @@ L 2 (J 3 jJ 1 jJ 1 j 12) 13 lR 4
 5 (J 3 j 2 Jj 1 Jj 2) 8
 47 (J 9 jJ 2 j 1) 12
 11 l 58 55 53 50 L 5 O 1 olR
+
 # part 2: open remaining paths
 # black door
 11 (Jj 1 Jj 1 Jj 1 Jj 6) 9
@@ -40,7 +40,7 @@ L 2 (J 3 jJ 1 jJ 1 j 12) 13 lR 4
 50 lR 16 Xx 19 O 1 orL
 9 (J 13 j 1 J 12 j) 14 lR 12
 # all red-cyan door: making copies
-66 9 (J 3 jJ 1 jJ 1 j 12) 2 r 1 L 14
+66 8 (J 3 jJ 1 jJ 1 j 12) 3 r 1 L 13
 4 (J 2 j 7) 9 1 lR 18 r
 Xx 48 Xx 46 Xx 44 Xx 42 Xx 40 Xx 38 Xx 36 L
 # frozen doors
@@ -56,14 +56,14 @@ Xx 48 Xx 46 Xx 44 Xx 42 Xx 40 Xx 38 Xx 36 L
 15 lR 5 (J 8 j 2 J 7 jJ 1 j) 18
 12 (J 3 jJ 1 jJ 1 j 12) 7 rL 10
 6 (J 2 j 7) 9 1 lR 18 rL
-16 F 1 flR 6 (J 8 j 2 J 7 jJ 1 j) 18
+16 F 1 flR 6 (J 13 j 1 J 3 jJ 1 j) 18
 12 (J 3 jJ 1 jJ 1 j 12) 7 rL 10
 6 (J 2 j 7) 9 1 lR 18 rL
-26 O 1 olR 15 (J 13 j 1 J 3 jJ 1 j) 18
+26 O 1 olR 15 (J 8 j 2 J 7 jJ 1 j) 18
 # spend the brown key
 6 (J 1 j 1 Jj 1 Jj 1 Jj 9) 5 rL 8
 (J 2 j 7) 9 1 lR 18 rL
 2 (J 11 j 1 J 4 j 2) 8 lR 9 O 1 orL
-(Jj 2 J 4 j 1) 7
+(J 3 j 4) 7
 (J 4 j 1 J 5 jJ 1 j) 2 lR 9
 18 J 1 rj
