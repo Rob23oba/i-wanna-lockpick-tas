@@ -1,0 +1,16 @@
+L 38
+(6 lR)
+J 13 j 1 J 3 j 1
+J 9 j 1 J 6 j 1 Jj 2
+J 7 j 1 J 9 jJ 1 j
+11 O 1 Lro
+76 Xx 41 lR
+50
+J 13 j 1 J 3 j 1
+J 7 j 1 J 9 jJ 1 j 1
+J 10 j 1 J 5 j 1 Jj 1
+27 O 1 Lro
+48 lR 50 O 1 Lro
+86
+J 10 j 1 J 5 j 1 Jj 1
+21 l
