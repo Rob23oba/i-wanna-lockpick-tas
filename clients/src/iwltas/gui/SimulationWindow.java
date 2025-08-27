@@ -2,6 +2,7 @@ package iwltas.gui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.*;
 import java.awt.event.*;
 import java.io.*;
 import java.util.*;
@@ -143,19 +144,46 @@ public class SimulationWindow extends JPanel {
 		};
 	}
 
+	public static int gridCacheScale = -1;
+	public static BufferedImage gridCache = null;
+
 	public static void drawGrid(Graphics g, int diffX, int diffY, int w, int h, int scale) {
+		if (scale != gridCacheScale) {
+			gridCacheScale = scale;
+			gridCache = new BufferedImage(scale * 64, scale * 64, BufferedImage.TYPE_INT_ARGB);
+			Graphics gr = gridCache.createGraphics();
+			for (int x = 0; x <= 64; x++) {
+				gr.setColor(gridColor(x));
+				gr.drawLine(x * scale + diffX, 0, x * scale + diffX, h);
+			}
+			for (int y = 0; y <= 64; y++) {
+				gr.setColor(gridColor(y));
+				gr.drawLine(0, y * scale + diffY, w, y * scale + diffY);
+			}
+		}
+		int firstX = -Math.floorDiv(diffX, scale * 64); // = ceil(-diffX / (scale * 64))
+		int firstY = -Math.floorDiv(diffY, scale * 64);
+		int lastX = Math.floorDiv(w - diffX, scale * 64);
+		int lastY = Math.floorDiv(h - diffY, scale * 64);
+		for (int x = firstX; x <= lastX; x++) {
+			for (int y = firstY; y <= lastY; y++) {
+				g.drawImage(gridCache, diffX + x * scale * 64, diffY + y * scale * 64, null);
+			}
+		}
+/*
 		int firstX = -Math.floorDiv(diffX, scale); // = ceil(-diffX / scale)
 		int firstY = -Math.floorDiv(diffY, scale);
 		int lastX = Math.floorDiv(w - diffX, scale);
 		int lastY = Math.floorDiv(h - diffY, scale);
 		for (int x = firstX; x <= lastX; x++) {
 			g.setColor(gridColor(x));
-			g.drawLine(x * 8 + diffX, 0, x * 8 + diffX, h);
+			g.drawLine(x * scale + diffX, 0, x * scale + diffX, h);
 		}
 		for (int y = firstY; y <= lastY; y++) {
 			g.setColor(gridColor(y));
-			g.drawLine(0, y * 8 + diffY, w, y * 8 + diffY);
+			g.drawLine(0, y * scale + diffY, w, y * scale + diffY);
 		}
+*/
 	}
 
 	public static void drawCenteredTextWithBackground(Graphics g, Color fg, Color bg, int x, int y, String text, int maxLen) {

@@ -200,7 +200,7 @@ static void handle_jump(struct jump_state s, int first_jump, int wait, int secon
 	if (s.frame_limit > max_leftover) {
 		return;
 	}
-	if (s.reach_y > reach_required) {
+	if (recursion == allow_recursion && s.reach_y > reach_required) {
 		return;
 	}
 	float min_y = min_max_y[recursion][0];
@@ -249,6 +249,7 @@ end_stable:
 		}
 	}
 	if (recursion < allow_recursion) {
+		if (end_time == 0) return;
 		int old_counter = counter;
 		recursion++;
 		bruteforce_first_jump(s);

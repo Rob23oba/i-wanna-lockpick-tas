@@ -69,7 +69,8 @@ public class TASClient implements Closeable {
 				throw new EOFException("No line received");
 			}
 			if (str.startsWith("$")) {
-				System.out.println(str);
+				//System.out.println(str);
+				// debug message
 				continue;
 			}
 			return str;
