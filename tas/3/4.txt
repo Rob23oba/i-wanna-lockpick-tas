@@ -1,0 +1,11 @@
+R 10 1 1 1 1 1 1
+J 7 j 1 J 9 jJ 1 j
+11 O 1 Lro 10
+1 Jj 1 Jj 2 Jj 4
+16 F 1 lRf 52
+Xx 6
+J 9 j 1 J 6 j 1 Jj 1
+14
+J 9 j 1 J 6 j 1 Jj 1
+17 Lr 53 l 17 R 39
+J 1 jr
