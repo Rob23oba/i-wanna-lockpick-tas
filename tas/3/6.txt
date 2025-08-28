@@ -1,0 +1,21 @@
+R 18 rL 13
+J 9 j 1 J 6 j 2
+J 9 j 1 J 6 j 1
+J 9 j 1 J 6 jJ 1 j
+24 F 1 flR 24
+J 14 j 16 Jj 20
+22
+(4 Lr) J 1 jJj 1 Jj 1 Jj 8
+32 l 14 R 15 12
+(4 Lr) J 1 jJj 1 Jj 1 Jj 8
+18 (J 9 j 1 J 6 j 1 Jj 1)
+7 l 9 R 30
+(4 Lr) J 1 jJj 1 Jj 1 Jj 8
+38 l 14 R 38
+(4 Lr) J 1 jJj 1 Jj 1 Jj 8
+28 J 9 j 1 J 6 j 1 Jj 1
+24 F 1 flR 16
+(J 9 j 1 J 6 j 1 Jj 1)
+6 r 10 L 26 F 1 flR 35 r
+15 L 32
+2 J 4 j 1 J 4 lj

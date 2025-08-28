@@ -1,0 +1,68 @@
+# get white key and pink key of last row
+R 1 (J 8 j 1 J 7 jJ 2 j)
+6 Lr 12
+16 O 1 olR
+
+# This seems to be 1 frame slower lol
+#17 r 12 L 1 1 28 F 1 lRf
+#21 (J 8 j 1 J 7 jJ 2 j)
+#6 Lr 12 27 O 1 lRo 20
+#(J 6 j 2 J 2 jJ 2 j)
+#2 r 9 L 17 O 1 lRo 17 r
+#12 L 31
+
+# exchange pink in second row
+10 (J 6 j 2 J 2 jJ 2 j)
+1 r 9 L 18 O 1 lRo 17 r
+
+# exchange white in third row
+12 L 25 O 1 lRo 27 r
+
+# exchange pink at the bottom
+13 L 29 F 1 lRf 21
+
+# exchange white in third row and open cyan
+(J 8 j 1 J 7 jJ 2 j)
+6 r 10 L 45 lR 37
+
+# all the way up to exchange pink key
+(J 10 j 1) 1 r 8 L 2 l
+(J 14 j 2 J 10 j 1) 18 R 15
+18 J 2 j 1 J 1 jJ 3 j
+8 O 1 Lro 40
+
+# white first row, pink on the right
+18 JjJ 2 j 12
+5 O 1 lRo 16
+J 10 j 8 23
+J 2 j 1 J 1 jJ 3 j
+19 O 1 Lro 51
+
+# pickup cyan key, white second row
+7 l 22 L 44 lR 42
+(J 6 j 2 J 2 jJ 2 j)
+1 r 10 L 28 O 1 lRo 20
+
+# pink on the right
+J 16 j 1 J 9 jJ 1 j
+23 J 2 j 1 J 1 jJ 3 j
+28 O 1 ro 21 L 7 lR 5
+
+# pink first row
+(J 13 j 1 J 12 j)
+1 r 23 L 20 20 20 1 1
+18 JjJ 2 j 29 O 1 lRo 26
+
+# white and cyan on the right
+Jj 2 J 16 j 1
+23 J 2 j 1 J 1 jJ 3 j
+28 r 22 L 31 lR 29
+(J 13 j 1 J 12 j)
+1 r 23 L 62
+
+# orange second row and win
+61 F 1 lRf 10 10 10 1 1 1 1 1 1 1
+(J 13 j 1 J 12 j 1)
+1 r 8 L 18
+J 3 jJ 4 j
+24 J 4 jl
