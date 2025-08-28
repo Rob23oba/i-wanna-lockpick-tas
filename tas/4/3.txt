@@ -1,0 +1,40 @@
+R 4
+(8 Lr) J 1 jJj 1 Jj 1 Jj 8
+(J 7 j 1 J 9 j 1) 5 l 11 R 2
+J 9 j 1 J 6 j 1
+J 9 j 1 J 6 jJ 1 j
+12 (3 Lr) J 1 jJj 1 Jj 1 Jj 8
+10 l 13 R 5 O 1 Lro 19 l 15 R 11 O 1 Lro 5
+(J 9 j 1 J 6 j 2) 5 l 11 R 2
+J 9 j 1 J 6 jJ 1 j
+17 (3 Lr) J 1 jJj 1 Jj 1 Jj 8
+26 l 14 R 15 Xx
+13 O 1 oLr 21
+(J 9 j 1 J 6 j 1 Jj 1)
+7 l 8 R 14 Lr 11 l 14 R 31 Lr 23
+(J 9 j 1 J 6 j 1 Jj 1)
+7 l 10 R 23
+(3 Lr) J 1 jJj 1 Jj 1 Jj 8
+21 l 13 R 72
+(J 7 j 1 J 9 j 1)
+7 r 9 L 2
+
+J 9 j 1 J 6 j 1
+(J 9 j 1 J 6 jJ 1 j)
+8 O 1 lo 7 L 1
+8 lR 8
+1 Jj 1 Jj 2 Jj 4
+5 Xx 2 O 1 Lro 7
+
+#  this seems to be 1 frame slower lol
+#1 Jj 1 Jj 2 Jj 4
+#17 lR 17 r 12 L 22 lR 13
+#J 9 j 1 J 6 j 1 Jj 1
+#11
+
+35 lR 13
+(J 9 j 1 J 6 j 1 Jj 1)
+6 r 10 L 18 lR 16
+1 Jj 1 Jj 2 Jj 15
+7 J 1 rj
+
