@@ -1,4 +1,4 @@
-R 16 r 9
+R 16 r
 $enter $4/1 $win
 
 R 7 r
