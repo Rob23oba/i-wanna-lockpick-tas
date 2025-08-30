@@ -191,6 +191,8 @@ while 1
                 copyTimer = string_split_next_int()
                 copySound = -1
                 visible = active
+                scrColorDoor()
+                scrColorDoor2()
                 undoReposition()
             }
             with (oDoorCombo)
@@ -209,6 +211,16 @@ while 1
                 copyTimer = string_split_next_int()
                 copySound = -1
                 visible = active
+                if (browned)
+                {
+                    c[0] = global.highTone[10]
+                    c[1] = global.mainTone[10]
+                    c[2] = global.darkTone[10]
+                }
+                else
+                {
+                    scrComboCFunc()
+                }
                 undoReposition()
             }
             break
